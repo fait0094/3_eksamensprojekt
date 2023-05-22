@@ -1,0 +1,73 @@
+---
+import Button from "./Button.astro";
+const { iconlist } = Astro.props;
+import "..//styles/style.css";
+---
+
+<section class="footer bg-primary_black p-10 text-primary_white gap-24 grid md:grid-cols-3">
+  <article>
+    <h3 class="pb-2">KONTAKT</h3>
+    <div class="flex gap-4">
+      <img src="../ikoner/telefon.png" alt="" width="25px" />
+      <p>+45 44 94 66 96</p>
+    </div>
+    <div class="flex gap-4">
+      <img src="../ikoner/mail.png" alt="" width="25px" />
+      <p>Info@dyrevaernet.dk</p>
+    </div>
+    <div class="flex gap-4">
+      <img src="../ikoner/location.png" alt="" width="25px" />
+      <p>Islevdalvej 85, 2610 Rødovre</p>
+    </div>
+  </article>
+
+  <div class="pt-16">
+    <h3 class="pb-2">TELEFONTID</h3>
+    <p>Man-fre: 9.30 - 12.00</p>
+    <p>Lør-søn: Lukket</p>
+  </div>
+</section>
+
+<article>
+  <div>
+    <h3 class="pb-2">ÅBNINGSTIDER</h3>
+    <p>Mandag: Lukket</p>
+    <p>Tirsdag: 09.00 - 11.00</p>
+    <p>Ons, tors, fre: 5.00 - 17.00</p>
+    <p>Lør, søn, helligdage: 12.00 - 16.00</p>
+    <p>24., 25., 26., 31., dec., 1. jan: Lukket</p>
+  </div>
+
+  <div class="pt-14">
+    <h3 class="pb-2">TILMELD DIG VORES NYHEDSBREV</h3>
+    <p class="pb-2">Tilmeld vores nyhedsbrev og få spændende nyheder og muligheder for at hjælpe dyrene.</p>
+    <div class="flex gap-5">
+      <div class="bg-primary_white text-gray-500 pr-16 pl-4 rounded">
+        <p class="pt-4">Indtast din e-mail</p>
+      </div>
+      <Button variant="primary_2">TILMELD</Button>
+    </div>
+  </div>
+</article>
+
+<article>
+  <div>
+    <div class="flex gap-2 align-middle">
+      <img src="../ikoner/star.png" alt="" width="50px" />
+      <h3 class="">TRUSTPILOT</h3>
+    </div>
+    <p>Anmeldelser 272 • Fremragende</p>
+
+    <div class="rating gap-4 pt-2">
+      <img src="../ikoner/stjerner.png" alt="" />
+      <p>4,7</p>
+    </div>
+
+    <div class="pt-28">
+      <h3 class="pb-2">FØLG OS HER</h3>
+    </div>
+    <div class="pt-2">
+      <img src="../ikoner/følgOs.png" alt="" />
+    </div>
+  </div>
+</article>
