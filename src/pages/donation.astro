@@ -1,0 +1,350 @@
+---
+import Button from "../components/Button.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import Card from "../components/Card.astro";
+import "..//styles/style.css";
+---
+
+<MainLayout
+  title="3. SEM - Eksamensprojekt"
+  splash_title="Donation"
+  splash_description="Din donation har magten til at forvandle og redde liv. Når du støtter os med en donation, giver du dyrene en anden chance for et bedre liv."
+  imgPath="/public/splash/donation.jpg"
+  intro_title="Din donation gør en forskel"
+  intro_description="Vi har gjort det nemt og enkelt at bidrage med en donation. Vælg mellem en enkel, månedlig eller virksomheds-donation og udfyld formularen."
+>
+  <!-- Indsæt indhold i main her -->
+
+  <!-- Form -->
+  <section
+    class="form-content mb-8 border-2 border-black p-8 pb-4"
+    id="step"
+    x-data="{ step: 'step1', winetype: 'both', quantity: '6', howoften : 'weekly', amount : '4'}"
+  >
+    <header class="border-b border-slate-500 pt-4 pb-8">
+      <p class="pb-2">Gennemfør din donation på 4 enkle trin:</p>
+      <ul class="">
+        <li
+          class="inline pr-2"
+          :class="{'border-black border-b': step === 'step1' }"
+        >
+          1: Udvælg
+        </li>
+        <li
+          class="inline pr-2"
+          :class="{'border-black border-b': step === 'step2' }"
+        >
+          2: Oplysninger
+        </li>
+        <li
+          class="inline pr-2"
+          :class="{'border-black border-b': step === 'step3' }"
+        >
+          3: Betaling
+        </li>
+        <li
+          class="inline pr-2"
+          :class="{'border-black border-b': step === 'step4' }"
+        >
+          4: Bekræftelse
+        </li>
+      </ul>
+    </header>
+
+    <div class="border-b border-slate-500 py-8">
+      <!-- step 1 -->
+      <div id="step1" x-show="step === 'step1'">
+        <p class="mb-4">Vælg din donationstype.</p>
+        <form id="winesubscriptionform" class="grid lg:grid-cols-3">
+          <Card
+            title="Enkel donation"
+            description="Med denne mulighed donerer du et engangsbeløb og du bestemmer selv beløbets størrelse."
+            imgPath="/public/ikoner/hjerte-ikon.png"
+          />
+          <Card
+            title="Månedlig donation"
+            description=" De fleste vælger denne mulighed, hvor du kan vælge, hvilket beløb du ønsker at støtte dyrene med hver måned."
+            imgPath="/public/ikoner/hjerte-ikon.png"
+          />
+          <Card
+            title="Virksomhedsdonation"
+            description="Vil din virksomhed hjælpe Dyreværnet med at redde dyr? Man kan hjælpe med en donation eller ved at blive sponsor."
+            imgPath="/public/ikoner/hjerte-ikon.png"
+          />
+        </form>
+      </div>
+
+      <!-- step 2-->
+      <div id="step2" x-show="step === 'step2'">
+        <p>Vælg dit beløb og udfyld dine personlige oplysninger.</p>
+
+        <div class="form-control">
+          <label class="label cursor-pointer">
+            <span class="label-text">200 DKK</span>
+            <input
+              type="radio"
+              name="radio-10"
+              class="radio checked:bg-primary_blue"
+              checked
+            />
+          </label>
+        </div>
+        <div class="form-control">
+          <label class="label cursor-pointer">
+            <span class="label-text">300 DKK</span>
+            <input
+              type="radio"
+              name="radio-10"
+              class="radio checked:bg-primary_blue"
+              checked
+            />
+          </label>
+        </div>
+        <div class="form-control">
+          <label class="label cursor-pointer">
+            <span class="label-text">400 DKK</span>
+            <input
+              type="radio"
+              name="radio-10"
+              class="radio checked:bg-primary_blue"
+              checked
+            />
+          </label>
+        </div>
+        <div class="form-control">
+          <label class="label cursor-pointer">
+            <span class="label-text">Andet</span>
+            <input
+              type="radio"
+              name="radio-10"
+              class="radio checked:bg-primary_blue"
+              checked
+            />
+          </label>
+        </div>
+
+        <div>
+          <label class="label">
+            <span class="label-text text-lg text-white">Fulde navn</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Indtast navn"
+            class="input-bordered input w-full max-w-xl bg-white text-custom_purple dark:bg-white"
+          />
+        </div>
+
+        <div>
+          <label class="label">
+            <span class="label-text text-lg text-white">Email</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Indtast email"
+            class="input-bordered input w-full max-w-xl bg-white text-custom_purple dark:bg-white"
+          />
+        </div>
+
+        <div>
+          <label class="label">
+            <span class="label-text text-lg text-white">Telefonnummer</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Indtast telefonnummer"
+            class="input-bordered input w-full max-w-xl bg-white text-custom_purple dark:bg-white"
+          />
+        </div>
+      </div>
+
+      <!-- step 3 -->
+      <div id="step3" x-show="step === 'step3'">
+        <p>Vælg din betalingsmetode og udfyld dine oplysninger.</p>
+        <label class="label cursor-pointer">
+          <span class="label-text">Betalingskort</span>
+          <input
+            type="radio"
+            name="radio-10"
+            class="radio checked:bg-primary_blue"
+            checked
+          />
+        </label>
+
+        <div>
+          <label class="label">
+            <span class="label-text text-lg text-white">Navn på kortet</span>
+          </label>
+          <input
+            type="text"
+            placeholder="Indtast navn på kortet"
+            class="input-bordered input w-full max-w-xl bg-white text-custom_purple dark:bg-white"
+          />
+        </div>
+
+        <div>
+          <label class="label">
+            <span class="label-text text-lg text-white">Kortnummer</span>
+          </label>
+          <input
+            type="text"
+            placeholder="0000 0000 00000 0000"
+            class="input-bordered input w-full max-w-xl bg-white text-custom_purple dark:bg-white"
+          />
+        </div>
+
+        <div class="grid lg:grid-cols-2">
+          <div>
+            <label class="label">
+              <span class="label-text text-lg text-white">Udløbsdato</span>
+            </label>
+            <input
+              type="text"
+              placeholder="MM/ÅÅ"
+              class="input-bordered input w-full max-w-xl bg-white text-custom_purple dark:bg-white"
+            />
+          </div>
+          <div>
+            <label class="label">
+              <span class="label-text text-lg text-white">Kontrolcifre</span>
+            </label>
+            <input
+              type="text"
+              placeholder="000"
+              class="input-bordered input w-full max-w-xl bg-white text-custom_purple dark:bg-white"
+            />
+          </div>
+        </div>
+
+        <label class="label cursor-pointer">
+          <span class="label-text">MobilePay</span>
+          <input
+            type="radio"
+            name="radio-10"
+            class="radio checked:bg-primary_blue"
+            checked
+          />
+        </label>
+      </div>
+
+      <!-- step 4-->
+      <div id="step4" x-show="step === 'step4'">
+        <h2 class="text-primary_blue">Tak for din donation!</h2>
+        <p>
+          Vi sender detaljer om din donation til den angivne mailadresse. Du vil
+          modtage en bekræftelse, kvittering og yderligere information om vores
+          organisation og hvordan din støtte hjælper dyrene i nød. <br /><br
+          />Vi sætter stor pris på din generøsitet og takker dig for at være en
+          del af vores indsats for dyrevelfærd.<br /><br /> Hvis du har spørgsmål
+          eller brug for yderligere hjælp, er du velkommen til at kontakte os. Vi
+          er her for at hjælpe dig. <br /><br />Tak igen for din donation!<br
+          /><br /> Med venlig hilsen,<br /><br />Dyreværnet
+        </p>
+      </div>
+    </div>
+
+    <footer class="flex justify-between py-8">
+      <div class="">
+        <button
+          id="knap2"
+          class="border-2 border-black p-2"
+          x-on:click="step = 'step1'"
+          x-show="step === 'step2'"
+        >
+          &LeftArrow; Udvælg
+        </button>
+        <button
+          id="knap3"
+          class="border-2 border-black p-2"
+          x-on:click="step = 'step2'"
+          x-show="step === 'step3'"
+        >
+          &LeftArrow; Oplysninger
+        </button>
+        <button
+          id="knap4"
+          class="border-2 border-black p-2"
+          x-on:click="step = 'step3'"
+          x-show="step === 'step4'"
+        >
+          &LeftArrow; Betaling
+        </button>
+      </div>
+      <div class="">
+        <button
+          id="knap2"
+          class="border-2 border-black p-2"
+          x-on:click="step = 'step2'"
+          x-show="step === 'step1'"
+        >
+          Oplysninger &RightArrow;
+        </button>
+        <!-- <Button
+          id="knap2"
+          x-on:click="step = 'step2'"
+          x-show="step === 'step1'"
+          variant="secondary"
+          size="small"
+        >
+          Oplysninger &RightArrow;
+        </Button> -->
+
+        <button
+          id="knap3"
+          class="border-2 border-black p-2"
+          x-on:click="step = 'step3'"
+          x-show="step === 'step2'"
+        >
+          Betaling &RightArrow;
+        </button>
+        <button
+          id="knap4"
+          class="border-2 border-black p-2"
+          x-on:click="step = 'step4'"
+          x-show="step === 'step3'"
+        >
+          Bekræftelse &RightArrow;
+        </button>
+        <button
+          id="knap4"
+          class="border-2 border-black bg-green-200 p-2"
+          x-on:click="step = 'step4'"
+          x-show="step === 'step4'"
+        >
+          Tilbage
+        </button>
+      </div>
+    </footer>
+  </section>
+
+  <!-- Info -->
+  <section class="info row-start-1">
+    <div class="mb-5">
+      <h3>Bankoverførsel</h3>
+      <p>
+        Du kan også overføre et beløb til vores donationskonto: 5329 - 0242143.
+      </p>
+    </div>
+
+    <div class="mb-5">
+      <h3>Vores dedikation siden 1898</h3>
+      <p>
+        Siden 1898 har vi hjulpet dyr fra et liv med misrøgt, svigt og
+        usikkerhed til et liv med kærlighed, omsorg og i sidste ende: En
+        blivende familie.
+      </p>
+    </div>
+
+    <div>
+      <h3>Spar 10% på din dyreforsikring</h3>
+      <p>
+        Vidste du, at når du støtter Dyreværnet - som fast bidragsyder eller som
+        medlem - kan du få 10% på din dyreforsikring hos vores samarbejdspartner
+        og hovedsponsor Agria Dyreforsikring.
+      </p>
+    </div>
+  </section>
+</MainLayout>
+
+<!-- Spørgsmål / Kommentarer -->
+<!-- Jeg har anvendt mb-5 (få defineret/brugt en rigtig spacing) -->
+<!-- Button-komponent virker ikke form? -->
