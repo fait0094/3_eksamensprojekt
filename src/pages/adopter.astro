@@ -1,0 +1,38 @@
+---
+import Button from "../components/Button.astro";
+import Card from "../components/Card.astro";
+import CardSektion from "../components/CardSektion.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import Splash from "../components/Splash.astro";
+import Intro from "../components/Intro.astro";
+import Faktaboks from "../components/Faktaboks.astro";
+import "..//styles/style.css";
+---
+
+<MainLayout title="3. SEM - Eksamensprojekt" splash_title="ADOPTER DIN NYE BEDSTE VEN" splash_description="Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem.">
+  <section class="max-w-sm md:max-w-3xl lg:max-w-6xl mx-auto">
+    <section class="grid grid-cols-3 gap-4 md:max-w-3xl max-w-sm lg:max-w-6xl mx-auto pb-24">
+      <div class="flex flex-col items-center justify-start">
+        <img src="../splash/1.png" alt="Hund" class="w-28 pb-10" />
+        <div class="text-center md:w-52">
+          <h5 class="text-sm pb-2">UNDERSØG INDLEVERING</h5>
+          <p class="text-xs">Undersøg kriterier for indlevering samt hvilke dyr vi modtager.</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-center justify-start">
+        <img src="../splash/2.png" alt="Hund" class="w-32 pb-10" />
+        <div class="text-center md:w-52">
+          <h5 class="text-sm pb-2">KONTAKT OS</h5>
+          <p class="text-xs">Ring til os på hverdage mellem 9.30 - 12.00 på telefon+45 44 94 66 95</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-center justify-start">
+        <img src="../splash/3.png" alt="Hund" class="w-28 pb-10" />
+        <div class="text-center md:w-52">
+          <h5 class="text-sm pb-2">AFTALE</h5>
+          <p class="text-xs">Hvis vi vurderer, at dyret er omplaceringsegnet, aftales den videre proces.</p>
+        </div>
+      </div>
+    </section>
+  </section>
+</MainLayout>
