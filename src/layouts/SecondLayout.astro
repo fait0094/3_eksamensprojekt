@@ -1,0 +1,36 @@
+---
+import "../styles/style.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const { title } = Astro.props;
+---
+
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="color-scheme" content="light" />
+
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2"></script>
+    <script src="/path/to/main.js" type="module"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;800&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

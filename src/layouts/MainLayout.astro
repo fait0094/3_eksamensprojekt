@@ -1,0 +1,66 @@
+---
+import "../styles/style.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const {
+  title,
+  splash_title,
+  splash_description,
+  imgPath,
+  intro_title,
+  intro_description,
+} = Astro.props;
+---
+
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta name="color-scheme" content="light" />
+
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2"></script>
+    <script src="/path/to/main.js" type="module"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;800&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Header />
+
+    <!-- Splash -->
+    <!-- <section class="splash">
+      <div class="hero h-60" style={`background-image: url(${imgPath});`}>
+        <div class="hero-overlay bg-opacity-20"></div>
+        <div class="hero-content text-neutral-content">
+          <div class="">
+            <h1 class="">{splash_title}</h1>
+            <p class="">{splash_description}</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Intro -->
+    <section class="flex flex-col items-center text-center my-12 mb-20">
+      <h2>{intro_title}</h2>
+      <p>{intro_description}</p>
+    </section>
+
+    <main class="max-w-6xl mx-auto">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style></style>

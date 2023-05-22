@@ -1,0 +1,41 @@
+---
+import Button from "../components/Button.astro";
+import CardSektion from "../components/CardSektion.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+
+import Card from "../components/Card.astro";
+import "..//styles/style.css";
+---
+
+<MainLayout
+  title="3. SEM - Eksamensprojekt"
+  splash_title="Donation"
+  splash_description="Din donation har magten til at forvandle og redde liv. Når du støtter os med en donation, giver du dyrene en anden chance for et bedre liv."
+  imgPath="/public/splash/donation.jpg"
+  intro_title="Din donation gør en forskel"
+  intro_description="Vi har gjort det nemt og enkelt at bidrage med en donation. Vælg mellem en enkel, månedlig eller virksomheds-donation og udfyld formularen."
+>
+  <!-- Indsæt indhold i main her -->
+  <section class="gap-8 lg:flex lg:justify-center">
+    <Card
+      title="Donation"
+      description="Vil du hjælpe Dyreværnet med at redde dyr? Vælg mellem enkelt, månedlig eller virksomhedsdonation og vær med til at redde dyreliv."
+      imgPath="/public/adoption/basse.webp"
+      link_side="donation.html"
+    />
+    <Card
+      title="Betænk dyrene i testamentet"
+      description="Testamentariske gaver er meget vigtige for Dyreværnets arbejde og eksistens. Vi kan hjælpe med oprettelse af testamente."
+      imgPath="/public/adoption/basse.webp"
+      link_side="donation.html"
+    />
+    <Card
+      title="Indsamling via Facebook"
+      description="På Facebook kan du nemt samle penge ind til Dyreværnets hunde, katte, kaniner & smådyr"
+      imgPath="/public/adoption/basse.webp"
+      link_side="donation.html"
+    />
+  </section>
+</MainLayout>
+
+<style></style>
