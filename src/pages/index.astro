@@ -10,69 +10,64 @@ import Testimonial from "../components/Testimonial.astro";
 ---
 
 <SecondLayout title="3. SEM - Eksamensprojekt">
-  <main>
-    <div class="">
-      <img src="../splash/hundsplash.webp" alt="Hund" class="z-0 w-full h-full" />
-    </div>
-    <div class="text-primary_white z-10 absolute top-[32rem]">
+  <main class="flex items-center justify-start h-screen bg-[url('/splash/hundsplash.webp')] bg-cover bg-center">
+    <div class="text-left mx-8">
       <h1 class="">ALLE DYR FORTJENER ET GODT HJEM</h1>
-      <p class="pt-5">Vi er dedikeret til at redde og beskytte dyr i nød. Vi arbejder for at finde kærlige hjem til vores pelsede venner og sikre, at de får den omsorg og opmærksomhed, de fortjener.</p>
-      <Button variant="primary_1" size="medium">STØT</Button>
-    </div>
-    <div class="">
-      <img src="../splash/hundsplash.webp" alt="Hund" class="z-0 w-full h-full" />
+      <p class="">Vi er dedikeret til at redde og beskytte dyr i nød. Vi arbejder for at finde kærlige hjem til vores pelsede venner og sikre, at de får den omsorg og opmærksomhed, de fortjener.</p>
+      <Button variant="primary_green" size="small">STØT</Button>
     </div>
   </main>
 
-  <section class="bg-secondary_beige place-content-center mx-0 grid">
-    <div class="">
-      <h2>KLAR TIL EN NY VEN?</h2>
-      <p>Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem.</p>
-    </div>
-
-    <div class="mb-10 grid grid-cols-2 lg:ml-10 lg:max-w-4xl lg:gap-16">
-      <div>
-        <div class="grid grid-cols-4 gap-10 align-baseline">
-          <div class="grid col-start-1">
-            <a href="adopter.astro"
-              ><img src="../ikoner/hund_ikon.png" alt="Hund" />
-              <p class="underline text-center pt-2 w-1/2">Hund</p>
-            </a>
-          </div>
-
-          <div class="grid col-start-2">
-            <a href="adopter.astro"
-              ><img src="../ikoner/kat_ikon.png" alt="Kat" />
-              <p class="underline text-center pt-2 w-1/2">Kat</p>
-            </a>
-          </div>
-
-          <div>
-            <a href=" adopter.astro">
-              <img src="../ikoner/kanin_ikon.png" alt="Kanin" />
-              <p class="underline text-center pt-2 w-1/2">Kanin</p>
-            </a>
-          </div>
-
-          <div>
-            <a href="adopter.astro"
-              ><img src="../ikoner/marsvin_ikon.png" alt="marsvin" />
-              <p class="underline text-center pt-2 w-1/2">Marsvin</p>
-            </a>
-          </div>
-        </div>
+  <body>
+    <section class="bg-secondary_beige place-content-center mx-0 grid">
+      <div class="text-center px-4 md:col-span-1">
+        <h2 class="mb-4">KLAR TIL EN NY VEN?</h2>
+        <p class="text-center md:text-left">Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem.</p>
       </div>
 
-      <div class="col-start-2">
-        <div class="justify-center grid">
-          <h3 class="">191</h3>
+      <div class="mb-10 grid grid-cols-1 md:grid-cols-2 md:ml-10 md:max-w-4xl lg:gap-16">
+        <div class="md:border-r-2 md:border-black md:pr-4">
+          <div class="grid grid-cols-4 gap-10 align-baseline">
+            <div class="grid col-start-1">
+              <a href="adopter.astro" class="flex flex-col items-center">
+                <img src="../ikoner/hund_ikon.png" alt="Hund" class="h-10 w-10 mb-2" />
+                <p class="underline text-center w-1/2">Hund</p>
+              </a>
+            </div>
+
+            <div class="grid col-start-2">
+              <a href="adopter.astro" class="flex flex-col items-center">
+                <img src="../ikoner/kat_ikon.png" alt="Kat" class="h-10 w-10 mb-2" />
+                <p class="underline text-center w-1/2">Kat</p>
+              </a>
+            </div>
+
+            <div>
+              <a href="adopter.astro" class="flex flex-col items-center">
+                <img src="../ikoner/kanin_ikon.png" alt="Kanin" class="h-10 w-10 mb-2" />
+                <p class="underline text-center w-1/2">Kanin</p>
+              </a>
+            </div>
+
+            <div>
+              <a href="adopter.astro" class="flex flex-col items-center">
+                <img src="../ikoner/marsvin_ikon.png" alt="marsvin" class="h-10 w-10 mb-2" />
+                <p class="underline text-center w-1/2">Marsvin</p>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <p class="justify-center grid pt-4">
-          venter på nyt hjem. Ingen fortjener at være alene <br />- adopter fra fyreværnet og gør en forskel
-        </p>
-        <Button variant="primary_1" size="medium">FIND KÆLEDYR</Button>
+        <div class="md:col-start-2 md:flex md:flex-col md:items-center md:justify-center md:pt-4 lg:pt-0 lg:pl-8">
+          <div class="justify-center">
+            <h3 class="">191</h3>
+          </div>
+
+          <p class="justify-center pt-4 text-center md:text-left">
+            venter på nyt hjem. Ingen fortjener at være alene <br />- adopter fra fyreværnet og gør en forskel
+          </p>
+          <button class="bg-primary_1 text-white px-4 py-2 </SecondLayout>"></button>
+        </div>
       </div>
-    </div>
-  </section>
+    </section></body>
 </SecondLayout>
