@@ -83,12 +83,40 @@ import Testimonial from "../components/Testimonial.astro";
       </main>
     </section>
 
-    <section>
-      <div class="grid justify-center text-center">
+    <section class="mb-8 grid justify-center">
+      <div class="text-center mt-8">
         <h1 class="">VIL DU GØRE EN FORSKEL?</h1>
         <p>Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem.</p>
       </div>
-      <div class="grid grid-cols-4"></div>
+      <article class="grid grid-cols-4 max-w-4xl mt-8 md:">
+        <div>
+          <a href="stot.astro" class="flex flex-col items-center">
+            <img src="../ikoner/hjerte.png" alt="Hjerte" class="mb-2" />
+            <p class="">STØT DYRENE</p>
+          </a>
+        </div>
+
+        <div>
+          <a href="adopter.astro" class="flex flex-col items-center">
+            <img src="../ikoner/hundkat.png" alt="Hund og kat" class="mb-2" />
+            <p class="">ADOPTERING</p>
+          </a>
+        </div>
+
+        <div>
+          <a href="adopter.astro" class="flex flex-col items-center">
+            <img src="../ikoner/haender.png" alt="Hænder" class="mb-2" />
+            <p class="">INDLEVERING</p>
+          </a>
+        </div>
+
+        <div>
+          <a href="adopter.astro" class="flex flex-col items-center">
+            <img src="../ikoner/poter.png" alt="Poter" class="mb-2" />
+            <p class="">SERIE</p>
+          </a>
+        </div>
+      </article>
     </section>
   </body>
 </SecondLayout>
