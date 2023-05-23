@@ -80,21 +80,52 @@ import Button from "..//components/Button.astro";
 
       <div class="flex">
         <div class="flex-1 lg:hidden">
-          <a href="index.html"><img class="" src="/logo.svg" alt="logo_vildskud" height="48" width="48" /></a>
+          <a href="index.html"
+            ><img
+              class=""
+              src="/logo.svg"
+              alt="logo_vildskud"
+              height="48"
+              width="48"
+            /></a
+          >
         </div>
 
         <!-- burgermenu -->
         <div class="flex-none lg:hidden">
           <Button variant="primary_1" size="medium">STØT</Button>
           <button class="hamburger z-50">
-            <img class="menuIcon" src="/ikoner/burgermenu-open.svg" alt="burgermenu" height="22" width="34" />
-            <img class="closeIcon hidden" src="/ikoner/burgermenu-close.svg" alt="burgermenu-luk" width="34" height="22" />
+            <img
+              class="menuIcon"
+              src="/ikoner/burgermenu-open.svg"
+              alt="burgermenu"
+              height="22"
+              width="34"
+            />
+            <img
+              class="closeIcon hidden"
+              src="/ikoner/burgermenu-close.svg"
+              alt="burgermenu-luk"
+              width="34"
+              height="22"
+            />
           </button>
         </div>
       </div>
-      <ul class="cursor-pointer top-0 right-0 bottom-0 z-50 grid w-full text-left text-primary_black" id="hammenu">
+      <ul
+        class="cursor-pointer top-0 right-0 bottom-0 z-50 grid w-full text-left text-primary_black"
+        id="hammenu"
+      >
         <div class="mt-10">
-          <a href="index.html"><img class="" src="/logo.svg" alt="logo_vildskud" height="48" width="48" /></a>
+          <a href="index.html"
+            ><img
+              class=""
+              src="/logo.svg"
+              alt="logo_vildskud"
+              height="48"
+              width="48"
+            /></a
+          >
 
           <li class="">
             <a class="menuItem font-semibold" href="adopter.html">Adopter</a>
@@ -103,10 +134,14 @@ import Button from "..//components/Button.astro";
             <a class="menuItem font-semibold" href="indlever.html">Indlever</a>
           </li>
           <li class="">
-            <a class="menuItem font-semibold" href="rodgivning.html">Rådgivning</a>
+            <a class="menuItem font-semibold" href="rodgivning.html"
+              >Rådgivning</a
+            >
           </li>
           <li class="">
-            <a class="menuItem font-semibold" href="#.html">Anmeld dyreværnssag</a>
+            <a class="menuItem font-semibold" href="#.html"
+              >Anmeld dyreværnssag</a
+            >
           </li>
           <li class="">
             <a class="menuItem font-semibold" href="om.html">Om Dyreværnet</a>
@@ -124,7 +159,15 @@ import Button from "..//components/Button.astro";
 
       <div class="hidden lg:flex justify-between">
         <div class="">
-          <a href="index.html"><img class="" src="/logo.svg" alt="logo_vildskud" height="48" width="48" /></a>
+          <a href="index.html"
+            ><img
+              class=""
+              src="/logo.svg"
+              alt="logo_vildskud"
+              height="48"
+              width="48"
+            /></a
+          >
         </div>
 
         <ul class="flex gap-6">
@@ -134,7 +177,14 @@ import Button from "..//components/Button.astro";
           <li class="uppercase"><a href="#">andmeld dyreværnssag</a></li>
           <li class="uppercase"><a href="om">om dyreværnet</a></li>
 
-          <a href="stot.html" class="bg-accent_green border-none text-primary_white">Støt</a>
+          <!-- <a
+            href="stot.html"
+            class="bg-accent_green border-none text-primary_white">Støt</a
+          > -->
+
+          <a href="stot.html">
+            <Button variant="primary_green" size="small">Støt</Button>
+          </a>
         </ul>
       </div>
     </div>
