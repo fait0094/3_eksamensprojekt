@@ -79,14 +79,14 @@ import Button from "..//components/Button.astro";
       </div>
 
       <div class="flex">
-        <div class="flex-1">
+        <div class="flex-1 lg:hidden">
           <a href="index.html"><img class="" src="public/logo.svg" alt="logo_vildskud" height="48" width="48" /></a>
         </div>
 
         <!-- burgermenu -->
-        <div class="flex-none">
+        <div class="flex-none lg:hidden">
           <Button variant="primary_1" size="medium">STØT</Button>
-          <button class="hamburger z-50 lg:hidden">
+          <button class="hamburger z-50">
             <img class="menuIcon" src="public/ikoner/burgermenu-open.svg" alt="burgermenu" height="22" width="34" />
             <img class="closeIcon hidden" src="public/ikoner/burgermenu-close.svg" alt="burgermenu-luk" width="34" height="22" />
           </button>
@@ -121,7 +121,22 @@ import Button from "..//components/Button.astro";
       </ul>
 
       <!-- Desktopmenu  -->
-      
+
+      <div class="hidden lg:flex justify-between">
+        <div class="">
+          <a href="index.html"><img class="" src="public/logo.svg" alt="logo_vildskud" height="48" width="48" /></a>
+        </div>
+
+        <ul class="flex gap-6">
+          <li class="uppercase"><a href="adopter.html">adopter</a></li>
+          <li class="uppercase"><a href="indlever.html">indlever</a></li>
+          <li class="uppercase"><a href="rodgivning.html">rådgivning</a></li>
+          <li class="uppercase"><a href="#">andmeld dyreværnssag</a></li>
+          <li class="uppercase"><a href="om">om dyreværnet</a></li>
+
+          <a href="stot.html" class="bg-accent_green border-none text-primary_white">Støt</a>
+        </ul>
+      </div>
     </div>
   </nav>
 </header>
