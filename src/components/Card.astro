@@ -13,7 +13,7 @@ const { title, description, imgPath, kategori, link_side } = Astro.props;
       <div class="">
         <h2 class="uppercase">{kategori}</h2>
         <div class="flex justify-between">
-          <h3 class="">{title}</h3>
+          <h3 class="uppercase">{title}</h3>
           <slot />
         </div>
       </div>
