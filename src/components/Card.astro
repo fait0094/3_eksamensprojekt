@@ -1,0 +1,26 @@
+---
+import Button from "./Button.astro";
+import "..//styles/style.css";
+const { title, description, imgPath, kategori, link_side } = Astro.props;
+---
+
+<section class="my-32">
+  <div class="rounded-lg w-96 shadow-xl">
+    <figure class="px-10 pt-10">
+      <img src={imgPath} alt="hund_til_adoption" />
+    </figure>
+    <div class="p-10">
+      <div class="">
+        <h2>{kategori}</h2>
+        <div class="flex justify-between">
+          <h3 class="card-title">{title}</h3>
+          <slot />
+        </div>
+      </div>
+      <p>{description}</p>
+      <div class="">
+        <a href={link_side}><Button variant="primary_2">Læs mere</Button></a>
+      </div>
+    </div>
+  </div>
+</section>
