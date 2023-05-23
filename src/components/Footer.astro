@@ -4,74 +4,81 @@ const { iconlist } = Astro.props;
 import "..//styles/style.css";
 ---
 
-<section class="footer bg-primary_black p-10 text-primary_white gap-x-24 grid md:grid-cols-3">
-  <article class="grid md:col-start-1">
-    <div>
-      <h3 class="pb-2">KONTAKT</h3>
-      <div class="flex gap-4 pb-2">
-        <img src="../ikoner/telefon.png" alt="" width="25px" />
-        <p>+45 44 94 66 96</p>
-      </div>
-      <div class="flex gap-4 pb-2">
-        <img src="../ikoner/mail.png" alt="" width="25px" />
-        <p>Info@dyrevaernet.dk</p>
-      </div>
-      <div class="flex gap-4 pb-2">
-        <img src="../ikoner/location.png" alt="" width="25px" />
-        <p>Islevdalvej 85, 2610 Rødovre</p>
-      </div>
-    </div>
-
-    <div class="pt-10 md:pt-2">
-      <h3 class="pb-2">TELEFONTID</h3>
-      <p>Man-fre: 9.30 - 12.00</p>
-      <p>Lør-søn: Lukket</p>
-    </div>
-  </article>
-
-  <article class="grid md:col-start-2 pt-10 md:pt-0">
-    <div>
-      <h3 class="pb-2">ÅBNINGSTIDER</h3>
-      <p>Mandag: Lukket</p>
-      <p>Tirsdag: 09.00 - 11.00</p>
-      <p>Ons, tors, fre: 5.00 - 17.00</p>
-      <p>Lør, søn, helligdage: 12.00 - 16.00</p>
-      <p>24., 25., 26., 31., dec., 1. jan: Lukket</p>
-    </div>
-
-    <div class="pt-12">
-      <h3 class="pb-2">TILMELD DIG VORES NYHEDSBREV</h3>
-      <p class="pb-2">Tilmeld vores nyhedsbrev og få spændende nyheder og muligheder for at hjælpe dyrene.</p>
-      <div class="flex gap-5 pt-2">
-        <div class="bg-primary_white text-gray-500 pr-16 pl-4 rounded">
-          <p class="items-center p-2">Indtast din e-mail</p>
+<section>
+  <div class="footer bg-primary_black p-10 text-primary_white gap-x-24 grid md:grid-cols-3">
+    <article class="grid md:col-start-1">
+      <div>
+        <h3 class="pb-2">KONTAKT</h3>
+        <div class="flex gap-4 pb-2">
+          <img src="../ikoner/telefon.png" alt="" width="25px" />
+          <p>+45 44 94 66 96</p>
         </div>
-        <Button variant="primary_2">TILMELD</Button>
+        <div class="flex gap-4 pb-2">
+          <img src="../ikoner/mail.png" alt="" width="25px" />
+          <p>Info@dyrevaernet.dk</p>
+        </div>
+        <div class="flex gap-4 pb-2">
+          <img src="../ikoner/location.png" alt="" width="25px" />
+          <p>Islevdalvej 85, 2610 Rødovre</p>
+        </div>
       </div>
-    </div>
-  </article>
 
-  <article class="grid md:col-start-3 pt-10 md:pt-2">
-    <div>
-      <div class="flex gap-2 items-center">
-        <img src="../ikoner/star.png" alt="" width="30px" />
-        <h3 class="">TRUSTPILOT</h3>
+      <div class="pt-10 md:pt-2">
+        <h3 class="pb-2">TELEFONTID</h3>
+        <p>Man-fre: 9.30 - 12.00</p>
+        <p>Lør-søn: Lukket</p>
       </div>
-      <p>Anmeldelser 272 • Fremragende</p>
+    </article>
 
-      <div class="rating gap-4 pt-2 flex">
-        <img src="../ikoner/stjerner.png" alt="" />
-        <p>4,7</p>
+    <article class="grid md:col-start-2 pt-10 md:pt-0">
+      <div>
+        <h3 class="pb-2">ÅBNINGSTIDER</h3>
+        <p>Mandag: Lukket</p>
+        <p>Tirsdag: 09.00 - 11.00</p>
+        <p>Ons, tors, fre: 5.00 - 17.00</p>
+        <p>Lør, søn, helligdage: 12.00 - 16.00</p>
+        <p>24., 25., 26., 31., dec., 1. jan: Lukket</p>
       </div>
-    </div>
 
-    <div class="pt-12">
-      <div class="">
-        <h3 class="pb-2">FØLG OS HER</h3>
+      <div class="pt-12">
+        <h3 class="pb-2">TILMELD DIG VORES NYHEDSBREV</h3>
+        <p class="pb-2">Tilmeld vores nyhedsbrev og få spændende nyheder og muligheder for at hjælpe dyrene.</p>
+        <div class="flex gap-5 pt-2">
+          <div class="bg-primary_white text-gray-500 pr-16 pl-4 rounded">
+            <p class="items-center p-2">Indtast din e-mail</p>
+          </div>
+          <Button variant="primary_2">TILMELD</Button>
+        </div>
       </div>
-      <div class="pt-2">
-        <img src="../ikoner/følgOs.png" alt="" />
+    </article>
+
+    <article class="grid md:col-start-3 pt-10 md:pt-2">
+      <div>
+        <div class="flex gap-2 items-center">
+          <img src="../ikoner/star.png" alt="" width="30px" />
+          <h3 class="">TRUSTPILOT</h3>
+        </div>
+        <p>Anmeldelser 272 • Fremragende</p>
+
+        <div class="rating gap-4 pt-2 flex">
+          <img src="../ikoner/stjerner.png" alt="" />
+          <p>4,7</p>
+        </div>
       </div>
-    </div>
-  </article>
+
+      <div class="pt-12">
+        <div class="">
+          <h3 class="pb-2">FØLG OS HER</h3>
+        </div>
+        <div class="pt-2">
+          <img src="../ikoner/følgOs.png" alt="" />
+        </div>
+      </div>
+    </article>
+  </div>
+  <div class="flex gap-10 justify-center">
+    <p>Cookie- og privatlivspolitik</p>
+    <p>CVR: 33 31 73 28</p>
+    <p>All rights reserved</p>
+  </div>
 </section>
