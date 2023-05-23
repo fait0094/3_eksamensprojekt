@@ -12,7 +12,7 @@ import Testimonial from "../components/Testimonial.astro";
 
 <SecondLayout title="3. SEM - Eksamensprojekt">
   <main class="flex items-center justify-start h-screen bg-[url('/splash/hundsplash.webp')] bg-cover bg-center">
-    <div class="text-left mx-8">
+    <div class="text-left mx-8 text-primary_white">
       <h1 class="">ALLE DYR FORTJENER ET GODT HJEM</h1>
       <p class="">Vi er dedikeret til at redde og beskytte dyr i nød. Vi arbejder for at finde kærlige hjem til vores pelsede venner og sikre, at de får den omsorg og opmærksomhed, de fortjener.</p>
       <Button variant="primary_green" size="small">STØT</Button>
@@ -20,14 +20,16 @@ import Testimonial from "../components/Testimonial.astro";
   </main>
 
   <body>
-    <section class="bg-secondary_beige place-content-center mx-0 grid">
-      <div class="text-center px-4 md:col-span-1">
+    <section class="bg-secondary_beige place-content-center grid">
+      <div class="text-center mb-10 mt-10">
         <h2 class="mb-4">KLAR TIL EN NY VEN?</h2>
-        <p class="text-center md:text-left">Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem.</p>
+        <p>Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem.</p>
       </div>
+    </section>
 
+    <section class="bg-secondary_beige place-content-center grid">
       <div class="mb-10 grid grid-cols-1 md:grid-cols-2 md:ml-10 md:max-w-4xl lg:gap-16">
-        <div class="md:border-r-2 md:border-black md:pr-4">
+        <div class="md:border-r-2 md:border-black md:pr-24 md:pt-16">
           <div class="grid grid-cols-4 gap-10 align-baseline">
             <div class="grid col-start-1">
               <a href="adopter.astro" class="flex flex-col items-center">
@@ -38,21 +40,21 @@ import Testimonial from "../components/Testimonial.astro";
 
             <div class="grid col-start-2">
               <a href="adopter.astro" class="flex flex-col items-center">
-                <img src="../ikoner/kat_ikon.png" alt="Kat" class="h-10 w-10 mb-2" />
+                <img src="../ikoner/kat_ikon.png" alt="Kat" class="h-10 w-10 mb-2 items-center" />
                 <p class="underline text-center w-1/2">Kat</p>
               </a>
             </div>
 
             <div>
               <a href="adopter.astro" class="flex flex-col items-center">
-                <img src="../ikoner/kanin_ikon.png" alt="Kanin" class="h-10 w-10 mb-2" />
+                <img src="../ikoner/kanin_ikon.png" alt="Kanin" class="h-10 mb-2 pl-2" />
                 <p class="underline text-center w-1/2">Kanin</p>
               </a>
             </div>
 
             <div>
               <a href="adopter.astro" class="flex flex-col items-center">
-                <img src="../ikoner/marsvin_ikon.png" alt="marsvin" class="h-10 w-10 mb-2" />
+                <img src="../ikoner/marsvin_ikon.png" alt="marsvin" class="h-8 w-12 mb-2 mt-2 pl-4" />
                 <p class="underline text-center w-1/2">Marsvin</p>
               </a>
             </div>
@@ -60,15 +62,33 @@ import Testimonial from "../components/Testimonial.astro";
         </div>
 
         <div class="md:col-start-2 md:flex md:flex-col md:items-center md:justify-center md:pt-4 lg:pt-0 lg:pl-8">
-          <div class="justify-center">
+          <div class="grid justify-center mt-10">
             <h3 class="">191</h3>
           </div>
 
-          <p class="justify-center pt-4 text-center md:text-left">
-            venter på nyt hjem. Ingen fortjener at være alene <br />- adopter fra fyreværnet og gør en forskel
-          </p>
-          <button class="bg-primary_1 text-white px-4 py-2 </SecondLayout>"></button>
+          <p class="pt-4 text-center">venter på nyt hjem. Ingen fortjener at være alene - adopter fra fyreværnet og gør en forskel</p>
+          <div class="justify-center grid pt-5">
+            <Button variant="primary_blue" size="small">FIND KÆLEDYR</Button>
+          </div>
         </div>
       </div>
-    </section></body>
+    </section>
+
+    <section>
+      <main class="flex items-center justify-center h-screen bg-[url('/splash/missekat.webp')] bg-cover bg-center">
+        <div class="text-center text-primary_white">
+          <h1 class="pb-10">TIPS OG TRICKS TIL DIG OG DIN PELSEDE VEN</h1>
+          <Button variant="primary_blue" size="small">LÆS MERE</Button>
+        </div>
+      </main>
+    </section>
+
+    <section>
+      <div class="grid justify-center text-center">
+        <h1 class="">VIL DU GØRE EN FORSKEL?</h1>
+        <p>Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem.</p>
+      </div>
+      <div class="grid grid-cols-4"></div>
+    </section>
+  </body>
 </SecondLayout>
