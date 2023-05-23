@@ -67,7 +67,7 @@ import Button from "..//components/Button.astro";
       <!-- topbar -->
 
       <div class="topbar list-none bg-primary_blue text-primary_white">
-        <div class="flex justify-end gap-6">
+        <div class="flex justify-end gap-6 text-primary_blue">
           <li>TV</li>
           <li>FRYNSEKLINIKKEN</li>
           <li>DYREKLINIK</li>
@@ -80,51 +80,51 @@ import Button from "..//components/Button.astro";
 
       <div class="flex">
         <div class="flex-1 lg:hidden">
-          <a href="index.html"><img class="" src="public/logo.svg" alt="logo_vildskud" height="48" width="48" /></a>
+          <a href="index.html"><img class="" src="/logo.svg" alt="logo_vildskud" height="48" width="48" /></a>
         </div>
 
         <!-- burgermenu -->
         <div class="flex-none lg:hidden">
           <Button variant="primary_1" size="medium">STØT</Button>
           <button class="hamburger z-50">
-            <img class="menuIcon" src="public/ikoner/burgermenu-open.svg" alt="burgermenu" height="22" width="34" />
-            <img class="closeIcon hidden" src="public/ikoner/burgermenu-close.svg" alt="burgermenu-luk" width="34" height="22" />
+            <img class="menuIcon" src="/ikoner/burgermenu-open.svg" alt="burgermenu" height="22" width="34" />
+            <img class="closeIcon hidden" src="/ikoner/burgermenu-close.svg" alt="burgermenu-luk" width="34" height="22" />
           </button>
         </div>
       </div>
-      <ul class="fixed top-0 right-0 bottom-0 z-40 grid w-full translate-x-full grid-rows-3 bg-primary-black pt-20 pl-16 text-left text-3xl transition-transform" id="hammenu">
+      <ul class="cursor-pointer top-0 right-0 bottom-0 z-50 grid w-full text-left text-primary_black" id="hammenu">
         <div class="mt-10">
-          <a href="index.html"><img class="" src="public/logo.svg" alt="logo_vildskud" height="48" width="48" /></a>
+          <a href="index.html"><img class="" src="/logo.svg" alt="logo_vildskud" height="48" width="48" /></a>
 
-          <li class="mb-4 z-50">
+          <li class="">
             <a class="menuItem font-semibold" href="adopter.html">Adopter</a>
           </li>
-          <li class="mb-4">
+          <li class="">
             <a class="menuItem font-semibold" href="indlever.html">Indlever</a>
           </li>
-          <li class="mb-10">
+          <li class="">
             <a class="menuItem font-semibold" href="rodgivning.html">Rådgivning</a>
           </li>
-          <li class="mb-10">
+          <li class="">
             <a class="menuItem font-semibold" href="#.html">Anmeld dyreværnssag</a>
           </li>
-          <li class="mb-10">
-            <a class="menuItem font-semibold" href="om.html">om Dyreværnet</a>
+          <li class="">
+            <a class="menuItem font-semibold" href="om.html">Om Dyreværnet</a>
           </li>
         </div>
-        <div class="mb-60 mt-20 flex grid-rows-2 gap-4">
-          <a href="https://www.facebook.com/dyrevaernet.dk"><img class="" src="public/ikoner/facebook_logo.svg" alt="facebook-logo" height="36" width="36" /></a>
-          <a href="https://www.instagram.com/dyrevaernet/"><img class="" src="public/ikoner/insta.svg" alt="instagram-logo" height="36" width="36" /></a>
-          <a href="https://www.youtube.com/@Dyrevaernet"><img class="" src="public/ikoner/yt_logo.svg" alt="youtube-logo" height="36" width="36" /></a>
-          <a href="https://www.linkedin.com/company/dyrev-rnet/"><img class="" src="public/ikoner/linkedin.svg" alt="linkedin-logo" height="36" width="36" /></a>
-        </div>
+        <!-- <div class="mb-60 mt-20 flex grid-rows-2 gap-4">
+          <a href="https://www.facebook.com/dyrevaernet.dk"><img class="" src="/ikoner/facebook_logo.svg" alt="facebook-logo" height="36" width="36" /></a>
+          <a href="https://www.instagram.com/dyrevaernet/"><img class="" src="/ikoner/insta.svg" alt="instagram-logo" height="36" width="36" /></a>
+          <a href="https://www.youtube.com/@Dyrevaernet"><img class="" src="/ikoner/yt_logo.svg" alt="youtube-logo" height="36" width="36" /></a>
+          <a href="https://www.linkedin.com/company/dyrev-rnet/"><img class="" src="/ikoner/linkedin.svg" alt="linkedin-logo" height="36" width="36" /></a>
+        </div> -->
       </ul>
 
       <!-- Desktopmenu  -->
 
       <div class="hidden lg:flex justify-between">
         <div class="">
-          <a href="index.html"><img class="" src="public/logo.svg" alt="logo_vildskud" height="48" width="48" /></a>
+          <a href="index.html"><img class="" src="/logo.svg" alt="logo_vildskud" height="48" width="48" /></a>
         </div>
 
         <ul class="flex gap-6">

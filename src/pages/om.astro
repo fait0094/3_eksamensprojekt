@@ -5,12 +5,11 @@ import Splash from "../components/Splash.astro";
 import Intro from "../components/Intro.astro";
 import "..//styles/style.css";
 import Faktaboks from "../components/Faktaboks.astro";
-import CardSektion from "../components/CardSektion.astro";
+import Card from "../components/Card.astro";
 ---
 
 <MainLayout class="col-span-2" title="3. SEM - Eksamensprojekt" splash_title="Værd at vide om os" splash_description="Find alt du skal vide om Dyreværnet her på siden." imgPath="/public/splash/donation.jpg" intro_title="Din donation gør en forskel" intro_description="Vi har gjort det nemt og enkelt at bidrage med en donation. Vælg mellem en enkel, månedlig eller virksomheds-donation og udfyld formularen." <main>
-  
-  <section class="grid grid-cols-2 grid-rows-2 max-w-6xl mx-auto gap-16">
+  <section class="grid lg:grid-cols-2 lg:grid-rows-2 max-w-6xl mx-auto gap-16">
     <div>
       <h3 class="uppercase">Dyreværnets formål og arbejde</h3>
       <p>
@@ -19,7 +18,17 @@ import CardSektion from "../components/CardSektion.astro";
       </p>
     </div>
 
-    <div class="bg-secondary_beige p-12 rounded row-span-2 leading-relaxed">
+    <div class="">
+      <h3 class="uppercase">Dyreværnets historie</h3>
+      <p>
+        Dyreværnet – Foreningen til Værn for Værgeløse Dyr - blev stiftet den 11. marts 1898 med det formål at redde herreløse og hjemløse hunde fra mishandling og aflivning.
+
+        <p>Siden 1910 har foreningen drevet internat forskellige steder i København/Frederiksberg. Det nuværende internatet i Rødovre blev indviet i 1954 og i 2016 indgik Dyreværnet et tæt samarbejde med Søndergaard Hunde- og Kattepension i Kolding, som derfor nu kalder sig Dyreværnet v/Søndergaard Hunde- og Kattepension.</p>
+        <p>I dag kan Dyreværnet huse familiedyr af næsten enhver art. Dyreværnet arbejder også sammen med Krybdyrinternatet, som har mulighed for at hjælpe krybdyr videre ud i nye, kærlige hjem.</p>
+      </p>
+    </div>
+
+    <div class="bg-secondary_beige p-12 rounded lg:row-span-2 leading-relaxed lg:row-start-1">
       <Faktaboks header="Dyreværnet i korte vuf..." text="...Hjælper hvert år over 1.200 kæledyr med at finde deres nye familie">
         <img src="blue_paw.svg" alt="iconlist" />
       </Faktaboks>
@@ -42,21 +51,16 @@ import CardSektion from "../components/CardSektion.astro";
         <img src="blue_paw.svg" alt="iconlist" />
       </Faktaboks>
     </div>
-    <div>
-      <h3 class="uppercase">Dyreværnets historie</h3>
-      <p>
-        Dyreværnet – Foreningen til Værn for Værgeløse Dyr - blev stiftet den 11. marts 1898 med det formål at redde herreløse og hjemløse hunde fra mishandling og aflivning.
-
-        <p>Siden 1910 har foreningen drevet internat forskellige steder i København/Frederiksberg. Det nuværende internatet i Rødovre blev indviet i 1954 og i 2016 indgik Dyreværnet et tæt samarbejde med Søndergaard Hunde- og Kattepension i Kolding, som derfor nu kalder sig Dyreværnet v/Søndergaard Hunde- og Kattepension.</p>
-        <p>I dag kan Dyreværnet huse familiedyr af næsten enhver art. Dyreværnet arbejder også sammen med Krybdyrinternatet, som har mulighed for at hjælpe krybdyr videre ud i nye, kærlige hjem.</p>
-      </p>
-    </div>
   </section>
 
-  <section class="justify-center grid">
-    <CardSektion />
-    <CardSektion />
+  <section class="lg:grid-cols-3 grid-cols-2 justify-center gap-8 grid">
+    <Card imgPath="" />
+    <Card />
+    <Card />
+    <Card imgPath="" />
+    <Card />
+    <Card />
   </section>
+
+  <style></style>
 </MainLayout>
-
-<style></style>
