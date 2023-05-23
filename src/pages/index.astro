@@ -4,7 +4,6 @@ import Card from "../components/Card.astro";
 import CardSektion from "../components/CardSektion.astro";
 import SecondLayout from "../layouts/SecondLayout.astro";
 import Intro from "../components/Intro.astro";
-import Header from "../components/Header.astro";
 
 import "..//styles/style.css";
 import Testimonial from "../components/Testimonial.astro";
@@ -12,13 +11,13 @@ import Testimonial from "../components/Testimonial.astro";
 
 <SecondLayout title="3. SEM - Eksamensprojekt">
   <main>
-    <div class="">
-      <img src="../splash/hundsplash.webp" alt="Hund" class="z-0 w-full h-full" />
-    </div>
-    <div class="text-primary_white z-10 absolute top-[32rem]">
+    <div class="text-primary_white z-10 absolute pt-10">
       <h1 class="">ALLE DYR FORTJENER ET GODT HJEM</h1>
       <p class="pt-5">Vi er dedikeret til at redde og beskytte dyr i nød. Vi arbejder for at finde kærlige hjem til vores pelsede venner og sikre, at de får den omsorg og opmærksomhed, de fortjener.</p>
       <Button variant="primary_1" size="medium">STØT</Button>
+    </div>
+    <div class="">
+      <img src="../splash/hundsplash.webp" alt="Hund" class="z-0 w-full h-full" />
     </div>
   </main>
 
@@ -73,5 +72,4 @@ import Testimonial from "../components/Testimonial.astro";
       </div>
     </div>
   </section>
-  <script type="module" src="src/pages/main.js"></script>
 </SecondLayout>
