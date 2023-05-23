@@ -1,38 +1,40 @@
 ---
 import Button from "../components/Button.astro";
-import CardSektion from "../components/CardSektion.astro";
+import Card from "../components/Card.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import Splash from "../components/Splash.astro";
 import Intro from "../components/Intro.astro";
 import "..//styles/style.css";
-import Card from "../components/Card.astro";
 ---
 
-<MainLayout
-  title="3. SEM - Eksamensprojekt"
-  splash_title="Dyreværnets tips og tricks"
-  splash_description="Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem."
-  imgPath="/public/splash/rodgivning.webp"
-  intro_title="Din donation gør en forskel"
-  intro_description="Vi har gjort det nemt og enkelt at bidrage med en donation. Vælg mellem en enkel, månedlig eller virksomheds-donation og udfyld formularen."
->
-  <section class="grid">
-    <div>
+<MainLayout title="3. SEM - Eksamensprojekt" splash_title="Dyreværnets tips og tricks" splash_description="Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem." imgPath="/public/splash/rodgivning.webp" intro_title="Din donation gør en forskel" intro_description="Vi har gjort det nemt og enkelt at bidrage med en donation. Vælg mellem en enkel, månedlig eller virksomheds-donation og udfyld formularen.">
+  <section class="">
+    <div class="">
       <h3 class="uppercase">Hunde</h3>
-      <CardSektion />
+      <div class="lg:flex gap-8">
+        <Card imgPath="adoption/basse.webp" kategori="tips og tricks" title="Sådan fjerner du flåter" description="Når temperaturen stiger udenfor, er det også ensbetydende med, at flåterne kommer." />
+        <Card imgPath="adoption/basse.webp" kategori="how to" title="Sådan fjerner du en flåt" description="Har du fundet en flåt på din hund, så er det vigtigt, at du fjerner den hurtigst muligt og at du fjerner hele flåten." />
+        <Card imgPath="adoption/basse.webp" kategori="gode råd"  title="Skal hunden med på ferie?" description="Har du planer om at tage din firbenede ven med på rejsen, så få fem gode råd fra Marie Jakobsen." />
+      </div>
     </div>
     <div class="bg-secondary_beige">
       <h3 class="uppercase">Katte</h3>
-      <CardSektion />
+      <div class="lg:flex gap-8">
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
 
     <div>
       <h3 class="uppercase">Smådyr</h3>
-      <CardSektion />
+      <div class="lg:flex gap-8">
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   </section>
 </MainLayout>
 
-<style>
-
-</style>
+<style></style>
