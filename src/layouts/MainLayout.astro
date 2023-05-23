@@ -38,7 +38,7 @@ const {
     <Header />
 
     <!-- Splash -->
-    <section
+    <!-- <section
       class="h-60 text-primary_white flex items-center"
       style={`background-image: url(${imgPath});`}
     >
@@ -46,9 +46,9 @@ const {
         <h1 class="">{splash_title}</h1>
         <p class="">{splash_description}</p>
       </div>
-    </section>
+    </section> -->
 
-    <!-- <section
+    <section
       class="h-60 text-primary_white flex items-center"
       style={`background-image: url(${imgPath}); background-size: 100% auto; background-repeat: no-repeat; background-position: center;`}
     >
@@ -56,7 +56,7 @@ const {
         <h1 class="">{splash_title}</h1>
         <p class="">{splash_description}</p>
       </div>
-    </section> -->
+    </section>
 
     <!-- Intro -->
     <section class="flex flex-col items-center text-center my-12 mb-20">
@@ -64,11 +64,11 @@ const {
       <p>{intro_description}</p>
     </section>
 
-    <main class="max-w-6xl mx-auto p-10">
+    <main class="max-w-6xl mx-auto p-10 md:p-0 lg:p-0">
       <slot />
     </main>
     <Footer />
   </body>
 </html>
 
-<style></style>
+<!-- Hvordan fikser jeg splash-billedet, så den ser ud på samme måde i mobil, som det udkommenteret kode? -->
