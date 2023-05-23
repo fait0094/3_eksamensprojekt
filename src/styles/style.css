@@ -31,7 +31,7 @@
   --secondary_beige: #f1f1e8;
   --secondary_eggwhite: #fcfbfa;
   --accent_green: #2ca900;
-  --darker_grey: #272727;
+  --secondary_black: #272727;
 
   /* Font */
   --heading-h1: var(--text-6);
