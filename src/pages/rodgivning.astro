@@ -1,0 +1,38 @@
+---
+import Button from "../components/Button.astro";
+import CardSektion from "../components/CardSektion.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import Splash from "../components/Splash.astro";
+import Intro from "../components/Intro.astro";
+import "..//styles/style.css";
+import Card from "../components/Card.astro";
+---
+
+<MainLayout
+  title="3. SEM - Eksamensprojekt"
+  splash_title="Dyreværnets tips og tricks"
+  splash_description="Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem."
+  imgPath="/public/splash/rodgivning.webp"
+  intro_title="Din donation gør en forskel"
+  intro_description="Vi har gjort det nemt og enkelt at bidrage med en donation. Vælg mellem en enkel, månedlig eller virksomheds-donation og udfyld formularen."
+>
+  <section class="grid">
+    <div>
+      <h3 class="uppercase">Hunde</h3>
+      <CardSektion />
+    </div>
+    <div class="bg-secondary_beige">
+      <h3 class="uppercase">Katte</h3>
+      <CardSektion />
+    </div>
+
+    <div>
+      <h3 class="uppercase">Smådyr</h3>
+      <CardSektion />
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+
+</style>
