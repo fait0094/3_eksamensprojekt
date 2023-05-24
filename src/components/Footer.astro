@@ -4,8 +4,8 @@ const { iconlist } = Astro.props;
 import "..//styles/style.css";
 ---
 
-<section>
-  <div class="footer bg-primary_black p-10 text-primary_white gap-x-24 grid md:grid-cols-3">
+<section class="bg-primary_black">
+  <div class="max-w-6xl mx-auto text-primary_white gap-x-24 grid md:grid-cols-3 pt-10 pb-10 pl-8">
     <article class="grid md:col-start-1">
       <div>
         <h5 class="pb-2">KONTAKT</h5>
@@ -45,7 +45,7 @@ import "..//styles/style.css";
         <p class="pb-2">Tilmeld vores nyhedsbrev og få spændende nyheder og muligheder for at hjælpe dyrene.</p>
         <div class="flex gap-5 pt-2">
           <div class="bg-primary_white text-gray-500 pr-16 pl-4 rounded">
-            <p class="items-center p-2">Indtast din e-mail</p>
+            <p class="items-center pt-2 pb-2">Indtast din e-mail</p>
           </div>
           <Button variant="primary_2">TILMELD</Button>
         </div>
@@ -70,8 +70,19 @@ import "..//styles/style.css";
         <div class="">
           <h5 class="pb-2">FØLG OS HER</h5>
         </div>
-        <div class="pt-2">
-          <img src="../ikoner/følgOs.png" alt="" />
+        <div class="pt-2 flex gap-2">
+          <a href="https://www.facebook.com/dyrevaernet.dk">
+            <img src="../ikoner/facebook.svg" width="30px" />
+          </a>
+          <a href="https://www.instagram.com/dyrevaernet/">
+            <img src="../ikoner/insta.svg" width="30px" />
+          </a>
+          <a href="https://www.youtube.com/@Dyrevaernet">
+            <img src="../ikoner/yt.svg" width="30px" />
+          </a>
+          <a href="https://www.linkedin.com/company/dyrev-rnet/">
+            <img src="../ikoner/linkedin.svg" width="30px" />
+          </a>
         </div>
       </div>
     </article>
