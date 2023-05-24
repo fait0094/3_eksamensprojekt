@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,16 +12,19 @@
   /* ------------- GLOBAL ------------- */
   /* Farver */
 
+  /* Typescale (1.250 Major Third) */
   /* Font scale heading */
-  --text-6: 4.209rem;
-  --text-5: 3.157rem;
-  --text-4: 2.3569rem;
-  --text-3: 1.777rem;
-  --text-2: 1.333rem;
+  --text-9: 3.052rem;
+  --text-8: 2.441rem;
+  --text-7: 1.953rem;
+  --text-6: 1.563rem;
+  --text-5: 1.25rem;
 
   /* Font scale body text */
-  --text-1: 1rem;
-  --text-0: 0.75rem;
+  --text-4: 1rem;
+  --text-3: 0.8rem;
+  --text-2: 0.64rem;
+  --text-1: 0.512rem;
 
   /* ------------- ALIAS ------------- */
   /* Farver */
@@ -35,13 +37,11 @@
   --secondary_black: #272727;
 
   /* Font */
-  --heading-h1: var(--text-6);
-  --heading-h2: var(--text-5);
-  --heading-h3: var(--text-4);
-  --heading-h4: var(--text-3);
-  --body-lead: var(--text-2);
-  --body-default: var(--text-1);
-  --body-small: var(--text-0);
+  --heading-h1: var(--text-8);
+  --heading-h2: var(--text-7);
+  --heading-h3: var(--text-6);
+  --heading-h4: var(--text-5);
+  --body-default: var(--text-4);
 
   /* ------------- COMPONENTS ------------- */
   /* Header */
