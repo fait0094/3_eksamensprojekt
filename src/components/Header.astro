@@ -29,7 +29,7 @@ import Button from "..//components/Button.astro";
           <!-- burgermenu -->
 
           <div class="lg:hidden flex gap-6">
-            <Button variant="primary_green" size="small">STØT</Button>
+            <Button variant="primary_green" size="small" link_side="stot.html">STØT</Button>
             <button class="hamburger z-60">
               <img class="menuIcon" src="/ikoner/burgermenu-open.svg" alt="burgermenu" height="22" width="34" />
               <img class="closeIcon hidden" src="/ikoner/burgermenu-close.svg" alt="burgermenu-luk" width="34" height="22" />
@@ -38,29 +38,28 @@ import Button from "..//components/Button.astro";
         </div>
       </div>
       <ul class="fixed text-primary_black z-40 bg-primary_white w-full translate-x-full text-left transition-transform" id="hammenu">
-        <div class="p-6 leading-loose">
-          <li class="">
-            <a class="menuItem font-semibold" href="adopter.html">Adopter</a>
+        <div class="p-6 leading-loose h-screen px-10">
+          <li class="heading-2">
+            <a class="menuItem" href="adopter.html">Adopter</a>
           </li>
-          <li class="">
-            <a class="menuItem font-semibold" href="indlever.html">Indlever</a>
+          <li class="heading-2">
+            <a class="menuItem" href="indlever.html">Indlever</a>
           </li>
-          <li class="">
-            <a class="menuItem font-semibold" href="rodgivning.html">Rådgivning</a>
+          <li class="heading-2">
+            <a class="menuItem" href="rodgivning.html">Rådgivning</a>
           </li>
-          <li class="">
-            <a class="menuItem font-semibold" href="#.html">Anmeld dyreværnssag</a>
+          <li class="heading-2">
+            <a class="menuItem" href="#.html">Anmeld dyreværnssag</a>
           </li>
-          <li class="">
-            <a class="menuItem font-semibold" href="om.html">Om Dyreværnet</a>
+          <li class="heading-2">
+            <a class="menuItem" href="om.html">Om Dyreværnet</a>
           </li>
-        </div>
-        <!-- <div class="mb-60 mt-20 flex grid-rows-2 gap-4">
+
           <a href="https://www.facebook.com/dyrevaernet.dk"><img class="" src="/ikoner/facebook_logo.svg" alt="facebook-logo" height="36" width="36" /></a>
           <a href="https://www.instagram.com/dyrevaernet/"><img class="" src="/ikoner/insta.svg" alt="instagram-logo" height="36" width="36" /></a>
           <a href="https://www.youtube.com/@Dyrevaernet"><img class="" src="/ikoner/yt_logo.svg" alt="youtube-logo" height="36" width="36" /></a>
           <a href="https://www.linkedin.com/company/dyrev-rnet/"><img class="" src="/ikoner/linkedin.svg" alt="linkedin-logo" height="36" width="36" /></a>
-        </div> -->
+        </div>
       </ul>
 
       <!-- Desktopmenu  -->
