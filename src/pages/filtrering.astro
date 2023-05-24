@@ -12,4 +12,284 @@ import "..//styles/style.css";
   imgPath="/splash/splash-adopter.webp"
   intro_title="Se vores søde dyr, der søger et nyt hjem"
   intro_description="Skab en forskel i et kæledyrs liv, og adopter en af vores søde og kærlige dyr. Fra legesyge hunde til kælne katte - vores adoptable dyr venter på at finde deres nye familie."
-/>
+>
+  <!-- Indsæt indhold her -->
+
+  <section>
+    <!-- Indhold -->
+    <main
+      class=""
+      id="step"
+      x-data="{ dyr: 'alledyr', lokation: 'allelokationer', alder: 'allealder', kon: 'allekon', skjulteforestillinger : 0 }"
+    >
+      <!-- Filterknapper -->
+      <section class="px-8 md:px-12">
+        <div class="mb-10 mx-10">
+          <form id="filtre" class="flex gap-5 justify-center">
+            <!-- Lokation -->
+            <div class="">
+              <label for="lokation"></label>
+              <select
+                class="text-center border-0 bg-purple_button w-36"
+                name="lokation"
+                id="lokation"
+                x-model="lokation"
+                form="filtre"
+                x-on:change="$nextTick(() => { ingenforestillinger() });"
+              >
+                <option value="allelokationer">Alle lokationer</option>
+                <option value="vox">Vox - Teaterhuset</option>
+                <option value="downunder">Downunder</option>
+                <option value="zebu">Zebu</option>
+                <option value="xenon">Xenon - Teaterhuset</option>
+                <option value="ukirke">Ukirke (Workshops)</option>
+              </select>
+            </div>
+
+            <!-- Dyr -->
+            <div class="">
+              <label for="dyr"></label>
+              <select
+                class="text-center border-0 bg-purple_button w-36"
+                name="dyr"
+                id="dyr"
+                x-model="dyr"
+                form="filtre"
+                x-on:change="$nextTick(() => { ingenforestillinger() });"
+              >
+                <option value="alledyr">Alle dyr</option>
+                <option value="tirsdag">Tirsdag: 2. august</option>
+                <option value="onsdag">Onsdag: 3. august</option>
+                <option value="torsdag">Torsdag: 4. august</option>
+                <option value="fredag">Fredag: 5. august</option>
+                <option value="lordag">Lørdag: 6. august</option>
+              </select>
+            </div>
+
+            <!-- Alder -->
+            <div class="">
+              <label for="alder"></label>
+              <select
+                class="text-center border-0 bg-purple_button w-36"
+                name="alder"
+                id="alder"
+                x-model="alder"
+                form="filtre"
+                x-on:change="$nextTick(() => { ingenforestillinger() });"
+              >
+                <option value="allealder">Alle aldre</option>
+                <option value="vox">Vox - Teaterhuset</option>
+                <option value="downunder">Downunder</option>
+                <option value="zebu">Zebu</option>
+                <option value="xenon">Xenon - Teaterhuset</option>
+                <option value="ukirke">Ukirke (Workshops)</option>
+              </select>
+            </div>
+
+            <!-- Køn -->
+            <div class="">
+              <label for="kon"></label>
+              <select
+                class="text-center border-0 bg-purple_button w-36"
+                name="kon"
+                id="kon"
+                x-model="kon"
+                form="filtre"
+                x-on:change="$nextTick(() => { ingenforestillinger() });"
+              >
+                <option value="allekon">Alle køn</option>
+                <option value="vox">Vox - Teaterhuset</option>
+                <option value="downunder">Downunder</option>
+                <option value="zebu">Zebu</option>
+                <option value="xenon">Xenon - Teaterhuset</option>
+                <option value="ukirke">Ukirke (Workshops)</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!---------------- Forestillinger ------------------>
+      <div class="grid md:grid-cols-3 gap-10 lg:max-w-6xl mx-auto">
+        <section
+          class="cursor-pointer"
+          :class="{'hidden': !(['alledyr', 'torsdag', 'fredag'].includes(dyr) && ['allelokationer', 'xenon'].includes(lokation)) }"
+          x-transition:enter.duration.800ms
+          x-on:change="testfunction();"
+        >
+          <Card
+            title="Schæfer / Husky / Border / Berner"
+            description=" I Basses tidligere familie var der små børn, der desværre var bange for denne smukke skabning, og man måtte indse, at samlivet ikke kunne fungere optimalt for alle parter."
+            imgPath="/adoption/basse.webp"
+            kategori="BASSE"
+            link_side="singleview.html"
+          />
+        </section>
+
+        <section
+          class="cursor-pointer"
+          :class="{'hidden': !(['alledyr', 'torsdag', 'fredag'].includes(dyr) && ['allelokationer', 'downunder'].includes(lokation)) }"
+          x-transition:enter.duration.800ms
+          x-on:change="testfunction();"
+        >
+          <Card
+            title="Lhasa Apso / Cavalier King Charles"
+            description=" Vores lille mini-Chewbacca her skal lige se nye folk an, før han overgiver sig helt, så ny familie må ikke forvente instant connection"
+            imgPath="/adoption/karlo.webp"
+            kategori="KARLO"
+            link_side="singleview.html"
+          />
+        </section>
+
+        <section
+          class="cursor-pointer"
+          :class="{'hidden': !(['alledyr', 'fredag', 'lordag'].includes(dyr) && ['allelokationer', 'xenon'].includes(lokation)) }"
+          x-transition:enter.duration.800ms
+          x-on:change="testfunction();"
+        >
+          <Card
+            title="Labrador-blanding"
+            description=" Zico er en flot fyr på kun 7 måneder, der er overdraget til Dyreværnet, da Zico og tidligere ejer var landet i en dårlig spiral, der påvirkede begge parter negativt, så noget måtte gøres."
+            imgPath="/adoption/zico.png"
+            kategori="ZICO"
+            link_side="singleview.html"
+          />
+        </section>
+
+        <section
+          class="cursor-pointer"
+          :class="{'hidden': !(['alledyr', 'tirsdag', 'onsdag'].includes(dyr) && ['allelokationer', 'vox'].includes(lokation)) }"
+          x-transition:enter.duration.800ms
+          x-on:change="testfunction();"
+        >
+          <Card
+            kategori="KILLING"
+            title="Udekat"
+            description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. "
+            imgPath="/adoption/killing.webp"
+            link_side="singleview.html"
+          />
+        </section>
+
+        <section
+          class="cursor-pointer"
+          :class="{'hidden': !(['alledyr', 'tirsdag', 'onsdag'].includes(dyr) && ['allelokationer', 'zebu'].includes(lokation)) }"
+          x-transition:enter.duration.800ms
+          x-on:change="testfunction();"
+        >
+          <Card
+            kategori="PJUSKE"
+            title="Indekat"
+            description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt."
+            imgPath="/adoption/pjuske.webp"
+            link_side="singleview.html"
+          />
+        </section>
+
+        <section
+          class="cursor-pointer"
+          :class="{'hidden': !(['alledyr', 'torsdag', 'fredag', 'lordag'].includes(dyr) && ['allelokationer', 'zebu'].includes(lokation)) }"
+          x-transition:enter.duration.800ms
+          x-on:change="testfunction();"
+        >
+          <Card
+            kategori="PURRSEIDON"
+            title="Udekat"
+            description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. "
+            imgPath="/adoption/purrisedon.webp"
+            link_side="singleview.html"
+          />
+        </section>
+
+        <section
+          class="cursor-pointer"
+          :class="{'hidden': !(['alledyr', 'fredag', 'lordag'].includes(dyr) && ['allelokationer', 'vox'].includes(lokation)) }"
+          x-transition:enter.duration.800ms
+          x-on:change="testfunction();"
+        >
+          <Card
+            kategori="WATERLOO"
+            title="Dværgkanin"
+            description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. "
+            imgPath="/adoption/waterloo.webp"
+            link_side="singleview.html"
+          />
+        </section>
+        <section
+          class="cursor-pointer"
+          :class="{'hidden': !(['alledyr', 'fredag', 'lordag'].includes(dyr) && ['allelokationer', 'vox'].includes(lokation)) }"
+          x-transition:enter.duration.800ms
+          x-on:change="testfunction();"
+        >
+          <Card
+            kategori="SØREN"
+            title="Glathåret marsvin"
+            description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt."
+            imgPath="/adoption/soren.webp"
+            link_side="singleview.html"
+          />
+        </section>
+
+        <section
+          class="cursor-pointer"
+          :class="{'hidden': !(['alledyr', 'fredag', 'lordag'].includes(dyr) && ['allelokationer', 'vox'].includes(lokation)) }"
+          x-transition:enter.duration.800ms
+          x-on:change="testfunction();"
+        >
+          <Card
+            kategori="STARSTRUCK"
+            title="Ørkenrotte"
+            description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. "
+            imgPath="/adoption/starstruck.webp"
+            link_side="singleview.html"
+          />
+        </section>
+
+        <section
+          class="cursor-pointer"
+          :class="{'hidden': !(['alledyr', 'fredag', 'lordag'].includes(dyr) && ['allelokationer', 'vox'].includes(lokation)) }"
+          x-transition:enter.duration.800ms
+          x-on:change="testfunction();"
+        >
+          <Card
+            kategori="FYLGJA"
+            title="Schecke / løvehoved kanin"
+            description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. "
+            imgPath="/adoption/fylgja.webp"
+            link_side="singleview.html"
+          />
+        </section>
+
+        <section
+          class="cursor-pointer"
+          :class="{'hidden': !(['alledyr', 'fredag', 'lordag'].includes(dyr) && ['allelokationer', 'vox'].includes(lokation)) }"
+          x-transition:enter.duration.800ms
+          x-on:change="testfunction();"
+        >
+          <Card
+            kategori="EMBLA"
+            title="Dværgkanin"
+            description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt."
+            imgPath="/adoption/embla3.png"
+            link_side="singleview.html"
+          />
+        </section>
+
+        <section
+          class="cursor-pointer"
+          :class="{'hidden': !(['alledyr', 'fredag', 'lordag'].includes(dyr) && ['allelokationer', 'vox'].includes(lokation)) }"
+          x-transition:enter.duration.800ms
+          x-on:change="testfunction();"
+        >
+          <Card
+            kategori="LULU"
+            title="Glathåret marsvin"
+            description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. "
+            imgPath="/adoption/Lulu.webp"
+            link_side="singleview.html"
+          />
+        </section>
+      </div>
+    </main>
+  </section>
+</MainLayout>

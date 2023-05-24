@@ -41,6 +41,7 @@
   --heading-h2: var(--text-7);
   --heading-h3: var(--text-6);
   --heading-h4: var(--text-5);
+  --heading-h5: var(--text-2);
   --body-default: var(--text-4);
 
   /* ------------- COMPONENTS ------------- */
@@ -109,6 +110,11 @@ h4,
 .heading-4 {
   font-size: var(--heading-h4);
   font-weight: 700;
+}
+
+h5,
+.heading-5 {
+  font-size: var(--heading-h5);
 }
 
 p {
