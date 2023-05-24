@@ -10,57 +10,107 @@ import "..//styles/style.css";
 ---
 
 <MainLayout title="3. SEM - Eksamensprojekt" splash_title="ADOPTER DIN NYE BEDSTE VEN" splash_description="Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem." imgPath="/splash/adoptersplash.png" intro_title="Se vores søde dyr, der søger et nyt hjem" intro_description="Skab en forskel i et kæledyrs liv, og adopter en af vores søde og kærlige dyr. Fra legesyge hunde til kælne katte - vores adoptable dyr venter på at finde deres nye familie.">
-  <section class="max-w-sm md:max-w-3xl lg:max-w-6xl mx-auto">
-    <article class="grid grid-cols-3 gap-4 md:max-w-3xl max-w-sm lg:max-w-6xl mx-auto pb-24">
-      <div class="flex flex-col items-center justify-start">
-        <img src="../splash/1.png" alt="Hund" class="w-28 pb-10" />
-        <div class="text-center md:w-52">
-          <h5 class="text-sm pb-2">UNDERSØG INDLEVERING</h5>
-          <p class="text-xs">Undersøg kriterier for indlevering samt hvilke dyr vi modtager.</p>
+  <main>
+    <section class="max-w-sm md:max-w-3xl lg:max-w-6xl mx-auto">
+      <article class="grid grid-cols-3 gap-4 md:max-w-3xl max-w-sm lg:max-w-6xl mx-auto pb-24">
+        <div class="flex flex-col items-center justify-start">
+          <img src="../splash/1.png" alt="Hund" class="w-28 pb-10" />
+          <div class="text-center md:w-52">
+            <h5 class="text-sm pb-2">UNDERSØG INDLEVERING</h5>
+            <p class="text-xs">Undersøg kriterier for indlevering samt hvilke dyr vi modtager.</p>
+          </div>
         </div>
-      </div>
-      <div class="flex flex-col items-center justify-start">
-        <img src="../splash/2.png" alt="Hund" class="w-32 pb-10" />
-        <div class="text-center md:w-52">
-          <h5 class="text-sm pb-2">KONTAKT OS</h5>
-          <p class="text-xs">Ring til os på hverdage mellem 9.30 - 12.00 på telefon+45 44 94 66 95</p>
+        <div class="flex flex-col items-center justify-start">
+          <img src="../splash/2.png" alt="Hund" class="w-32 pb-10" />
+          <div class="text-center md:w-52">
+            <h5 class="text-sm pb-2">KONTAKT OS</h5>
+            <p class="text-xs">Ring til os på hverdage mellem 9.30 - 12.00 på telefon+45 44 94 66 95</p>
+          </div>
         </div>
-      </div>
-      <div class="flex flex-col items-center justify-start">
-        <img src="../splash/3.png" alt="Hund" class="w-28 pb-10" />
-        <div class="text-center md:w-52">
-          <h5 class="text-sm pb-2">AFTALE</h5>
-          <p class="text-xs">Hvis vi vurderer, at dyret er omplaceringsegnet, aftales den videre proces.</p>
+        <div class="flex flex-col items-center justify-start">
+          <img src="../splash/3.png" alt="Hund" class="w-28 pb-10" />
+          <div class="text-center md:w-52">
+            <h5 class="text-sm pb-2">AFTALE</h5>
+            <p class="text-xs">Hvis vi vurderer, at dyret er omplaceringsegnet, aftales den videre proces.</p>
+          </div>
         </div>
-      </div>
-    </article>
-  </section>
+      </article>
+    </section>
 
-  <section>
-    <article>
-      <div class="">
-        <h1>HUNDE</h1>
-        <h5 class="text-end">SE MERE</h5>
-      </div>
-      <div class="hunde grid grid-cols-2 md:grid-cols-3">
-        <div class="lg:flex gap-8">
-          <Card title="Schæfer / Husky / Border / Berner" description=" I Basses tidligere familie var der små børn, der desværre var bange for denne smukke skabning, og man måtte indse, at samlivet ikke kunne fungere optimalt for alle parter." imgPath="/public/adoption/basse.webp" kategori="BASSE" />
-          <Card title="Lhasa Apso / Cavalier King Charles" description=" Vores lille mini-Chewbacca her skal lige se nye folk an, før han overgiver sig helt, så ny familie må ikke forvente instant connection" imgPath="/public/adoption/karlo.webp" kategori="KARLO" />
+    <section class="">
+      <article>
+        <div class="">
+          <h1>HUNDE</h1>
+          <h5 class="text-end underline">SE MERE</h5>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 justify-center gap-8">
+          <div class="grid col-start-1">
+            <Card title="Schæfer / Husky / Border / Berner" description=" I Basses tidligere familie var der små børn, der desværre var bange for denne smukke skabning, og man måtte indse, at samlivet ikke kunne fungere optimalt for alle parter." imgPath="/public/adoption/basse.webp" kategori="BASSE" />
+          </div>
+          <div class="grid col-start-2 pb-2">
+            <Card title="Lhasa Apso / Cavalier King Charles" description=" Vores lille mini-Chewbacca her skal lige se nye folk an, før han overgiver sig helt, så ny familie må ikke forvente instant connection" imgPath="/public/adoption/karlo.webp" kategori="KARLO" />
+          </div>
           <Card title="Labrador-blanding" description=" Zico er en flot fyr på kun 7 måneder, der er overdraget til Dyreværnet, da Zico og tidligere ejer var landet i en dårlig spiral, der påvirkede begge parter negativt, så noget måtte gøres." imgPath="/public/adoption/zico.png" kategori="ZICO" />
         </div>
-      </div>
-    </article>
+      </article>
 
-    <article>
-      <h1>KATTE</h1>
-      <h5 class="text-end">SE MERE</h5>
-      <div class="hunde grid grid-cols-2 md:grid-cols-3">
-        <div class="lg:flex gap-8">
-          <Card title="Schæfer / Husky / Border / Berner" description=" I Basses tidligere familie var der små børn, der desværre var bange for denne smukke skabning, og man måtte indse, at samlivet ikke kunne fungere optimalt for alle parter." imgPath="/public/adoption/basse.webp" kategori="BASSE" />
-          <Card title="Lhasa Apso / Cavalier King Charles" description=" Vores lille mini-Chewbacca her skal lige se nye folk an, før han overgiver sig helt, så ny familie må ikke forvente instant connection" imgPath="/public/adoption/karlo.webp" kategori="KARLO" />
-          <Card title="Labrador-blanding" description=" Zico er en flot fyr på kun 7 måneder, der er overdraget til Dyreværnet, da Zico og tidligere ejer var landet i en dårlig spiral, der påvirkede begge parter negativt, så noget måtte gøres." imgPath="/public/adoption/zico.png" kategori="ZICO" />
+      <article class="mt-10">
+        <div class="">
+          <h1>KATTE</h1>
+          <h5 class="text-end underline">SE MERE</h5>
         </div>
-      </div>
-    </article>
-  </section>
+        <div class="grid grid-cols-2 md:grid-cols-3 justify-center gap-8">
+          <div class="grid col-start-1">
+            <Card kategori="KILLING" title="Udekat" description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. " imgPath="/public/adoption/killing.webp" />
+          </div>
+          <div class="grid col-start-2">
+            <Card kategori="PJUSKE" title="Indekat" description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt." imgPath="/public/adoption/pjuske.webp" />
+          </div>
+          <div class="grid col-start-3">
+            <Card kategori="PURRSEIDON" title="Udekat" description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. " imgPath="/public/adoption/purrisedon.webp" />
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <article class="flex items-center justify-center h-screen bg-[url('/splash/ninus.webp')] bg-blend-darken bg-cover bg-center">
+        <div class="text-center text-primary_white">
+          <h1 class="pb-10">TIPS OG TRICKS TIL DIG OG DIN PELSEDE VEN</h1>
+          <Button variant="primary_blue" size="small">LÆS MERE</Button>
+        </div>
+      </article>
+    </section>
+
+    <section class="mt-10 mb-10">
+      <article>
+        <div class="">
+          <h1>SMÅDYR</h1>
+          <h5 class="text-end underline">SE MERE</h5>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 justify-center gap-8">
+          <div class="grid col-start-1">
+            <Card kategori="WATERLOO" title="Dværgkanin" description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. " imgPath="/public/adoption/waterloo.webp" />
+          </div>
+          <div class="grid col-start-2">
+            <Card kategori="SØREN" title="Glathåret marsvin" description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt." imgPath="/public/adoption/soren.webp" />
+          </div>
+          <div class="grid col-start-3">
+            <Card kategori="STARSTRUCK" title="Ørkenrotte" description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. " imgPath="/public/adoption/starstruck.webp" />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 justify-center gap-8 pt-10">
+          <div class="grid col-start-1">
+            <Card kategori="FYLGJA" title="Schecke / løvehoved kanin" description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. " imgPath="/public/adoption/fylgja.webp" />
+          </div>
+          <div class="grid col-start-2">
+            <Card kategori="EMBLA" title="Dværgkanin" description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt." imgPath="/public/adoption/embla.webp" />
+          </div>
+          <div class="grid col-start-3">
+            <Card kategori="LULU" title="Glathåret marsvin" description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. " imgPath="/public/adoption/lulu.webp" />
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
 </MainLayout>
