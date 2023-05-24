@@ -1,14 +1,18 @@
 ---
 import "..//styles/style.css";
+import Button from "./Button.astro";
 const { name, race, color, weight, sex, age, location, price } = Astro.props;
 ---
 
+<section class="p-6 lg:max-w-6xl lg:mx-auto">
 <h2>{name}</h2>
 
-<section class="grid grid-cols-2">
+<section class="grid lg:grid-cols-2 gap-8 my-8">
+  <div><img class="w-[70%]" src="/adoption/basse.webp" alt="basse" /></div>
+
   <div class="grid grid-cols-2">
     <div class="flex">
-      <img src="ikoner/paw.svg" alt="race" />
+      <img class="" src="ikoner/paw.svg" alt="race" />
       <div><h3>Race</h3> <p>{race}</p></div>
     </div>
 
@@ -40,11 +44,9 @@ const { name, race, color, weight, sex, age, location, price } = Astro.props;
       <div><h3>Price</h3> <p>{price}</p></div>
     </div>
   </div>
-
-  <div><img src="adoption/basse.webp" alt="basse" /></div>
 </section>
 
-<section class="grid grid-cols-2">
+<section class="grid lg:grid-cols-2 gap-8 my-8">
   <div>
     <h3>Hvem er {name}?</h3>
     <p>
@@ -72,6 +74,9 @@ const { name, race, color, weight, sex, age, location, price } = Astro.props;
   </div>
 </section>
 
+<Button variant="primary_blue" size="small">Ansøg</Button>
+</section>
+
 <style>
   .info-card {
     display: grid;
@@ -85,5 +90,4 @@ const { name, race, color, weight, sex, age, location, price } = Astro.props;
   div {
     gap: var(--spacing-xs);
   }
-
 </style>
