@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -102,7 +101,7 @@ h2,
 h3,
 .heading-3 {
   font-size: var(--heading-h3);
-  font-weight: 800;
+  font-weight: 500;
 }
 
 h4,
