@@ -57,8 +57,8 @@ import "..//styles/style.css";
           <h4 class="underline">SE MERE</h4>
         </div>
       </article>
-      <div class="grid grid-cols-2 md:grid-cols-3 justify-center gap-8">
-        <div class="grid col-start-1">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-8">
+        <div class="grid md:col-start-1">
           <Card
             title="Schæfer / Husky / Border / Berner"
             description=" I Basses tidligere familie var der små børn, der desværre var bange for denne smukke skabning, og man måtte indse, at samlivet ikke kunne fungere optimalt for alle parter."
@@ -67,7 +67,7 @@ import "..//styles/style.css";
             link_side="singleview.html"
           />
         </div>
-        <div class="grid col-start-2 pb-2">
+        <div class="grid md:col-start-2 pb-2">
           <Card
             title="Lhasa Apso / Cavalier King Charles"
             description=" Vores lille mini-Chewbacca her skal lige se nye folk an, før han overgiver sig helt, så ny familie må ikke forvente instant connection"
@@ -76,130 +76,132 @@ import "..//styles/style.css";
             link_side="singleview.html"
           />
         </div>
-        <Card
-          title="Labrador-blanding"
-          description=" Zico er en flot fyr på kun 7 måneder, der er overdraget til Dyreværnet, da Zico og tidligere ejer var landet i en dårlig spiral, der påvirkede begge parter negativt, så noget måtte gøres."
-          imgPath="/adoption/zico.png"
-          kategori="ZICO"
-          link_side="singleview.html"
-        />
+        <div class="grid md:col-start-1 lg:col-start-3">
+          <Card
+            title="Labrador-blanding"
+            description=" Zico er en flot fyr på kun 7 måneder, der er overdraget til Dyreværnet, da Zico og tidligere ejer var landet i en dårlig spiral, der påvirkede begge parter negativt, så noget måtte gøres."
+            imgPath="/adoption/zico.png"
+            kategori="ZICO"
+            link_side="singleview.html"
+          />
+        </div>
       </div>
+
+      <article class="mt-10">
+        <div class="flex justify-between">
+          <h2>KATTE</h2>
+          <h4 class="underline">SE MERE</h4>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 justify-center gap-8">
+          <div class="grid col-start-1">
+            <Card
+              kategori="KILLING"
+              title="Udekat"
+              description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. "
+              imgPath="/adoption/killing.webp"
+              link_side="singleview.html"
+            />
+          </div>
+          <div class="grid col-start-2">
+            <Card
+              kategori="PJUSKE"
+              title="Indekat"
+              description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt."
+              imgPath="/adoption/pjuske.webp"
+              link_side="singleview.html"
+            />
+          </div>
+          <div class="grid col-start-3">
+            <Card
+              kategori="PURRSEIDON"
+              title="Udekat"
+              description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. "
+              imgPath="/adoption/purrisedon.webp"
+              link_side="singleview.html"
+            />
+          </div>
+        </div>
+      </article>
     </section>
 
-    <article class="mt-10">
-      <div class="flex justify-between">
-        <h2>KATTE</h2>
-        <h4 class="underline">SE MERE</h4>
-      </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 justify-center gap-8">
-        <div class="grid col-start-1">
-          <Card
-            kategori="KILLING"
-            title="Udekat"
-            description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. "
-            imgPath="/adoption/killing.webp"
-            link_side="singleview.html"
-          />
+    <section>
+      <article
+        class="flex items-center justify-center h-96 bg-[url('/splash/ninus.webp')] bg-blend-darken bg-cover bg-center"
+      >
+        <div class="text-center text-primary_white">
+          <h1 class="pb-10">Hjælp os med at give dyrene en god oplevelse</h1>
+          <Button variant="primary_green" size="medium" link_side="stot.html">
+            STØT
+          </Button>
         </div>
-        <div class="grid col-start-2">
-          <Card
-            kategori="PJUSKE"
-            title="Indekat"
-            description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt."
-            imgPath="/adoption/pjuske.webp"
-            link_side="singleview.html"
-          />
+      </article>
+    </section>
+
+    <section class="mt-10 mb-10">
+      <article>
+        <div class="flex justify-between">
+          <h2 class="">SMÅDYR</h2>
+          <h4 class="underline">SE MERE</h4>
         </div>
-        <div class="grid col-start-3">
-          <Card
-            kategori="PURRSEIDON"
-            title="Udekat"
-            description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. "
-            imgPath="/adoption/purrisedon.webp"
-            link_side="singleview.html"
-          />
+        <div class="grid grid-cols-2 md:grid-cols-3 justify-center gap-8">
+          <div class="grid col-start-1">
+            <Card
+              kategori="WATERLOO"
+              title="Dværgkanin"
+              description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. "
+              imgPath="/adoption/waterloo.webp"
+              link_side="singleview.html"
+            />
+          </div>
+          <div class="grid col-start-2">
+            <Card
+              kategori="SØREN"
+              title="Glathåret marsvin"
+              description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt."
+              imgPath="/adoption/soren.webp"
+              link_side="singleview.html"
+            />
+          </div>
+          <div class="grid col-start-3">
+            <Card
+              kategori="STARSTRUCK"
+              title="Ørkenrotte"
+              description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. "
+              imgPath="/adoption/starstruck.webp"
+              link_side="singleview.html"
+            />
+          </div>
         </div>
-      </div>
-    </article>
+        <div class="grid grid-cols-2 md:grid-cols-3 justify-center gap-8 pt-10">
+          <div class="grid col-start-1">
+            <Card
+              kategori="FYLGJA"
+              title="Schecke / løvehoved kanin"
+              description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. "
+              imgPath="/adoption/fylgja.webp"
+              link_side="singleview.html"
+            />
+          </div>
+          <div class="grid col-start-2">
+            <Card
+              kategori="EMBLA"
+              title="Dværgkanin"
+              description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt."
+              imgPath="/adoption/embla3.png"
+              link_side="singleview.html"
+            />
+          </div>
+          <div class="grid col-start-3">
+            <Card
+              kategori="LULU"
+              title="Glathåret marsvin"
+              description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. "
+              imgPath="/adoption/Lulu.webp"
+              link_side="singleview.html"
+            />
+          </div>
+        </div>
+      </article>
+    </section>
   </main>
-
-  <section>
-    <article
-      class="flex items-center justify-center h-96 bg-[url('/splash/ninus.webp')] bg-blend-darken bg-cover bg-center"
-    >
-      <div class="text-center text-primary_white">
-        <h1 class="pb-10">Hjælp os med at give dyrene en god oplevelse</h1>
-        <Button variant="primary_green" size="medium" link_side="stot.html">
-          STØT
-        </Button>
-      </div>
-    </article>
-  </section>
-
-  <section class="mt-10 mb-10">
-    <article>
-      <div class="flex justify-between">
-        <h2 class="">SMÅDYR</h2>
-        <h4 class="underline">SE MERE</h4>
-      </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 justify-center gap-8">
-        <div class="grid col-start-1">
-          <Card
-            kategori="WATERLOO"
-            title="Dværgkanin"
-            description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. "
-            imgPath="/adoption/waterloo.webp"
-            link_side="singleview.html"
-          />
-        </div>
-        <div class="grid col-start-2">
-          <Card
-            kategori="SØREN"
-            title="Glathåret marsvin"
-            description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt."
-            imgPath="/adoption/soren.webp"
-            link_side="singleview.html"
-          />
-        </div>
-        <div class="grid col-start-3">
-          <Card
-            kategori="STARSTRUCK"
-            title="Ørkenrotte"
-            description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. "
-            imgPath="/adoption/starstruck.webp"
-            link_side="singleview.html"
-          />
-        </div>
-      </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 justify-center gap-8 pt-10">
-        <div class="grid col-start-1">
-          <Card
-            kategori="FYLGJA"
-            title="Schecke / løvehoved kanin"
-            description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. "
-            imgPath="/adoption/fylgja.webp"
-            link_side="singleview.html"
-          />
-        </div>
-        <div class="grid col-start-2">
-          <Card
-            kategori="EMBLA"
-            title="Dværgkanin"
-            description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt."
-            imgPath="/adoption/embla3.png"
-            link_side="singleview.html"
-          />
-        </div>
-        <div class="grid col-start-3">
-          <Card
-            kategori="LULU"
-            title="Glathåret marsvin"
-            description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. "
-            imgPath="/adoption/Lulu.webp"
-            link_side="singleview.html"
-          />
-        </div>
-      </div>
-    </article>
-  </section>
 </MainLayout>
