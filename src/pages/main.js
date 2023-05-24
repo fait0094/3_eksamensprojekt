@@ -1,4 +1,4 @@
-import "..//styles/style.css";
+import "../styles/style.css";
 
 /*burgermenu*/
 const menu = document.querySelector("#hammenu");
