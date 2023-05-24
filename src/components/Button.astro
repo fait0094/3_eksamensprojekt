@@ -1,10 +1,17 @@
 ---
 import "..//styles/style.css";
-const { variant, size, link_side } = Astro.props;
+const { variant, size, link_side, step } = Astro.props;
 // const { variant = "primary_1", size = "medium" } = Astro.props;
 ---
 
-<a href={link_side} data-variant={variant} data-size={size} class="rounded-xl text-primary_white"><slot /></a>
+<a
+  href={link_side}
+  data-variant={variant}
+  data-size={size}
+  class="rounded-xl text-primary_white"
+>
+  <slot /></a
+>
 
 <!-- <button
   data-variant={variant}
@@ -27,13 +34,6 @@ const { variant, size, link_side } = Astro.props;
   }
 
   /* Sizes */
-  /* [data-size="medium"] {
-    font-size: var(--font-size-base);
-    min-height: var(--spacing-xxxl);
-    padding-block: var(--spacing-xs);
-    padding-inline: var(--spacing-xl);
-  } */
-
   [data-size="medium"] {
     font-size: var(--font-size-base);
     min-height: var(--spacing-xxxl);
@@ -50,6 +50,13 @@ const { variant, size, link_side } = Astro.props;
     padding-block: var(--spacing-xxs);
     padding-inline: var(--spacing-md);
   }
+
+  /* [data-size="medium"] {
+    font-size: var(--font-size-base);
+    min-height: var(--spacing-xxxl);
+    padding-block: var(--spacing-xs);
+    padding-inline: var(--spacing-xl);
+  } */
 </style>
 
 <!-- <Button variant="primary_1" size="medium">FIND KÆLEDYR</Button>
