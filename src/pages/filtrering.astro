@@ -26,31 +26,11 @@ import "..//styles/style.css";
       <section class="px-8 md:px-12">
         <div class="mb-10 mx-10">
           <form id="filtre" class="flex gap-5 justify-center">
-            <!-- Lokation -->
-            <div class="">
-              <label for="lokation"></label>
-              <select
-                class="text-center border-0 bg-purple_button w-36"
-                name="lokation"
-                id="lokation"
-                x-model="lokation"
-                form="filtre"
-                x-on:change="$nextTick(() => { ingenforestillinger() });"
-              >
-                <option value="allelokationer">Alle lokationer</option>
-                <option value="vox">Vox - Teaterhuset</option>
-                <option value="downunder">Downunder</option>
-                <option value="zebu">Zebu</option>
-                <option value="xenon">Xenon - Teaterhuset</option>
-                <option value="ukirke">Ukirke (Workshops)</option>
-              </select>
-            </div>
-
             <!-- Dyr -->
             <div class="">
-              <label for="dyr"></label>
+              <label for="dyr">Dyr</label>
               <select
-                class="text-center border-0 bg-purple_button w-36"
+                class="border rounded-lg border-primary_black block px-3 py-1 bg-primary_white"
                 name="dyr"
                 id="dyr"
                 x-model="dyr"
@@ -58,39 +38,36 @@ import "..//styles/style.css";
                 x-on:change="$nextTick(() => { ingenforestillinger() });"
               >
                 <option value="alledyr">Alle dyr</option>
-                <option value="tirsdag">Tirsdag: 2. august</option>
-                <option value="onsdag">Onsdag: 3. august</option>
-                <option value="torsdag">Torsdag: 4. august</option>
-                <option value="fredag">Fredag: 5. august</option>
-                <option value="lordag">Lørdag: 6. august</option>
+                <option value="hund">Hund</option>
+                <option value="kat">Kat</option>
+                <option value="kanin">Kanin</option>
+                <option value="marsvin">Marsvin</option>
+                <option value="orkenrotte">Ørkenrotte</option>
               </select>
             </div>
 
-            <!-- Alder -->
+            <!-- Lokation -->
             <div class="">
-              <label for="alder"></label>
+              <label for="lokation">Lokation</label>
               <select
-                class="text-center border-0 bg-purple_button w-36"
-                name="alder"
-                id="alder"
-                x-model="alder"
+                class="border rounded-lg border-primary_black block px-3 py-1 bg-primary_white"
+                name="lokation"
+                id="lokation"
+                x-model="lokation"
                 form="filtre"
                 x-on:change="$nextTick(() => { ingenforestillinger() });"
               >
-                <option value="allealder">Alle aldre</option>
-                <option value="vox">Vox - Teaterhuset</option>
-                <option value="downunder">Downunder</option>
-                <option value="zebu">Zebu</option>
-                <option value="xenon">Xenon - Teaterhuset</option>
-                <option value="ukirke">Ukirke (Workshops)</option>
+                <option value="allelokationer">Alle lokationer</option>
+                <option value="vox">Sjælland</option>
+                <option value="downunder">Jylland</option>
               </select>
             </div>
 
             <!-- Køn -->
             <div class="">
-              <label for="kon"></label>
+              <label for="kon">Køn</label>
               <select
-                class="text-center border-0 bg-purple_button w-36"
+                class="border rounded-lg border-primary_black block px-3 py-1 bg-primary_white"
                 name="kon"
                 id="kon"
                 x-model="kon"
@@ -98,11 +75,8 @@ import "..//styles/style.css";
                 x-on:change="$nextTick(() => { ingenforestillinger() });"
               >
                 <option value="allekon">Alle køn</option>
-                <option value="vox">Vox - Teaterhuset</option>
-                <option value="downunder">Downunder</option>
-                <option value="zebu">Zebu</option>
-                <option value="xenon">Xenon - Teaterhuset</option>
-                <option value="ukirke">Ukirke (Workshops)</option>
+                <option value="vox">Han</option>
+                <option value="downunder">Hun</option>
               </select>
             </div>
           </form>
