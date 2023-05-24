@@ -27,7 +27,7 @@ import "..//styles/style.css";
         <div class="mb-10 mx-10">
           <form id="filtre" class="flex gap-5 justify-center">
             <!-- Dyr -->
-            <div class="">
+            <div class="grid gap-2">
               <label for="dyr">Dyr</label>
               <select
                 class="border rounded-lg border-primary_black block px-3 py-1 bg-primary_white"
@@ -47,7 +47,7 @@ import "..//styles/style.css";
             </div>
 
             <!-- Lokation -->
-            <div class="">
+            <div class="grid gap-2">
               <label for="lokation">Lokation</label>
               <select
                 class="border rounded-lg border-primary_black block px-3 py-1 bg-primary_white"
@@ -58,13 +58,13 @@ import "..//styles/style.css";
                 x-on:change="$nextTick(() => { ingenforestillinger() });"
               >
                 <option value="allelokationer">Alle lokationer</option>
-                <option value="vox">Sjælland</option>
-                <option value="downunder">Jylland</option>
+                <option value="sjaelland">Sjælland</option>
+                <option value="jylland">Jylland</option>
               </select>
             </div>
 
             <!-- Køn -->
-            <div class="">
+            <div class="grid gap-2">
               <label for="kon">Køn</label>
               <select
                 class="border rounded-lg border-primary_black block px-3 py-1 bg-primary_white"
@@ -75,8 +75,8 @@ import "..//styles/style.css";
                 x-on:change="$nextTick(() => { ingenforestillinger() });"
               >
                 <option value="allekon">Alle køn</option>
-                <option value="vox">Han</option>
-                <option value="downunder">Hun</option>
+                <option value="han">Han</option>
+                <option value="hun">Hun</option>
               </select>
             </div>
           </form>
@@ -87,7 +87,7 @@ import "..//styles/style.css";
       <div class="grid md:grid-cols-3 gap-10 lg:max-w-6xl mx-auto">
         <section
           class="cursor-pointer"
-          :class="{'hidden': !(['alledyr', 'torsdag', 'fredag'].includes(dyr) && ['allelokationer', 'xenon'].includes(lokation)) }"
+          :class="{'hidden': !(['alledyr', 'hund'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
         >
@@ -102,7 +102,7 @@ import "..//styles/style.css";
 
         <section
           class="cursor-pointer"
-          :class="{'hidden': !(['alledyr', 'torsdag', 'fredag'].includes(dyr) && ['allelokationer', 'downunder'].includes(lokation)) }"
+          :class="{'hidden': !(['alledyr', 'hund'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
         >
@@ -117,7 +117,7 @@ import "..//styles/style.css";
 
         <section
           class="cursor-pointer"
-          :class="{'hidden': !(['alledyr', 'fredag', 'lordag'].includes(dyr) && ['allelokationer', 'xenon'].includes(lokation)) }"
+          :class="{'hidden': !(['alledyr', 'hund'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
         >
@@ -132,7 +132,7 @@ import "..//styles/style.css";
 
         <section
           class="cursor-pointer"
-          :class="{'hidden': !(['alledyr', 'tirsdag', 'onsdag'].includes(dyr) && ['allelokationer', 'vox'].includes(lokation)) }"
+          :class="{'hidden': !(['alledyr', 'kat'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'hun'].includes(kon)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
         >
@@ -147,7 +147,7 @@ import "..//styles/style.css";
 
         <section
           class="cursor-pointer"
-          :class="{'hidden': !(['alledyr', 'tirsdag', 'onsdag'].includes(dyr) && ['allelokationer', 'zebu'].includes(lokation)) }"
+          :class="{'hidden': !(['alledyr', 'kat'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'hun'].includes(kon)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
         >
@@ -162,7 +162,7 @@ import "..//styles/style.css";
 
         <section
           class="cursor-pointer"
-          :class="{'hidden': !(['alledyr', 'torsdag', 'fredag', 'lordag'].includes(dyr) && ['allelokationer', 'zebu'].includes(lokation)) }"
+          :class="{'hidden': !(['alledyr', 'kat'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
         >
@@ -177,7 +177,7 @@ import "..//styles/style.css";
 
         <section
           class="cursor-pointer"
-          :class="{'hidden': !(['alledyr', 'fredag', 'lordag'].includes(dyr) && ['allelokationer', 'vox'].includes(lokation)) }"
+          :class="{'hidden': !(['alledyr', 'kanin'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
         >
@@ -191,7 +191,7 @@ import "..//styles/style.css";
         </section>
         <section
           class="cursor-pointer"
-          :class="{'hidden': !(['alledyr', 'fredag', 'lordag'].includes(dyr) && ['allelokationer', 'vox'].includes(lokation)) }"
+          :class="{'hidden': !(['alledyr', 'marsvin'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
         >
@@ -206,7 +206,7 @@ import "..//styles/style.css";
 
         <section
           class="cursor-pointer"
-          :class="{'hidden': !(['alledyr', 'fredag', 'lordag'].includes(dyr) && ['allelokationer', 'vox'].includes(lokation)) }"
+          :class="{'hidden': !(['alledyr', 'orkenrotte'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
         >
@@ -221,7 +221,7 @@ import "..//styles/style.css";
 
         <section
           class="cursor-pointer"
-          :class="{'hidden': !(['alledyr', 'fredag', 'lordag'].includes(dyr) && ['allelokationer', 'vox'].includes(lokation)) }"
+          :class="{'hidden': !(['alledyr', 'kanin'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'hun'].includes(kon)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
         >
@@ -236,7 +236,7 @@ import "..//styles/style.css";
 
         <section
           class="cursor-pointer"
-          :class="{'hidden': !(['alledyr', 'fredag', 'lordag'].includes(dyr) && ['allelokationer', 'vox'].includes(lokation)) }"
+          :class="{'hidden': !(['alledyr', 'kanin'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
         >
@@ -251,13 +251,13 @@ import "..//styles/style.css";
 
         <section
           class="cursor-pointer"
-          :class="{'hidden': !(['alledyr', 'fredag', 'lordag'].includes(dyr) && ['allelokationer', 'vox'].includes(lokation)) }"
+          :class="{'hidden': !(['alledyr', 'kanin'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
           x-transition:enter.duration.800ms
           x-on:change="testfunction();"
         >
           <Card
             kategori="LULU"
-            title="Glathåret marsvin"
+            title="Dværgkanin"
             description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. "
             imgPath="/adoption/Lulu.webp"
             link_side="singleview.html"
