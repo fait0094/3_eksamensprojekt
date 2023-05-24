@@ -1,27 +1,26 @@
 ---
 import Button from "./Button.astro";
 import "..//styles/style.css";
-const { title, description, imgPath, kategori, link_side } = Astro.props;
+const { title, description, imgPath, kategori, link_side, icon } = Astro.props;
 ---
 
 <section class="">
-  <div class="rounded-lg shadow-xl bg-primary_white">
-    <figure class="px-10 pt-10">
+  <div class="rounded-lg shadow-xl bg-primary_white h-full grid p-10 ">
+    <figure class="mb-6">
       <img src={imgPath} alt="hund_til_adoption" />
     </figure>
-    <div class="p-10">
-      <div class="">
-        <h2 class="uppercase">{kategori}</h2>
+    <div class="grid">
+      <div class="flex">
+        <h3 class="uppercase heading-5">{kategori}</h3>
+        <img src={icon} alt="gender-icon">
         <div class="flex justify-between">
-          <h3 class="uppercase">{title}</h3>
+          <h4 class="uppercase">{title}</h4>
           <slot />
         </div>
       </div>
       <p>{description}</p>
-      <div class="my-6">
-        <Button variant="primary_blue" size="medium" link_side="">
-          Læs mere
-        </Button>
+      <div class="mt-6 items-end grid">
+        <Button variant="primary_blue" size="medium" link_side="">Læs mere</Button>
       </div>
     </div>
   </div>
