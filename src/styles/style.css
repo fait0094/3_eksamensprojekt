@@ -8,7 +8,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   /* ------------- GLOBAL ------------- */
   /* Farver */
@@ -83,7 +82,8 @@ body {
   color: var(--font_black);
 }
 
-h1 {
+h1,
+.heading-1 {
   font-size: var(--heading-h1);
   font-weight: 800;
   text-transform: uppercase;
