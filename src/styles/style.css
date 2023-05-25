@@ -75,6 +75,16 @@
   --spacing-xxl: 5rem;
 }
 
+.cookieboks {
+  font-family: "Barlow", sans-serif;
+  height: auto;
+  
+}
+
+.cookietekst {
+  font-family: "Poppins", "sans-serif";
+}
+
 body {
   font-family: "Barlow", sans-serif;
   font-size: var(--body-default);

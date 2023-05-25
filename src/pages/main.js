@@ -1,5 +1,18 @@
 import "../styles/style.css";
 
+// cookieboks
+const cookieBox = document.getElementById("cookiebox");
+const afvisBtn = document.getElementById("afvis");
+const accepterBtn = document.getElementById("accepter");
+
+afvisBtn.addEventListener("click", () => {
+  cookieBox.style.display = "none";
+});
+
+accepterBtn.addEventListener("click", () => {
+  cookieBox.style.display = "none";
+});
+
 /*burgermenu*/
 const menu = document.querySelector("#hammenu");
 const menuItem = document.querySelector(".menuItem");
@@ -22,4 +35,3 @@ function toggleMenu() {
 }
 
 hamburger.addEventListener("click", toggleMenu);
-
