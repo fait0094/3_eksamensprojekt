@@ -5,9 +5,9 @@ const { title, description, imgPath, kategori, link_side, icon } = Astro.props;
 ---
 
 <section class="mb-8">
-  <div class="rounded-lg shadow-xl bg-primary_white h-full grid p-10 ">
+  <div class="rounded-lg shadow-xl bg-primary_white h-full grid p-10">
     <figure class="mb-6">
-      <img src={imgPath} alt="hund_til_adoption" />
+      <img class="rounded-lg" src={imgPath} alt="hund_til_adoption" />
     </figure>
     <div class="grid">
       <div class="">
@@ -19,7 +19,9 @@ const { title, description, imgPath, kategori, link_side, icon } = Astro.props;
       </div>
       <p>{description}</p>
       <div class="mt-6 items-end grid">
-        <Button variant="primary_blue" size="medium" link_side="">Læs mere</Button>
+        <Button variant="primary_blue" size="medium" link_side="">
+          Læs mere
+        </Button>
       </div>
     </div>
   </div>

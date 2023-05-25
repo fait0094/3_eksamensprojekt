@@ -48,8 +48,13 @@ const { variant, size, link_side, step } = Astro.props;
     min-height: var(--spacing-md);
     padding-block: var(--spacing-xs);
     padding-inline: var(--spacing-md);
+  }
 
-    
+  [data-size="mini"] {
+    font-size: var(--font-size-small);
+    min-height: var(--spacing-xxs);
+    padding-block: var(--spacing-xxs);
+    padding-inline: var(--spacing-sm);
   }
 
   /* [data-size="medium"] {
