@@ -22,9 +22,11 @@ import Testimonial from "../components/Testimonial.astro";
         omsorg og opmærksomhed, de fortjener.
       </p>
 
-      <Button variant="primary_green" size="small" link_side="stot.html">
-        STØT
-      </Button>
+      <div class="mt-5">
+        <Button variant="primary_green" size="small" link_side="stot.html">
+          STØT
+        </Button>
+      </div>
     </div>
   </main>
 
@@ -60,9 +62,9 @@ import Testimonial from "../components/Testimonial.astro";
       </div>
     </div>
 
-    <section class="bg-secondary_beige place-content-center grid p-10 lg:p-0">
+    <section class="place-content-center grid px-10 lg:p-0">
       <div class="text-center mb-10 mt-10">
-        <h2 class="mb-4">KLAR TIL EN NY VEN?</h2>
+        <h2>KLAR TIL EN NY VEN?</h2>
         <p>
           Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og
           find netop det dyr der passer perfekt til dit hjem.
@@ -70,9 +72,9 @@ import Testimonial from "../components/Testimonial.astro";
       </div>
     </section>
 
-    <section class="bg-secondary_beige place-content-center grid p-10">
+    <section class="place-content-center grid p-10">
       <div
-        class="mb-10 grid grid-cols-1 md:grid-cols-2 md:ml-10 md:max-w-4xl lg:gap-16"
+        class="mb-10 grid grid-cols-1 md:grid-cols-2 md:ml-10 md:max-w-4xl lg:gap-16 gap-10"
       >
         <div class="md:border-r-2 md:border-black md:pr-24 md:pt-16">
           <div class="grid grid-cols-4 gap-10">
@@ -118,11 +120,11 @@ import Testimonial from "../components/Testimonial.astro";
         <div
           class="md:col-start-2 md:flex md:flex-col md:items-center md:justify-center md:pt-4 lg:pt-0 lg:pl-8"
         >
-          <div class="grid justify-center mt-10">
+          <div class="grid justify-center">
             <h1 class="">191</h1>
           </div>
 
-          <p class="pt-4 text-center">
+          <p class="text-center">
             venter på nyt hjem. Ingen fortjener at være alene - adopter fra
             Dyreværnet og gør en forskel
           </p>
@@ -144,7 +146,7 @@ import Testimonial from "../components/Testimonial.astro";
         class="flex items-center justify-center h-96 bg-[url('/splash/missekat.webp')] bg-blend-darken bg-cover bg-center"
       >
         <div class="text-center text-primary_white">
-          <h1 class="pb-10">TIPS OG TRICKS TIL DIG OG DIN PELSEDE VEN</h1>
+          <h1 class="mb-10">TIPS OG TRICKS TIL DIG OG DIN PELSEDE VEN</h1>
           <Button
             variant="primary_blue"
             size="small"
@@ -158,41 +160,41 @@ import Testimonial from "../components/Testimonial.astro";
 
     <section class="mb-8 grid justify-center p-10">
       <div class="text-center mt-8">
-        <h1 class="">VIL DU GØRE EN FORSKEL?</h1>
+        <h2 class="">VIL DU GØRE EN FORSKEL?</h2>
         <p>
           Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og
           find netop det dyr der passer perfekt til dit hjem.
         </p>
       </div>
-      <article class="grid grid-cols-4 max-w-4xl mt-8 gap-10">
+      <section class="grid grid-cols-4 max-w-4xl mt-10 gap-10">
         <div>
-          <a href="stot.astro" class="flex flex-col items-center">
+          <a href="stot.html" class="flex flex-col items-center">
             <img src="../ikoner/hjerte.svg" alt="Hjerte" class="mb-2" />
-            <h4 class="">STØT DYRENE</h4>
+            <h5 class="lg:text-heading-4">STØT DYRENE</h5>
           </a>
         </div>
 
         <div>
-          <a href="adopter.astro" class="flex flex-col items-center">
+          <a href="adopter.html" class="flex flex-col items-center">
             <img src="../ikoner/hundkat.svg" alt="Hund og kat" class="mb-2" />
-            <h4 class="">ADOPTERING</h4>
+            <h5 class="lg:text-heading-4">ADOPTERING</h5>
           </a>
         </div>
 
         <div>
-          <a href="adopter.astro" class="flex flex-col items-center">
+          <a href="adopter.html" class="flex flex-col items-center">
             <img src="../ikoner/haender.svg" alt="Hænder" class="mb-2" />
-            <h4 class="">INDLEVERING</h4>
+            <h5 class="lg:text-heading-4">INDLEVERING</h5>
           </a>
         </div>
 
         <div>
-          <a href="adopter.astro" class="flex flex-col items-center">
+          <a href="adopter.html" class="flex flex-col items-center">
             <img src="../ikoner/poter.svg" alt="Poter" class="mb-2" />
-            <h4 class="">SERIE</h4>
+            <h5 class="lg:text-heading-4">SERIE</h5>
           </a>
         </div>
-      </article>
+      </section>
     </section>
   </body>
 </SecondLayout>

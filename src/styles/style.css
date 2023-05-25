@@ -78,7 +78,6 @@
 .cookieboks {
   font-family: "Barlow", sans-serif;
   height: auto;
-  
 }
 
 .cookietekst {
@@ -100,14 +99,15 @@ h1,
   text-transform: uppercase;
 
   line-height: 1.1;
-  margin-top: 0;
-  margin-bottom: var(--spacing-30);
+  /* margin-top: 0; */
+  margin-bottom: var(--spacing-xxs);
 }
 
 h2,
 .heading-2 {
   font-size: var(--heading-h2);
   font-weight: 800;
+  margin-bottom: var(--spacing-xxs);
 }
 
 h3,

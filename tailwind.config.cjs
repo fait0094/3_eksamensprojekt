@@ -15,6 +15,9 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         barlow: ["Barlow", "sans-serif"],
       },
+      fontSize: {
+        "heading-4": ["1.25rem"],
+      },
     },
   },
   plugins: [],
