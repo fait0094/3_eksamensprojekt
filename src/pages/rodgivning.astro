@@ -7,34 +7,96 @@ import Intro from "../components/Intro.astro";
 import "..//styles/style.css";
 ---
 
-<MainLayout title="3. SEM - Eksamensprojekt" splash_title="Dyreværnets tips og tricks" splash_description="Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem." imgPath="/splash/splash-raadgivning.webp" intro_title="Din donation gør en forskel" intro_description="Vi har gjort det nemt og enkelt at bidrage med en donation. Vælg mellem en enkel, månedlig eller virksomheds-donation og udfyld formularen.">
+<MainLayout
+  title="3. SEM - Eksamensprojekt"
+  splash_title="Dyreværnets tips og tricks"
+  splash_description="Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem."
+  imgPath="/splash/splash-raadgivning.webp"
+  intro_title="Alt du skal vide om din hund, kat og kanin"
+  intro_description="Udforsk vores guide til pleje og trivsel for din hund, kat og kanin. Få værdifulde tips om sundhed, ernæring, træning, adfærd og meget mere."
+>
   <section class="grid justify">
-    <div class="max-w-6xl mx-auto">
-      <h3 class="uppercase">Hunde</h3>
+    <div class="max-w-6xl mx-auto px-10 lg:px-0">
+      <div class="flex justify-between">
+        <h3>HUNDE</h3>
+        <h4 class="underline">SE MERE</h4>
+      </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-8">
-        <Card imgPath="rodgivning/hund_1.webp" kategori="tips og tricks" title="Sådan holder du flåterne væk" description="Når temperaturen stiger udenfor, er det også ensbetydende med, at flåterne kommer." />
-        <Card imgPath="rodgivning/hund_2.webp" kategori="how to" title="Sådan fjerner du en flåt" description="Har du fundet en flåt på din hund, så er det vigtigt, at du fjerner den hurtigst muligt og at du fjerner hele flåten." />
-        <Card imgPath="rodgivning/hund_3.webp" kategori="gode råd" title="Skal hunden med på ferie?" description="Har du planer om at tage din firbenede ven med på rejsen, så få fem gode råd fra Marie Jakobsen." />
+        <Card
+          imgPath="rodgivning/hund_1.webp"
+          kategori="tips og tricks"
+          title="Sådan holder du flåterne væk"
+          description="Når temperaturen stiger udenfor, er det også ensbetydende med, at flåterne kommer."
+        />
+        <Card
+          imgPath="rodgivning/hund_2.webp"
+          kategori="how to"
+          title="Sådan fjerner du en flåt"
+          description="Har du fundet en flåt på din hund, så er det vigtigt, at du fjerner den hurtigst muligt og at du fjerner hele flåten."
+        />
+        <Card
+          imgPath="rodgivning/hund_3.webp"
+          kategori="gode råd"
+          title="Skal hunden med på ferie?"
+          description="Har du planer om at tage din firbenede ven med på rejsen, så få fem gode råd fra Marie Jakobsen."
+        />
       </div>
     </div>
 
-    <div class="bg-secondary_beige py-10">
-      <div class="max-w-6xl mx-auto">
-        <h3 class="uppercase">Katte</h3>
+    <div class="bg-secondary_beige">
+      <div class="max-w-6xl mx-auto px-10 lg:px-0">
+        <div class="flex justify-between mt-10">
+          <h3>KATTE</h3>
+          <h4 class="underline">SE MERE</h4>
+        </div>
+
         <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-8">
-          <Card imgPath="rodgivning/kat_1.webp" kategori="how to" title="Er din kat registeret korrekt?" description="Er du sikker på, at du kan kontaktes, hvis din kat løber væk hjemmefra?" />
-          <Card imgPath="rodgivning/kat_2.webp" kategori="tips og tricks" title="Giv din killing en god start" description="Det handler om at få en tryg start på livet." />
-          <Card imgPath="rodgivning/kat_3.webp" kategori="gode råd" title="Førstehjælp til katte" description="Dét skal du gøre, hvis din kat er i livsfare." />
+          <Card
+            imgPath="rodgivning/kat_1.webp"
+            kategori="how to"
+            title="Er din kat registeret korrekt?"
+            description="Er du sikker på, at du kan kontaktes, hvis din kat løber væk hjemmefra?"
+          />
+          <Card
+            imgPath="rodgivning/kat_2.webp"
+            kategori="tips og tricks"
+            title="Giv din killing en god start"
+            description="Det handler om at få en tryg start på livet."
+          />
+          <Card
+            imgPath="rodgivning/kat_3.webp"
+            kategori="gode råd"
+            title="Førstehjælp til katte"
+            description="Dét skal du gøre, hvis din kat er i livsfare."
+          />
         </div>
       </div>
     </div>
 
-    <div class="max-w-6xl mx-auto">
-      <h3 class="uppercase">Smådyr</h3>
+    <div class="max-w-6xl mx-auto px-10 lg:px-0">
+      <div class="flex justify-between mt-10">
+        <h3>SMÅDYR</h3>
+        <h4 class="underline">SE MERE</h4>
+      </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-8">
-        <Card imgPath="rodgivning/smaadyr_1.webp" kategori="gode råd" title="Hvor meget grønt må kaninen spise?" description="Kaniner elsker at spise grønt, men kan de få for meget af det?" />
-        <Card imgPath="rodgivning/smaadyr_2.webp" kategori="how to" title="Det perefekte kaninbur" description="På de kolde vinterdage skal der ikke meget til, før vand fryser til is. Her får du her fem tips til at gøre din kanins bolig vinterklar." />
-        <Card imgPath="rodgivning/smaadyr_3.webp" kategori="tips og tricks" title="Sammenføring af marsvin" description="Kaniner elsker selskab af andre kaniner og det er godt for deres humør." />
+        <Card
+          imgPath="rodgivning/smaadyr_1.webp"
+          kategori="gode råd"
+          title="Hvor meget grønt må kaninen spise?"
+          description="Kaniner elsker at spise grønt, men kan de få for meget af det?"
+        />
+        <Card
+          imgPath="rodgivning/smaadyr_2.webp"
+          kategori="how to"
+          title="Det perefekte kaninbur"
+          description="På de kolde vinterdage skal der ikke meget til, før vand fryser til is. Her får du her fem tips til at gøre din kanins bolig vinterklar."
+        />
+        <Card
+          imgPath="rodgivning/smaadyr_3.webp"
+          kategori="tips og tricks"
+          title="Sammenføring af marsvin"
+          description="Kaniner elsker selskab af andre kaniner og det er godt for deres humør."
+        />
       </div>
     </div>
   </section>
