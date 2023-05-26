@@ -15,9 +15,13 @@ import "..//styles/style.css";
 >
   <!-- Indsæt indhold i main her -->
 
-  <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto p-10 lg:p-0">
+  <div class="grid md:grid-cols-3 gap-10 lg:max-w-6xl mx-auto p-10 lg:p-0">
     <!-- Form -->
-    <section class="form-content mb-8" id="step" x-data="{ step: 'step1' }">
+    <section
+      class="form-content mb-8 col-span-2"
+      id="step"
+      x-data="{ step: 'step1' }"
+    >
       <header class="pb-8">
         <p class="pb-2">Gennemfør din donation på 4 enkle trin:</p>
         <ul class="">
@@ -51,17 +55,19 @@ import "..//styles/style.css";
       <!-- step 1 -->
       <div id="step1" x-show="step === 'step1'">
         <p class="mb-4">Vælg din donationstype.</p>
-        <form id="form" class="grid lg:grid-cols-3">
+        <form id="form" class="grid lg:grid-cols-3 gap-10">
           <Card
             title="Enkel donation"
             description="Med denne mulighed donerer du et engangsbeløb og du bestemmer selv beløbets størrelse."
             imgPath="/public/ikoner/hjerte-firkant.svg"
           />
+
           <Card
             title="Månedlig donation"
             description=" De fleste vælger denne mulighed, hvor du kan vælge, hvilket beløb du ønsker at støtte dyrene med hver måned."
             imgPath="/public/ikoner/hjerte-firkant.svg"
           />
+
           <Card
             title="Virksomhedsdonation"
             description="Vil din virksomhed hjælpe Dyreværnet med at redde dyr? Man kan hjælpe med en donation eller ved at blive sponsor."
@@ -293,7 +299,7 @@ import "..//styles/style.css";
     </section>
 
     <!-- Info -->
-    <section class="info lg:row-start-1">
+    <section class="info lg:row-start-1 col-span-1">
       <div class="mb-5">
         <h3>Bankoverførsel</h3>
         <p>
