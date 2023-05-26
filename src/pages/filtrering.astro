@@ -2,6 +2,7 @@
 import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import AdoptionCard from "../components/AdoptionCard.astro";
 import "..//styles/style.css";
 ---
 
@@ -11,7 +12,7 @@ import "..//styles/style.css";
   splash_description="Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem."
   imgPath="/splash/splash-adopter.webp"
   intro_title="Se vores søde dyr, der søger et nyt hjem"
-  intro_description="Skab en forskel i et kæledyrs liv, og adopter en af vores søde og kærlige dyr. Fra legesyge hunde til kælne katte - vores adoptable dyr venter på at finde deres nye familie."
+  intro_description="Skab en forskel i et kæledyrs liv ved at adoptere et af vores kærlige dyr. Fra legesyge hunde til kælne katte - vores adoptable dyr venter på deres nye familie."
 >
   <!-- Indsæt indhold her -->
   <section class="max-w-sm md:max-w-3xl lg:max-w-6xl mx-auto">
@@ -60,7 +61,7 @@ import "..//styles/style.css";
     <!-- Filterknapper -->
     <section class="px-8 md:px-12">
       <div class="mb-10 mx-10">
-        <form id="filtre" class="flex gap-5 justify-center">
+        <form id="filtre" class="flex gap-10 justify-center">
           <!-- Dyr -->
           <div class="grid gap-2">
             <label for="dyr">Dyr</label>
@@ -126,11 +127,12 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <Card
-          title="Schæfer / Husky / Border / Berner"
+        <AdoptionCard
+          title=" BASSE "
           description=" I Basses tidligere familie var der små børn, der desværre var bange for denne smukke skabning, og man måtte indse, at samlivet ikke kunne fungere optimalt for alle parter."
           imgPath="/adoption/basse.webp"
-          kategori="BASSE"
+          kategori="Schæfer / Husky / Border / Berner"
+          icon="ikoner/sex.svg"
           link_side="singleview.html"
         />
       </section>
@@ -141,12 +143,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <Card
-          title="Lhasa Apso / Cavalier King Charles"
+        <AdoptionCard
+          title="KARLO"
           description=" Vores lille mini-Chewbacca her skal lige se nye folk an, før han overgiver sig helt, så ny familie må ikke forvente instant connection"
           imgPath="/adoption/karlo.webp"
-          kategori="KARLO"
+          kategori="Lhasa Apso / Cavalier King Charles"
           link_side="singleview.html"
+          icon="ikoner/sex.svg"
         />
       </section>
 
@@ -156,12 +159,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <Card
-          title="Labrador-blanding"
+        <AdoptionCard
+          title="ZICO"
           description=" Zico er en flot fyr på kun 7 måneder, der er overdraget til Dyreværnet, da Zico og tidligere ejer var landet i en dårlig spiral, der påvirkede begge parter negativt, så noget måtte gøres."
           imgPath="/adoption/zico.png"
-          kategori="ZICO"
+          kategori="Labrador-blanding"
           link_side="singleview.html"
+          icon="ikoner/sex.svg"
         />
       </section>
 
@@ -171,12 +175,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <Card
-          kategori="KILLING"
-          title="Udekat"
+        <AdoptionCard
+          kategori="Udekat"
+          title="KILLING"
           description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. "
           imgPath="/adoption/killing.webp"
           link_side="singleview.html"
+          icon="ikoner/sex-female.svg"
         />
       </section>
 
@@ -186,12 +191,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <Card
-          kategori="PJUSKE"
-          title="Indekat"
+        <AdoptionCard
+          kategori="Indekat"
+          title="PJUSKE"
           description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt."
           imgPath="/adoption/pjuske.webp"
           link_side="singleview.html"
+          icon="ikoner/sex-female.svg"
         />
       </section>
 
@@ -201,12 +207,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <Card
-          kategori="PURRSEIDON"
-          title="Udekat"
+        <AdoptionCard
+          kategori="Udekat"
+          title="PURRSEIDON"
           description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. "
           imgPath="/adoption/purrisedon.webp"
           link_side="singleview.html"
+          icon="ikoner/sex.svg"
         />
       </section>
 
@@ -216,12 +223,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <Card
-          kategori="WATERLOO"
-          title="Dværgkanin"
-          description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. "
+        <AdoptionCard
+          kategori="Dværgkanin"
+          title="WATERLOO "
+          description="Waterloo er en sød lille spirrevip, der har brug for at være mere i hænder, da det nok har været sparsomt med håndtering i tidligere hjem."
           imgPath="/adoption/waterloo.webp"
           link_side="singleview.html"
+          icon="ikoner/sex.svg"
         />
       </section>
       <section
@@ -230,12 +238,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <Card
-          kategori="SØREN"
-          title="Glathåret marsvin"
-          description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt."
+        <AdoptionCard
+          kategori="Glathåret marsvin"
+          title="SØREN"
+          description=" Søren har i sandhed formået at sætte mange hjerter i brand her hos os, da han bare er noget af det sødeste lille væsen."
           imgPath="/adoption/soren.webp"
           link_side="singleview.html"
+          icon="ikoner/sex.svg"
         />
       </section>
 
@@ -245,12 +254,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <Card
-          kategori="STARSTRUCK"
-          title="Ørkenrotte"
-          description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. "
+        <AdoptionCard
+          kategori="Ørkenrotte"
+          title="STARSTRUCK"
+          description="Starstruck er en skøn ørkenrotte, der desværre har mistet sin ven, og han er derfor på jagt efter en ny erfaren ejer."
           imgPath="/adoption/starstruck.webp"
           link_side="singleview.html"
+          icon="ikoner/sex.svg"
         />
       </section>
 
@@ -260,12 +270,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <Card
-          kategori="FYLGJA"
-          title="Schecke / løvehoved kanin"
-          description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. "
+        <AdoptionCard
+          kategori="Schecke / løvehoved kanin"
+          title="FYLGJA"
+          description=" Fylgja og Embla er to smukke kaniner, der blev fundet herreløse midt på en landevej i Taastrup. "
           imgPath="/adoption/fylgja.webp"
           link_side="singleview.html"
+          icon="ikoner/sex-female.svg"
         />
       </section>
 
@@ -275,12 +286,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <Card
-          kategori="EMBLA"
-          title="Dværgkanin"
-          description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt."
+        <AdoptionCard
+          kategori="Dværgkanin"
+          title="EMBLA"
+          description="Embla og Fylgja er to smukke kaniner,, der blev fundet herreløse midt på en landevej i Taastrup."
           imgPath="/adoption/embla3.png"
           link_side="singleview.html"
+          icon="ikoner/sex.svg"
         />
       </section>
 
@@ -290,12 +302,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <Card
-          kategori="LULU"
-          title="Dværgkanin"
-          description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. "
+        <AdoptionCard
+          kategori="Løvehoved-blanding"
+          title="LULU"
+          description="En baby på vej og det faktum, at lille, henrivende Lulu bare slet ikke var vild med mændene i hjemmet."
           imgPath="/adoption/Lulu.webp"
           link_side="singleview.html"
+          icon="ikoner/sex.svg"
         />
       </section>
     </div>
