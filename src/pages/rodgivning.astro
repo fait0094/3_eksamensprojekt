@@ -2,12 +2,18 @@
 import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
 import MainLayout from "../layouts/MainLayout.astro";
-import Splash from "../components/Splash.astro";
 import Intro from "../components/Intro.astro";
 import "..//styles/style.css";
 ---
 
-<MainLayout title="3. SEM - Eksamensprojekt" splash_title="DYREVÆRNETS RÅDGIVNING" splash_description="Gode råd, how to, tips og tricks til dit kæledyrs trivsel - læs Dyreværnets ekspertrådgivning her." imgPath="/splash/splash-raadgivning.webp" intro_title="Alt du skal vide om din hund, kat og kanin" intro_description="Udforsk vores guide til pleje og trivsel for din hund, kat og kanin. Få værdifulde tips om sundhed, ernæring, træning, adfærd og meget mere.">
+<MainLayout
+  title="3. SEM - Eksamensprojekt"
+  splash_title="DYREVÆRNETS RÅDGIVNING"
+  splash_description="Gode råd, how to, tips og tricks til dit kæledyrs trivsel - læs Dyreværnets ekspertrådgivning her."
+  imgPath="/splash/splash-raadgivning.webp"
+  intro_title="Alt du skal vide om din hund, kat og kanin"
+  intro_description="Udforsk vores guide til pleje og trivsel for din hund, kat og kanin. Få værdifulde tips om sundhed, ernæring, træning, adfærd og meget mere."
+>
   <section class="grid justify">
     <div class="max-w-6xl mx-auto px-10 lg:px-0">
       <div class="flex justify-between">
@@ -15,9 +21,24 @@ import "..//styles/style.css";
         <h4 class="underline">SE MERE</h4>
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-8">
-        <Card imgPath="rodgivning/hund_1.webp" kategori="tips og tricks" title="Sådan holder du flåterne væk" description="Når temperaturen stiger udenfor, er det også ensbetydende med, at flåterne kommer." />
-        <Card imgPath="rodgivning/hund_2.webp" kategori="how to" title="Sådan fjerner du en flåt" description="Har du fundet en flåt på din hund, så er det vigtigt, at du fjerner den hurtigst muligt og at du fjerner hele flåten." />
-        <Card imgPath="rodgivning/hund_3.webp" kategori="gode råd" title="Skal hunden med på ferie?" description="Har du planer om at tage din firbenede ven med på rejsen, så få fem gode råd fra Marie Jakobsen." />
+        <Card
+          imgPath="rodgivning/hund_1.webp"
+          kategori="tips og tricks"
+          title="Sådan holder du flåterne væk"
+          description="Når temperaturen stiger udenfor, er det også ensbetydende med, at flåterne kommer."
+        />
+        <Card
+          imgPath="rodgivning/hund_2.webp"
+          kategori="how to"
+          title="Sådan fjerner du en flåt"
+          description="Har du fundet en flåt på din hund, så er det vigtigt, at du fjerner den hurtigst muligt og at du fjerner hele flåten."
+        />
+        <Card
+          imgPath="rodgivning/hund_3.webp"
+          kategori="gode råd"
+          title="Skal hunden med på ferie?"
+          description="Har du planer om at tage din firbenede ven med på rejsen, så få fem gode råd fra Marie Jakobsen."
+        />
       </div>
     </div>
 
@@ -29,9 +50,24 @@ import "..//styles/style.css";
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-8">
-          <Card imgPath="rodgivning/kat_1.webp" kategori="how to" title="Er din kat registeret korrekt?" description="Er du sikker på, at du kan kontaktes, hvis din kat løber væk hjemmefra?" />
-          <Card imgPath="rodgivning/kat_2.webp" kategori="tips og tricks" title="Giv din killing en god start" description="Det handler om at få en tryg start på livet." />
-          <Card imgPath="rodgivning/kat_3.webp" kategori="gode råd" title="Førstehjælp til katte" description="Dét skal du gøre, hvis din kat er i livsfare." />
+          <Card
+            imgPath="rodgivning/kat_1.webp"
+            kategori="how to"
+            title="Er din kat registeret korrekt?"
+            description="Er du sikker på, at du kan kontaktes, hvis din kat løber væk hjemmefra?"
+          />
+          <Card
+            imgPath="rodgivning/kat_2.webp"
+            kategori="tips og tricks"
+            title="Giv din killing en god start"
+            description="Det handler om at få en tryg start på livet."
+          />
+          <Card
+            imgPath="rodgivning/kat_3.webp"
+            kategori="gode råd"
+            title="Førstehjælp til katte"
+            description="Dét skal du gøre, hvis din kat er i livsfare."
+          />
         </div>
       </div>
     </div>
@@ -42,9 +78,24 @@ import "..//styles/style.css";
         <h4 class="underline">SE MERE</h4>
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-8">
-        <Card imgPath="rodgivning/smaadyr_1.webp" kategori="gode råd" title="Hvor meget grønt må kaninen spise?" description="Kaniner elsker at spise grønt, men kan de få for meget af det?" />
-        <Card imgPath="rodgivning/smaadyr_2.webp" kategori="how to" title="Det perefekte kaninbur" description="På de kolde vinterdage skal der ikke meget til, før vand fryser til is. Her får du her fem tips til at gøre din kanins bolig vinterklar." />
-        <Card imgPath="rodgivning/smaadyr_3.webp" kategori="tips og tricks" title="Sammenføring af marsvin" description="Kaniner elsker selskab af andre kaniner og det er godt for deres humør." />
+        <Card
+          imgPath="rodgivning/smaadyr_1.webp"
+          kategori="gode råd"
+          title="Hvor meget grønt må kaninen spise?"
+          description="Kaniner elsker at spise grønt, men kan de få for meget af det?"
+        />
+        <Card
+          imgPath="rodgivning/smaadyr_2.webp"
+          kategori="how to"
+          title="Det perefekte kaninbur"
+          description="På de kolde vinterdage skal der ikke meget til, før vand fryser til is. Her får du her fem tips til at gøre din kanins bolig vinterklar."
+        />
+        <Card
+          imgPath="rodgivning/smaadyr_3.webp"
+          kategori="tips og tricks"
+          title="Sammenføring af marsvin"
+          description="Kaniner elsker selskab af andre kaniner og det er godt for deres humør."
+        />
       </div>
     </div>
   </section>
