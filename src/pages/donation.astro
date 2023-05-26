@@ -110,7 +110,7 @@ import "..//styles/style.css";
                 name="full-name"
                 type="text"
                 placeholder="Indtast fulde navn"
-                class="border rounded-lg border-primary_black block px-3 py-1"
+                class="border rounded-lg border-primary_black block px-3 py-1 w-1/2"
               />
             </div>
 
@@ -121,7 +121,7 @@ import "..//styles/style.css";
                 name="email"
                 type="email"
                 placeholder="Indtast email"
-                class="border rounded-lg border-primary_black block px-3 py-1"
+                class="border rounded-lg border-primary_black block px-3 py-1 w-1/2"
               />
             </div>
 
@@ -132,7 +132,7 @@ import "..//styles/style.css";
                 name="tnummer"
                 type="tel"
                 placeholder="Indtast telefonnummer"
-                class="border rounded-lg border-primary_black block px-3 py-1"
+                class="border rounded-lg border-primary_black block px-3 py-1 w-1/2"
               />
             </div>
           </div>
@@ -156,7 +156,7 @@ import "..//styles/style.css";
               name="name-card"
               type="text"
               placeholder="Indtast navn på kortet"
-              class="border rounded-lg border-primary_black block px-3 py-1"
+              class="border rounded-lg border-primary_black block px-3 py-1 w-1/2"
             />
           </div>
 
@@ -167,7 +167,7 @@ import "..//styles/style.css";
               name="number-card"
               type="text"
               placeholder="Indtast kortnummer"
-              class="border rounded-lg border-primary_black block px-3 py-1"
+              class="border rounded-lg border-primary_black block px-3 py-1 w-1/2"
             />
           </div>
 
@@ -221,7 +221,7 @@ import "..//styles/style.css";
         <div class="">
           <button
             id="knap2"
-            class="border-2 border-black p-2"
+            class="rounded-xl text-primary_white bg-primary_black px-8 py-4"
             x-on:click="step = 'step1'"
             x-show="step === 'step2'"
           >
@@ -230,7 +230,7 @@ import "..//styles/style.css";
 
           <button
             id="knap3"
-            class="border-2 border-black p-2"
+            class="rounded-xl text-primary_white bg-primary_black px-8 py-4"
             x-on:click="step = 'step2'"
             x-show="step === 'step3'"
           >
@@ -239,7 +239,7 @@ import "..//styles/style.css";
 
           <button
             id="knap4"
-            class="border-2 border-black p-2"
+            class="rounded-xl text-primary_white bg-primary_black px-8 py-4"
             x-on:click="step = 'step3'"
             x-show="step === 'step4'"
           >
@@ -250,26 +250,16 @@ import "..//styles/style.css";
         <div class="">
           <button
             id="knap2"
-            class="border-2 border-black p-2"
+            class="rounded-xl text-primary_white bg-primary_black px-8 py-4"
             x-on:click="step = 'step2'"
             x-show="step === 'step1'"
           >
             Oplysninger &RightArrow;</button
           >
 
-          <Button
-            id="knap2"
-            x-on:click="step = 'step2'"
-            x-show="step === 'step1'"
-            variant="secondary"
-            size="small"
-          >
-            Oplysninger &RightArrow;
-          </Button>
-
           <button
             id="knap3"
-            class="border-2 border-black p-2"
+            class="rounded-xl text-primary_white bg-primary_black px-8 py-4"
             x-on:click="step = 'step3'"
             x-show="step === 'step2'"
           >
@@ -278,20 +268,21 @@ import "..//styles/style.css";
 
           <button
             id="knap4"
-            class="border-2 border-black p-2"
+            class="rounded-xl text-primary_white bg-primary_black px-8 py-4"
             x-on:click="step = 'step4'"
             x-show="step === 'step3'"
           >
             Bekræftelse &RightArrow;</button
           >
-
-          <button
-            id="knap4"
-            class="border-2 border-black bg-green-200 p-2"
-            x-on:click="step = 'step4'"
-            x-show="step === 'step4'"
-          >
-            Tilbage</button
+          <a href="donation.html">
+            <button
+              id="knap4"
+              class="rounded-xl text-primary_white bg-primary_black px-8 py-4"
+              x-on:click="step = 'step4'"
+              x-show="step === 'step4'"
+            >
+              Tilbage</button
+            ></a
           >
         </div>
       </footer>
@@ -328,8 +319,8 @@ import "..//styles/style.css";
   </div>
 
   <!-- Spørgsmål / Kommentarer -->
-  <!-- Hvordan fikser jeg cardsene? Fjerner overflow? -->
+
   <!-- Jeg har anvendt mb-5 (få defineret/brugt en rigtig spacing) -->
-  <!-- Hvordan kan jeg anvende min egen button-komponent? -->
+
   <!-- Kan jeg lave en stepper? -->
 </MainLayout>
