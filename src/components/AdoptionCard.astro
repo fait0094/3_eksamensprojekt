@@ -12,15 +12,16 @@ const { title, description, imgPath, kategori, link_side, icon } = Astro.props;
     <div class="grid">
       <div class="">
         <h3 class="uppercase heading-5">{kategori}</h3>
-        <img src={icon} alt="gender-icon" />
         <div class="flex justify-between">
           <h4 class="uppercase">{title}</h4>
-          <slot />
+          <img class="w-5" src={icon} alt="gender-icon" />
         </div>
       </div>
       <p>{description}</p>
       <div class="mt-6 items-end grid">
-        <Button variant="primary_blue" size="medium" link_side="">Læs mere</Button>
+        <Button variant="primary_blue" size="medium" link_side="">
+          Læs mere
+        </Button>
       </div>
     </div>
   </div>
