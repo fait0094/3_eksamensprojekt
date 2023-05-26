@@ -4,28 +4,45 @@ import Faktaboks from "../components/Faktaboks.astro";
 import "..//styles/style.css";
 ---
 
-<MainLayout title="3. SEM - Eksamensprojekt" splash_title="INDLEVER DIT KÆLEDYR TIL OS" splash_description="Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem." imgPath="/public/splash/splash-indlever.webp" intro_title="Lad os finde en kærlig familie til dit dyr " intro_description="Slår dit liv en kolbøtte? Uanset om det er på grund af sundhed eller flytning, så er vi her til at hjælpe din ven trygt videre i et nyt og kærligt hjem.">
+<MainLayout
+  title="3. SEM - Eksamensprojekt"
+  splash_title="INDLEVER DIT KÆLEDYR TIL OS"
+  splash_description="Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem."
+  imgPath="/public/splash/splash-indlever.webp"
+  intro_title="Lad os finde en kærlig familie til dit dyr "
+  intro_description="Slår dit liv en kolbøtte? Uanset om det er på grund af sundhed eller flytning, så er vi her til at hjælpe din ven trygt videre i et nyt og kærligt hjem."
+>
   <section class="max-w-sm md:max-w-3xl lg:max-w-6xl mx-auto">
-    <section class="grid grid-cols-3 gap-4 md:max-w-3xl max-w-sm lg:max-w-6xl mx-auto pb-24">
+    <section
+      class="grid grid-cols-3 gap-4 md:max-w-3xl max-w-sm lg:max-w-6xl mx-auto pb-24"
+    >
       <div class="flex flex-col items-center justify-start">
         <img src="../splash/1.png" alt="Hund" class="w-28 pb-10" />
         <div class="text-center md:w-52">
           <h5 class="text-sm pb-2">UNDERSØG INDLEVERING</h5>
-          <p class="text-xs">Undersøg kriterier for indlevering samt hvilke dyr vi modtager.</p>
+          <p class="text-xs">
+            Undersøg kriterier for indlevering samt hvilke dyr vi modtager.
+          </p>
         </div>
       </div>
       <div class="flex flex-col items-center justify-start">
         <img src="../splash/2.png" alt="Hund" class="w-32 pb-10" />
         <div class="text-center md:w-52">
           <h5 class="text-sm pb-2">KONTAKT OS</h5>
-          <p class="text-xs">Ring til os på hverdage mellem 9.30 - 12.00 på telefon+45 44 94 66 95</p>
+          <p class="text-xs">
+            Ring til os på hverdage mellem 9.30 - 12.00 på telefon+45 44 94 66
+            95
+          </p>
         </div>
       </div>
       <div class="flex flex-col items-center justify-start">
         <img src="../splash/3.png" alt="Hund" class="w-28 pb-10" />
         <div class="text-center md:w-52">
           <h5 class="text-sm pb-2">AFTALE</h5>
-          <p class="text-xs">Hvis vi vurderer, at dyret er omplaceringsegnet, aftales den videre proces.</p>
+          <p class="text-xs">
+            Hvis vi vurderer, at dyret er omplaceringsegnet, aftales den videre
+            proces.
+          </p>
         </div>
       </div>
     </section>
@@ -34,21 +51,35 @@ import "..//styles/style.css";
       <section class="md:grid md:grid-cols-2">
         <div class="">
           <h2>PRAKTISKE INFORMATIONER</h2>
-          <p class="pb-8">Når man indleverer et dyr til Dyreværnet, starter processen typisk med en grundig vurdering af dyrets tilstand og behov. Det kan omfatte en fysisk sundhedskontrol og en adfærdsmæssig vurdering for at få et indblik i dyrets temperament og eventuelle særlige krav. Dyreværnets dyrepassere og veterinærer er eksperter i at håndtere forskellige dyr og sikre deres trivsel.</p>
+          <p class="pb-8">
+            Når man indleverer et dyr til Dyreværnet, starter processen typisk
+            med en grundig vurdering af dyrets tilstand og behov. Det kan
+            omfatte en fysisk sundhedskontrol og en adfærdsmæssig vurdering for
+            at få et indblik i dyrets temperament og eventuelle særlige krav.
+            Dyreværnets dyrepassere og veterinærer er eksperter i at håndtere
+            forskellige dyr og sikre deres trivsel.
+          </p>
         </div>
 
         <div class="bg-secondary_beige rounded-md p-8">
-          <Faktaboks header="PRAKTISKE INFORMATIONER" text="...Ring til os på hverdage mellem 9.30 - 12.00 på telefonnummer 4494 6695">
-            <img src="blue_paw.svg" alt="iconlist" />
+          <Faktaboks
+            header="PRAKTISKE INFORMATIONER"
+            text="...Ring til os på hverdage mellem 9.30 - 12.00 på telefonnummer 4494 6695"
+          >
+            <img src="ikoner/blue_paw.svg" alt="iconlist" />
           </Faktaboks>
-          <Faktaboks text="...Er dyret omplaceringsegnet, oplyses vigtige informationer (eks. hundens chipnummer, kan dyret med andre dyr, hvordan er det med børn, sundhedshistorik osv.">
-            <img src="blue_paw.svg" alt="iconlist" />
+          <Faktaboks
+            text="...Er dyret omplaceringsegnet, oplyses vigtige informationer (eks. hundens chipnummer, kan dyret med andre dyr, hvordan er det med børn, sundhedshistorik osv."
+          >
+            <img src="ikoner/blue_paw.svg" alt="iconlist" />
           </Faktaboks>
           <Faktaboks text="...Herefter aftales den videre proces.">
-            <img src="blue_paw.svg" alt="iconlist" />
+            <img src="ikoner/blue_paw.svg" alt="iconlist" />
           </Faktaboks>
-          <Faktaboks text="...Dyreværnet har et indleveringsgebyr, som du kan få oplyst ved at kontakte os">
-            <img src="blue_paw.svg" alt="iconlist" />
+          <Faktaboks
+            text="...Dyreværnet har et indleveringsgebyr, som du kan få oplyst ved at kontakte os"
+          >
+            <img src="ikoner/blue_paw.svg" alt="iconlist" />
           </Faktaboks>
         </div>
       </section>
@@ -56,20 +87,37 @@ import "..//styles/style.css";
       <section class="pt-10 md:grid md:grid-cols-2 md:gap-10">
         <div>
           <h2>FÅ HJÆLP FRA SPECIALISTERNE</h2>
-          <p class="pb-2">Dyreværnets adoptionsteam har lang erfaring i at finde det perfekte match til hver eneste skønne, sunde hund, kat eller smådyr, der vurderes omplaceringsegnet.</p>
-          <p class="pb-2">Vi er specialister i at stille alle de rette spørgsmål både om kæledyret, og når de interviewer potentielle nye familier.</p>
-          <p class="pb-8">Hos Dyreværnet kommer dyrets bedste altid i første række, så adoptionsprocessen er grundig.</p>
+          <p class="pb-2">
+            Dyreværnets adoptionsteam har lang erfaring i at finde det perfekte
+            match til hver eneste skønne, sunde hund, kat eller smådyr, der
+            vurderes omplaceringsegnet.
+          </p>
+          <p class="pb-2">
+            Vi er specialister i at stille alle de rette spørgsmål både om
+            kæledyret, og når de interviewer potentielle nye familier.
+          </p>
+          <p class="pb-8">
+            Hos Dyreværnet kommer dyrets bedste altid i første række, så
+            adoptionsprocessen er grundig.
+          </p>
         </div>
 
         <div class="bg-secondary_beige rounded-md p-8">
-          <Faktaboks header="OM OMPLACERINGSPROCESSEN" text="...Hver dag omplacerer vi i gennemsnit fire kæledyr">
-            <img src="blue_paw.svg" alt="iconlist" />
+          <Faktaboks
+            header="OM OMPLACERINGSPROCESSEN"
+            text="...Hver dag omplacerer vi i gennemsnit fire kæledyr"
+          >
+            <img src="ikoner/blue_paw.svg" alt="iconlist" />
           </Faktaboks>
-          <Faktaboks text="...Hvalpe matches før de ankommer, så hvalpen oplever et minimum af forandringer i dens liv.">
-            <img src="blue_paw.svg" alt="iconlist" />
+          <Faktaboks
+            text="...Hvalpe matches før de ankommer, så hvalpen oplever et minimum af forandringer i dens liv."
+          >
+            <img src="ikoner/blue_paw.svg" alt="iconlist" />
           </Faktaboks>
-          <Faktaboks text="...Familiehunde bliver typisk matchet med ny, kærlig familie i løbet af 7-9 dage">
-            <img src="blue_paw.svg" alt="iconlist" />
+          <Faktaboks
+            text="...Familiehunde bliver typisk matchet med ny, kærlig familie i løbet af 7-9 dage"
+          >
+            <img src="ikoner/blue_paw.svg" alt="iconlist" />
           </Faktaboks>
         </div>
       </section>
@@ -77,28 +125,49 @@ import "..//styles/style.css";
       <section class="md:grid md:grid-cols-2 pt-10">
         <div>
           <h2>EN TYPISK DAGLIGDAG FOR DYRENE</h2>
-          <p class="pb-2">Den vigtigste opgave, for vores dedikerede og erfarne dyrepassere, adfærdsrådgivere og dyrlæger, er at sikre, at dyrene trives og har det godt.</p>
-          <p class="pb-8">Vores dyreglade praktikanter og mere end 100 frivillige møder dagligt op og hjælper til med hundeluftning, nus og kæl samt rengøring.</p>
+          <p class="pb-2">
+            Den vigtigste opgave, for vores dedikerede og erfarne dyrepassere,
+            adfærdsrådgivere og dyrlæger, er at sikre, at dyrene trives og har
+            det godt.
+          </p>
+          <p class="pb-8">
+            Vores dyreglade praktikanter og mere end 100 frivillige møder
+            dagligt op og hjælper til med hundeluftning, nus og kæl samt
+            rengøring.
+          </p>
         </div>
 
         <div class="bg-secondary_beige rounded-md p-8">
-          <Faktaboks header="DYRENES TRIVSEL " text="...Alle hunde får dagligt minimum tre gåture">
-            <img src="blue_paw.svg" alt="iconlist" />
+          <Faktaboks
+            header="DYRENES TRIVSEL "
+            text="...Alle hunde får dagligt minimum tre gåture"
+          >
+            <img src="ikoner/blue_paw.svg" alt="iconlist" />
           </Faktaboks>
-          <Faktaboks text="...Alle hunde har eget indendørs- og udendørs areal.">
-            <img src="blue_paw.svg" alt="iconlist" />
+          <Faktaboks
+            text="...Alle hunde har eget indendørs- og udendørs areal."
+          >
+            <img src="ikoner/blue_paw.svg" alt="iconlist" />
           </Faktaboks>
-          <Faktaboks text="...Alle hunde får tildelt en hundekurv med dyner og tæpper. Derudover er der varme i gulvet.">
-            <img src="blue_paw.svg" alt="iconlist" />
+          <Faktaboks
+            text="...Alle hunde får tildelt en hundekurv med dyner og tæpper. Derudover er der varme i gulvet."
+          >
+            <img src="ikoner/blue_paw.svg" alt="iconlist" />
           </Faktaboks>
-          <Faktaboks text="...Alle katte, kaniner og smådyr har eget værelse, med mulighed for at komme ud.">
-            <img src="blue_paw.svg" alt="iconlist" />
+          <Faktaboks
+            text="...Alle katte, kaniner og smådyr har eget værelse, med mulighed for at komme ud."
+          >
+            <img src="ikoner/blue_paw.svg" alt="iconlist" />
           </Faktaboks>
-          <Faktaboks text="...Der er daglig rengøring hos alle dyrene i vores pleje.">
-            <img src="blue_paw.svg" alt="iconlist" />
+          <Faktaboks
+            text="...Der er daglig rengøring hos alle dyrene i vores pleje."
+          >
+            <img src="ikoner/blue_paw.svg" alt="iconlist" />
           </Faktaboks>
-          <Faktaboks text="...Vi sparer ikke på nus og kærlighed. Vi elsker at være omgivet af dyr, og det får dyrene også at mærke.">
-            <img src="blue_paw.svg" alt="iconlist" />
+          <Faktaboks
+            text="...Vi sparer ikke på nus og kærlighed. Vi elsker at være omgivet af dyr, og det får dyrene også at mærke."
+          >
+            <img src="ikoner/blue_paw.svg" alt="iconlist" />
           </Faktaboks>
         </div>
       </section>
