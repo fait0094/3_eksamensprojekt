@@ -1,13 +1,12 @@
 ---
-import Button from "./Button.astro";
 import "..//styles/style.css";
-const { title, description, imgPath, kategori, link_side } = Astro.props;
+const { title, description, imgPath, kategori, ejer } = Astro.props;
 ---
 
 <section class="mb-8">
   <div class="rounded-lg shadow-xl bg-primary_white h-full grid p-10">
     <figure class="mb-6 center flex justify-center">
-      <img class="rounded-lg" src={imgPath} alt="hund_til_adoption" />
+      <img class="rounded-lg" src={imgPath} alt="Indleveret dyr" />
     </figure>
     <div class="grid">
       <div class="">
@@ -16,12 +15,8 @@ const { title, description, imgPath, kategori, link_side } = Astro.props;
           <h4 class="uppercase">{title}</h4>
         </div>
       </div>
-      <p>{description}</p>
-      <div class="mt-6 items-end grid">
-        <Button variant="primary_blue" size="medium" link_side={link_side}>
-          <slot />
-        </Button>
-      </div>
+      <p class="italic">{description}</p>
+      <p class="mt-5 font-bold heading-5">{ejer}</p>
     </div>
   </div>
 </section>

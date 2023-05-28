@@ -2,6 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import "..//styles/style.css";
 import Fakta from "../components/Fakta.astro";
+import TestimonialCard from "../components/TestimonialCard.astro";
 ---
 
 <MainLayout
@@ -171,6 +172,39 @@ import Fakta from "../components/Fakta.astro";
           </Fakta>
         </div>
       </section>
+    </section>
+
+    <section class="pt-10">
+      <div>
+        <h2 class="uppercase">Testimonials fra dyreejere</h2>
+        <p>
+          Læs her tre testimonials fra dyreejere, som valgte at lade os hjælpe
+          dem med at finde et nyt hjem til deres kæledyr.
+        </p>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-8">
+        <TestimonialCard
+          kategori="TESTIMONIAL"
+          title="»De dygtigste matchmakere«"
+          description="“Det var aldrig en mulighed at finde andre end Dyreværnet til at finde et nyt hjem til Buller. Jeg kender siden med opdateringer fra de nye hjem, og at de ikke afliver, fordi de skal bruge et tomt bur. De er dygtige matchmakere, og det var vigtigt for mig, at Buller skulle være glad fra dag 1.“"
+          ejer="Betina, tidligere ejer af Buller"
+          imgPath="/public/stot/stot-hunde-2.webp"
+        />
+        <TestimonialCard
+          kategori="TESTIMONIAL"
+          title="»Snowy fandt et nyt hjem på kun 7 dage!«"
+          description="“Vi havde faktisk opgivet håbet om at omplacere Snowy og tid til aflivning blev bestilt. Så blev vi via Facebook gjort opmærksomme på Dyreværnet, og det var Snowys sidste udvej. 20 timer før aflivning kørte vi ind til Dyreværnet, og 7 dage efter havde Snowy fået et nyt hjem.“"
+          ejer="Michael, tidligere ejer af Snowy"
+          imgPath="/public/stot/stot-hunde-2.webp"
+        />
+        <TestimonialCard
+          kategori="TESTIMONIAL"
+          title="»Dyreværnet er omhyggelige«"
+          description="“Vi har valgt Dyreværnet, fordi de har en meget grundig tilgang til omplacering, og fordi vi ved, at de vil tage sig godt af Sia. Jeg ville ønske, at Sias tidligere ejer havde været ærlig. I stedet måtte hele familien – inklusive Sia – igennem en følelsesmæssig rutsjetur og unødig stress."
+          ejer="Susanne, tidligere ejer af Sia "
+          imgPath="/public/stot/stot-hunde-2.webp"
+        />
+      </div>
     </section>
   </section>
 </MainLayout>
