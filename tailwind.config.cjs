@@ -10,6 +10,7 @@ module.exports = {
         secondary_beige: "#f1f1e8",
         secondary_eggwhite: "#fcfbfa",
         accent_green: "#2ca900",
+        selected_gray: "#D3D3D3",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
