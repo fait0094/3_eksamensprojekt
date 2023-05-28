@@ -137,3 +137,11 @@ p {
 .showMenu {
   transform: translateY(0);
 }
+
+/* Hover effekt */
+.ikon:hover {
+  transform: scale(1.05);
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}

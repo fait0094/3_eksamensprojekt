@@ -1,6 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Card from "../components/Card.astro";
+import DonationCard from "../components/DonationCard.astro";
 import "..//styles/style.css";
 ---
 
@@ -54,29 +54,29 @@ import "..//styles/style.css";
       <div id="step1" x-show="step === 'step1'">
         <p class="mb-4">Vælg din donationstype.</p>
         <form id="form" class="grid grid-cols-1 lg:grid-cols-3 gap-5">
-          <Card
+          <DonationCard
             title="Enkel donation"
             description="Med denne mulighed donerer du ét beløb, og du bestemmer selv beløbets størrelse."
             imgPath="/public/ikoner/hjerte-firkant.svg"
           >
             VÆLG
-          </Card>
+          </DonationCard>
 
-          <Card
+          <DonationCard
             title="Månedlig donation"
             description="De fleste vælger denne mulighed og donerer et valgfrit beløb hver måned."
             imgPath="/public/ikoner/hjerte-firkant.svg"
           >
             VÆLG
-          </Card>
+          </DonationCard>
 
-          <Card
+          <DonationCard
             title="Virksomheds donation"
             description="Din virksomhed kan hjælpe til med en donation eller ved at blive sponsor."
             imgPath="/public/ikoner/hjerte-firkant.svg"
           >
             VÆLG
-          </Card>
+          </DonationCard>
         </form>
       </div>
 
@@ -329,3 +329,12 @@ import "..//styles/style.css";
 
   <!-- Kan jeg lave en stepper? -->
 </MainLayout>
+
+<style>
+  button:hover {
+    transform: scale(1.05);
+    transition-property: transform;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+  }
+</style>
