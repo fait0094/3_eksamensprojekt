@@ -12,12 +12,10 @@ import "..//styles/style.css";
   intro_title="Din donation gør en forskel"
   intro_description="Vi har gjort det nemt og enkelt at bidrage med en donation. Vælg mellem en enkel, månedlig eller virksomheds-donation og udfyld formularen."
 >
-  <!-- Indsæt indhold i main her -->
-
   <div class="grid md:grid-cols-3 gap-10 lg:max-w-6xl mx-auto p-10 lg:p-0">
     <!-- Form -->
     <section
-      class="form-content mb-8 col-span-2"
+      class="form-content mb-8 col-span-2 grid"
       id="step"
       x-data="{ step: 'step1' }"
     >
@@ -51,7 +49,7 @@ import "..//styles/style.css";
       </header>
 
       <!-- step 1 -->
-      <div id="step1" x-show="step === 'step1'">
+      <div class="justify-self-center" id="step1" x-show="step === 'step1'">
         <p class="mb-4">Vælg din donationstype.</p>
         <form id="form" class="grid grid-cols-1 lg:grid-cols-3 gap-5">
           <DonationCard
@@ -81,7 +79,11 @@ import "..//styles/style.css";
       </div>
 
       <!-- step 2-->
-      <div id="step2" x-show="step === 'step2'">
+      <div
+        class="max-w-md justify-self-center"
+        id="step2"
+        x-show="step === 'step2'"
+      >
         <p class="mb-4">
           Vælg dit beløb og udfyld dine personlige oplysninger.
         </p>
@@ -115,7 +117,7 @@ import "..//styles/style.css";
                 name="full-name"
                 type="text"
                 placeholder="Indtast fulde navn"
-                class="border rounded-lg border-primary_black block px-3 py-1 w-1/2"
+                class="border rounded-lg border-primary_black block px-3 py-1"
               />
             </div>
 
@@ -126,7 +128,7 @@ import "..//styles/style.css";
                 name="email"
                 type="email"
                 placeholder="Indtast email"
-                class="border rounded-lg border-primary_black block px-3 py-1 w-1/2"
+                class="border rounded-lg border-primary_black block px-3 py-1"
               />
             </div>
 
@@ -137,7 +139,7 @@ import "..//styles/style.css";
                 name="tnummer"
                 type="tel"
                 placeholder="Indtast telefonnummer"
-                class="border rounded-lg border-primary_black block px-3 py-1 w-1/2"
+                class="border rounded-lg border-primary_black block px-3 py-1"
               />
             </div>
           </div>
@@ -145,7 +147,11 @@ import "..//styles/style.css";
       </div>
 
       <!-- step 3 -->
-      <div id="step3" x-show="step === 'step3'">
+      <div
+        class="max-w-md justify-self-center"
+        id="step3"
+        x-show="step === 'step3'"
+      >
         <p class="mb-4">Vælg din betalingsmetode og udfyld dine oplysninger.</p>
 
         <div class="grid gap-3">
@@ -161,7 +167,7 @@ import "..//styles/style.css";
               name="name-card"
               type="text"
               placeholder="Indtast navn på kortet"
-              class="border rounded-lg border-primary_black block px-3 py-1 w-1/2"
+              class="border rounded-lg border-primary_black block px-3 py-1"
             />
           </div>
 
@@ -172,7 +178,7 @@ import "..//styles/style.css";
               name="number-card"
               type="text"
               placeholder="Indtast kortnummer"
-              class="border rounded-lg border-primary_black block px-3 py-1 w-1/2"
+              class="border rounded-lg border-primary_black block px-3 py-1"
             />
           </div>
 
@@ -208,7 +214,11 @@ import "..//styles/style.css";
       </div>
 
       <!-- step 4-->
-      <div id="step4" x-show="step === 'step4'">
+      <div
+        class="max-w-md justify-self-center"
+        id="step4"
+        x-show="step === 'step4'"
+      >
         <h2 class="text-primary_blue mb-4">Tak for din donation!</h2>
         <p>
           Vi sender detaljer om din donation til den angivne mailadresse. Du vil
@@ -222,15 +232,15 @@ import "..//styles/style.css";
         </p>
       </div>
 
-      <footer class="flex justify-between py-8">
-        <div class="">
+      <footer class="flex justify-between py-8 lg:max-w-md">
+        <div>
           <button
             id="knap2"
             class="rounded-xl text-primary_white bg-primary_black px-8 py-4"
             x-on:click="step = 'step1'"
             x-show="step === 'step2'"
           >
-            &LeftArrow; Udvælg</button
+            &LeftArrow; UDVÆLG</button
           >
 
           <button
@@ -239,7 +249,7 @@ import "..//styles/style.css";
             x-on:click="step = 'step2'"
             x-show="step === 'step3'"
           >
-            &LeftArrow; Oplysninger</button
+            &LeftArrow; OPLYSNINGER</button
           >
 
           <button
@@ -248,7 +258,7 @@ import "..//styles/style.css";
             x-on:click="step = 'step3'"
             x-show="step === 'step4'"
           >
-            &LeftArrow; Betaling</button
+            &LeftArrow; BETALING</button
           >
         </div>
 
@@ -259,7 +269,7 @@ import "..//styles/style.css";
             x-on:click="step = 'step2'"
             x-show="step === 'step1'"
           >
-            Oplysninger &RightArrow;</button
+            OPLYSNINGER &RightArrow;</button
           >
 
           <button
@@ -268,7 +278,7 @@ import "..//styles/style.css";
             x-on:click="step = 'step3'"
             x-show="step === 'step2'"
           >
-            Betaling &RightArrow;</button
+            BETALING &RightArrow;</button
           >
 
           <button
@@ -277,7 +287,7 @@ import "..//styles/style.css";
             x-on:click="step = 'step4'"
             x-show="step === 'step3'"
           >
-            Bekræftelse &RightArrow;</button
+            BEKRÆFTELSE &RightArrow;</button
           >
           <a href="donation.html">
             <button
@@ -286,7 +296,7 @@ import "..//styles/style.css";
               x-on:click="step = 'step4'"
               x-show="step === 'step4'"
             >
-              Tilbage</button
+              TILBAGE</button
             ></a
           >
         </div>
