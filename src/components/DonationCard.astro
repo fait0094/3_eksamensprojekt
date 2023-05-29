@@ -4,7 +4,7 @@ import "..//styles/style.css";
 const { title, description, imgPath, kategori, link_side } = Astro.props;
 ---
 
-<section x-data="{ selected: null }" class="mb-8">
+<section x-data="{ selected: null }">
   <div
     class="rounded-lg shadow-xl bg-primary_white h-full grid p-10 cursor-pointer"
     x-on:click="selected = (selected === $el) ? null : $el"
