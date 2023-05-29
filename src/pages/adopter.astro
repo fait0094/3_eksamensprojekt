@@ -55,7 +55,7 @@ import "..//styles/style.css";
     <!-- Filterknapper -->
     <section class="px-8 md:px-12">
       <div class="mb-10 mx-10">
-        <form id="filtre" class="flex gap-10 justify-center">
+        <form id="filtre" class="flex gap-8 justify-center">
           <!-- Dyr -->
           <div class="grid gap-2">
             <label for="dyr">Dyr</label>
@@ -114,7 +114,7 @@ import "..//styles/style.css";
     </section>
 
     <!---------------- Dyr til adoption ------------------>
-    <div class="grid md:grid-cols-3 gap-10 lg:max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-8 lg:max-w-6xl mx-auto">
       <section
         class="cursor-pointer"
         :class="{'hidden': !(['alledyr', 'hund'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"

@@ -12,7 +12,7 @@ import "..//styles/style.css";
   intro_title="Din donation gør en forskel"
   intro_description="Vi har gjort det nemt og enkelt at bidrage med en donation. Vælg mellem en enkel, månedlig eller virksomheds-donation og udfyld formularen."
 >
-  <div class="grid md:grid-cols-3 gap-10 lg:max-w-6xl mx-auto p-10 lg:p-0">
+  <div class="grid md:grid-cols-3 gap-8 lg:max-w-6xl mx-auto p-10 lg:p-0">
     <!-- Form -->
     <section
       class="form-content mb-8 col-span-2 grid"
@@ -51,7 +51,7 @@ import "..//styles/style.css";
       <!-- step 1 -->
       <div class="justify-self-center" id="step1" x-show="step === 'step1'">
         <p class="mb-4">Vælg din donationstype.</p>
-        <form id="form" class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <form id="form" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <DonationCard
             title="Enkel donation"
             description="Med denne mulighed donerer du ét beløb, og du bestemmer selv beløbets størrelse."
@@ -110,7 +110,7 @@ import "..//styles/style.css";
           </div>
 
           <div class="grid gap-3">
-            <div class="grid gap-1">
+            <div class="grid gap-2">
               <label for="full-name">Fulde navn</label>
               <input
                 id="full-name"
@@ -121,7 +121,7 @@ import "..//styles/style.css";
               />
             </div>
 
-            <div class="grid gap-1">
+            <div class="grid gap-2">
               <label for="email">E-mail</label>
               <input
                 id="email"
@@ -132,7 +132,7 @@ import "..//styles/style.css";
               />
             </div>
 
-            <div class="grid gap-1">
+            <div class="grid gap-2">
               <label for="telefon-nummer">Telefonnummer</label>
               <input
                 id="telefon-nummer"
@@ -160,7 +160,7 @@ import "..//styles/style.css";
             <label for="kort">Betalingskort</label>
           </div>
 
-          <div class="grid gap-1">
+          <div class="grid gap-2">
             <label for="name-card">Navn på kortet</label>
             <input
               id="name-card"
@@ -171,7 +171,7 @@ import "..//styles/style.css";
             />
           </div>
 
-          <div class="grid gap-1">
+          <div class="grid gap-2">
             <label for="number-card">Kortnummer</label>
             <input
               id="number-card"
@@ -182,8 +182,8 @@ import "..//styles/style.css";
             />
           </div>
 
-          <div class="grid lg:grid-cols-2 gap-3">
-            <div class="grid gap-1">
+          <div class="grid lg:grid-cols-2 gap-2">
+            <div class="grid gap-2">
               <label for="expiration">Udløbsdato</label>
               <input
                 id="expiration"
@@ -194,7 +194,7 @@ import "..//styles/style.css";
               />
             </div>
 
-            <div class="grid gap-1">
+            <div class="grid gap-2">
               <label for="control">Kontrolcifre</label>
               <input
                 id="control"
