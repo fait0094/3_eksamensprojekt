@@ -2,6 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import "..//styles/style.css";
 import Fakta from "../components/Fakta.astro";
+import TestimonialCard from "../components/TestimonialCard.astro";
 ---
 
 <MainLayout
@@ -13,32 +14,34 @@ import Fakta from "../components/Fakta.astro";
   intro_description="Slår dit liv en kolbøtte? Uanset om det er på grund af sundhed eller flytning, så er vi her til at hjælpe din ven trygt videre i et nyt og kærligt hjem."
 >
   <section class="max-w-sm md:max-w-3xl lg:max-w-6xl mx-auto">
-    <section
-      class="grid grid-cols-3 gap-4 md:max-w-3xl max-w-sm lg:max-w-6xl mx-auto pb-24"
-    >
+    <section class="grid grid-cols-3 mb-8">
       <div class="flex flex-col items-center justify-start">
-        <img src="../splash/1.png" alt="Hund" class="w-28 pb-10" />
+        <img
+          src="../splash/1.png"
+          alt="find dit drømmedyr"
+          class="w-28 pb-10"
+        />
         <div class="text-center md:w-52">
-          <h5 class="text-sm pb-2">UNDERSØG INDLEVERING</h5>
+          <h5 class="text-sm pb-2 uppercase">1) Undersøg indlevering</h5>
           <p class="text-xs">
             Undersøg kriterier for indlevering samt hvilke dyr vi modtager.
           </p>
         </div>
       </div>
       <div class="flex flex-col items-center justify-start">
-        <img src="../splash/2.png" alt="Hund" class="w-32 pb-10" />
+        <img src="../splash/2.png" alt="kom på besøg" class="w-28 pb-10" />
         <div class="text-center md:w-52">
-          <h5 class="text-sm pb-2">KONTAKT OS</h5>
+          <h5 class="text-sm pb-2 uppercase">2) Kontakt os</h5>
           <p class="text-xs">
             Ring til os på hverdage mellem 9.30 - 12.00 på telefon+45 44 94 66
-            95
+            95.
           </p>
         </div>
       </div>
       <div class="flex flex-col items-center justify-start">
-        <img src="../splash/3.png" alt="Hund" class="w-28 pb-10" />
+        <img src="../splash/3.png" alt="udfyld ansøgning" class="w-28 pb-10" />
         <div class="text-center md:w-52">
-          <h5 class="text-sm pb-2">AFTALE</h5>
+          <h5 class="text-sm pb-2 uppercase">3) Aftale</h5>
           <p class="text-xs">
             Hvis vi vurderer, at dyret er omplaceringsegnet, aftales den videre
             proces.
@@ -48,7 +51,7 @@ import Fakta from "../components/Fakta.astro";
     </section>
 
     <section class="">
-      <section class="md:grid md:grid-cols-2">
+      <section class="md:grid md:grid-cols-2 md:gap-8">
         <div class="">
           <h2>PRAKTISKE INFORMATIONER</h2>
           <p class="pb-8">
@@ -61,7 +64,7 @@ import Fakta from "../components/Fakta.astro";
           </p>
         </div>
 
-        <div class="bg-secondary_beige rounded-md p-8">
+        <div class="bg-secondary_beige rounded-lg p-8">
           <Fakta
             header="praktiske informationer"
             text="...Ring til os på hverdage mellem 9.30 - 12.00 på telefonnummer 4494 6695"
@@ -84,7 +87,7 @@ import Fakta from "../components/Fakta.astro";
         </div>
       </section>
 
-      <section class="pt-10 md:grid md:grid-cols-2 md:gap-10">
+      <section class="pt-10 md:grid md:grid-cols-2 md:gap-8">
         <div>
           <h2>FÅ HJÆLP FRA SPECIALISTERNE</h2>
           <p class="pb-2">
@@ -102,7 +105,7 @@ import Fakta from "../components/Fakta.astro";
           </p>
         </div>
 
-        <div class="bg-secondary_beige rounded-md p-8">
+        <div class="bg-secondary_beige rounded-lg p-8">
           <Fakta
             header="om omplaceringsprocessen"
             text="...Hver dag omplacerer vi i gennemsnit fire kæledyr"
@@ -122,7 +125,7 @@ import Fakta from "../components/Fakta.astro";
         </div>
       </section>
 
-      <section class="md:grid md:grid-cols-2 pt-10">
+      <section class="md:grid md:grid-cols-2 pt-10 md:gap-8">
         <div>
           <h2>EN TYPISK DAGLIGDAG FOR DYRENE</h2>
           <p class="pb-2">
@@ -137,7 +140,7 @@ import Fakta from "../components/Fakta.astro";
           </p>
         </div>
 
-        <div class="bg-secondary_beige rounded-md p-8">
+        <div class="bg-secondary_beige rounded-lg p-8">
           <Fakta
             header="dyrernes trivsel "
             text="...Alle hunde får dagligt minimum tre gåture"
@@ -169,6 +172,39 @@ import Fakta from "../components/Fakta.astro";
           </Fakta>
         </div>
       </section>
+    </section>
+
+    <section class="pt-10">
+      <div>
+        <h2 class="uppercase">Testimonials fra dyreejere</h2>
+        <p>
+          Læs her tre testimonials fra dyreejere, som valgte at lade os hjælpe
+          dem med at finde et nyt hjem til deres kæledyr.
+        </p>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-8">
+        <TestimonialCard
+          kategori="TESTIMONIAL"
+          title="»De dygtigste matchmakere«"
+          description="“Det var aldrig en mulighed at finde andre end Dyreværnet til at finde et nyt hjem til Buller. Jeg kender siden med opdateringer fra de nye hjem, og at de ikke afliver, fordi de skal bruge et tomt bur. De er dygtige matchmakere, og det var vigtigt for mig, at Buller skulle være glad fra dag 1.“"
+          ejer="Betina, tidligere ejer af Buller"
+          imgPath="/indlever/buller-testimonial-1.webp"
+        />
+        <TestimonialCard
+          kategori="TESTIMONIAL"
+          title="»Snowy fandt et nyt hjem på kun 7 dage!«"
+          description="“Vi havde faktisk opgivet håbet om at omplacere Snowy og tid til aflivning blev bestilt. Så blev vi via Facebook gjort opmærksomme på Dyreværnet, og det var Snowys sidste udvej. 20 timer før aflivning kørte vi ind til Dyreværnet, og 7 dage efter havde Snowy fået et nyt hjem.“"
+          ejer="Michael, tidligere ejer af Snowy"
+          imgPath="/indlever/snowy-testimonial-2.webp"
+        />
+        <TestimonialCard
+          kategori="TESTIMONIAL"
+          title="»Dyreværnet er omhyggelige«"
+          description="“Vi har valgt Dyreværnet, fordi de har en meget grundig tilgang til omplacering, og fordi vi ved, at de vil tage sig godt af Sia. Jeg ville ønske, at Sias tidligere ejer havde været ærlig. I stedet måtte hele familien – inklusive Sia – igennem en følelsesmæssig rutsjetur og unødig stress."
+          ejer="Susanne, tidligere ejer af Sia "
+          imgPath="/indlever/sia-testimonial-3.webp"
+        />
+      </div>
     </section>
   </section>
 </MainLayout>

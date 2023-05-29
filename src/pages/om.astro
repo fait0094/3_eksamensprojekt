@@ -14,46 +14,44 @@ import Card from "../components/Card.astro";
   intro_title="Ønsker du at komme i kontakt med os?"
   intro_description="Rul venligst ned til bunden af siden for at finde yderligere oplysninger og vores kontaktoplysninger."
 >
-  <section class="grid lg:grid-cols-2 lg:grid-rows-2 max-w-6xl mx-auto gap-6">
-    <div>
-      <h3 class="uppercase">Dyreværnets formål og arbejde</h3>
-      <p class="mb-4">
-        Dyreværnet er en af Danmarks ældste dyreværnsforeninger og vores vision
-        er enkel, og fungerer som ledestjerne i alle Dyreværnets tiltag, nemlig
-        at »Alle kæledyr i Danmark skal have et godt hjem«. Vores vision går
-        hånd i hånd med vores holdning om at »Hver en pote tæller«.
+  <section class="grid lg:grid-cols-2 max-w-6xl mx-auto gap-8 p-10 lg:p-0">
+    <div class="grid gap-8">
+      <div>
+        <h3 class="uppercase">Dyreværnets formål og arbejde</h3>
         <p>
+          Dyreværnet er en af Danmarks ældste dyreværnsforeninger og vores
+          vision er enkel, og fungerer som ledestjerne i alle Dyreværnets
+          tiltag, nemlig at »Alle kæledyr i Danmark skal have et godt hjem«.
+          Vores vision går hånd i hånd med vores holdning om at »Hver en pote
+          tæller«.<br /><br />
+
           Det vil sige at hos Dyreværnet gør vi alt, hvad der står i vores magt
           for at give dyrene en chance, og vi går langt for at undgå aflivning.
           Vi giver, takket være vores internater, dyreklinikker og
           adoptionsafdeling, dyrene et godt og værdigt liv - fuld af kærlighed.
         </p>
-      </p>
-    </div>
+      </div>
+      <div class="">
+        <h3 class="uppercase">Dyreværnets historie</h3>
+        <p>
+          Dyreværnet – Foreningen til Værn for Værgeløse Dyr - blev stiftet den
+          11. marts 1898 med det formål at redde herreløse og hjemløse hunde fra
+          mishandling og aflivning.<br /><br />
 
-    <div class="">
-      <h3 class="uppercase">Dyreværnets historie</h3>
-      <p class="mb-4">
-        Dyreværnet – Foreningen til Værn for Værgeløse Dyr - blev stiftet den
-        11. marts 1898 med det formål at redde herreløse og hjemløse hunde fra
-        mishandling og aflivning.
-
-        <p class="mb-4">
           Siden 1910 har foreningen drevet internat forskellige steder i
           København/Frederiksberg. Det nuværende internatet i Rødovre blev
-          indviet i 1954 og i 2016.
-        </p>
-        <p>
+          indviet i 1954 og i 2016.<br /><br />
+
           I dag kan Dyreværnet huse familiedyr af næsten enhver art. Vi er meget
           stolte over dyreværnets udvikling og daglige indsats - men dette
           skyldes kun vores fantastiske købere, der deler en ligeså stor
           kærlighed til dyrerne som os.
         </p>
-      </p>
+      </div>
     </div>
 
     <div
-      class="bg-secondary_beige p-12 rounded lg:row-span-2 leading-relaxed lg:row-start-1"
+      class="bg-secondary_beige p-12 rounded-lg leading-relaxed lg:row-start-1"
     >
       <Fakta
         header="Dyreværnet i korte vuf..."
@@ -95,31 +93,43 @@ import Card from "../components/Card.astro";
       imgPath="om/frivillig.webp"
       title="bliv frivillig hos dyreværnet"
       description="Nyd en sjov, aktiv og spændende hverdag med skønne dyr."
-    />
+    >
+      LÆS MERE
+    </Card>
     <Card
       imgPath="om/nyheder.webp"
       title="læs de seneste nyheder"
       description="Bliv klogere på, hvad der sker hos Dyreværnet."
-    />
+    >
+      LÆS MERE
+    </Card>
     <Card
       imgPath="om/hilsner.webp"
       title="hilsner"
       description="Opret en sød hilsen fra et dyr, du har adopteret hos os."
-    />
+    >
+      LÆS MERE
+    </Card>
     <Card
       imgPath="om/stillinger.webp"
       title="ledige stillinger"
       description="Bliv en del af en spændende hverdag, hvor du hjælper dyrene til et bedre liv. "
-    />
+    >
+      LÆS MERE
+    </Card>
     <Card
       imgPath="om/samarbejde.webp"
       title="samarbejdspartnere"
       description="Bliv klogere på hvem Dyreværnet samarbejder med, eller kontakt os for et evt. samarbejde om dyrernes velværd."
-    />
+    >
+      LÆS MERE
+    </Card>
     <Card
       imgPath="om/magasiner.webp"
       title="dyreværnets magasiner"
       description="Se de vilde før/efter billeder af hunde og katte, vi har reddet fra misrøgt - og meget, meget andet i bladet."
-    />
+    >
+      LÆS MERE
+    </Card>
   </section>
 </MainLayout>

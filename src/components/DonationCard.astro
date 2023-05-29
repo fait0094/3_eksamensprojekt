@@ -4,10 +4,14 @@ import "..//styles/style.css";
 const { title, description, imgPath, kategori, link_side } = Astro.props;
 ---
 
-<section>
-  <div class="rounded-lg shadow-xl bg-primary_white h-full grid p-10">
+<section x-data="{ selected: null }">
+  <div
+    class="rounded-lg shadow-xl bg-primary_white h-full grid p-10 cursor-pointer"
+    x-on:click="selected = (selected === $el) ? null : $el"
+    :class="{ 'bg-selected_gray': selected === $el }"
+  >
     <figure class="mb-6 center flex justify-center">
-      <img class="rounded-lg" src={imgPath} alt="Dyr til adoption" />
+      <img class="rounded-lg" src={imgPath} alt="Donation" />
     </figure>
     <div class="grid">
       <div class="">
