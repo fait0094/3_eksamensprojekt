@@ -48,7 +48,7 @@ import "..//styles/style.css";
   <section
     class=""
     id="step"
-    x-data="{ dyr: 'alledyr', lokation: 'allelokationer', alder: 'allealder', kon: 'allekon', skjulteforestillinger : 0 }"
+    x-data="{ dyr: 'alledyr', lokation: 'allelokationer', alder: 'allealder', kon: 'allekon', skjultedyr : 0 }"
   >
     <!-- Indhold -->
 
@@ -65,7 +65,7 @@ import "..//styles/style.css";
               id="dyr"
               x-model="dyr"
               form="filtre"
-              x-on:change="$nextTick(() => { ingenforestillinger() });"
+              x-on:change="$nextTick(() => { ingendyr() });"
             >
               <option value="alledyr">Alle dyr</option>
               <option value="hund">Hund</option>
@@ -85,7 +85,7 @@ import "..//styles/style.css";
               id="lokation"
               x-model="lokation"
               form="filtre"
-              x-on:change="$nextTick(() => { ingenforestillinger() });"
+              x-on:change="$nextTick(() => { ingendyr() });"
             >
               <option value="allelokationer">Alle lokationer</option>
               <option value="sjaelland">Sjælland</option>
@@ -102,7 +102,7 @@ import "..//styles/style.css";
               id="kon"
               x-model="kon"
               form="filtre"
-              x-on:change="$nextTick(() => { ingenforestillinger() });"
+              x-on:change="$nextTick(() => { ingendyr() });"
             >
               <option value="allekon">Alle køn</option>
               <option value="han">Han</option>
@@ -113,7 +113,7 @@ import "..//styles/style.css";
       </div>
     </section>
 
-    <!---------------- Forestillinger ------------------>
+    <!---------------- Dyr til adoption ------------------>
     <div class="grid md:grid-cols-3 gap-10 lg:max-w-6xl mx-auto">
       <section
         class="cursor-pointer"
@@ -306,7 +306,21 @@ import "..//styles/style.css";
         />
       </section>
 
-      <!-- <p id="ingenforestillinger">Ingen forestillinger</p> -->
+      <p id="ingendyr" class="hidden">
+        Der er desværre ingen dyr til adoption, som matcher dine valgte filtre.
+      </p>
     </div>
   </section>
 </MainLayout>
+
+<script>
+  // Brug alpine.js
+  function ingendyr() {
+    const skjultedyr = document.querySelectorAll(".dyr.hidden").length;
+    if (skjultedyr === 12) {
+      document.querySelector("#ingendyr").classList.remove("hidden");
+    } else {
+      document.querySelector("#ingendyr").classList.add("hidden");
+    }
+  }
+</script>
