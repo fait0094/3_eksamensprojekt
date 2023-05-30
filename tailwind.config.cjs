@@ -12,10 +12,6 @@ module.exports = {
         accent_green: "#2ca900",
         selected_gray: "#D3D3D3",
       },
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        barlow: ["Barlow", "sans-serif"],
-      },
       fontSize: {
         "heading-4": ["1.25rem"],
       },
