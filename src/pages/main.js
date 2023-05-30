@@ -23,7 +23,7 @@ function toggleMenu() {
 
 hamburger.addEventListener("click", toggleMenu);
 
-cookieboks
+cookieboks;
 const cookieBox = document.getElementById("cookiebox");
 const afvisBtn = document.getElementById("afvis");
 const accepterBtn = document.getElementById("accepter");
