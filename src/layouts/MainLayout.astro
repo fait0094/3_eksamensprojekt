@@ -3,7 +3,14 @@ import "../styles/style.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
-const { title, splash_title, splash_description, imgPath, intro_title, intro_description } = Astro.props;
+const {
+  title,
+  splash_title,
+  splash_description,
+  imgPath,
+  intro_title,
+  intro_description,
+} = Astro.props;
 ---
 
 <html lang="da">
@@ -15,36 +22,28 @@ const { title, splash_title, splash_description, imgPath, intro_title, intro_des
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <meta name="color-scheme" content="light" />
-
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2"></script>
     <script src="/path/to/main.js" type="module"></script>
     <script type="module" src="src/pages/main.js"></script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;800&family=Poppins&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;800&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <title>{title}</title>
   </head>
   <body>
     <Header />
 
     <!-- Splash -->
-    <section class="h-60 text-primary_white flex items-center" style={`background-image: url(${imgPath}); background-repeat: no-repeat; background-size: cover;`}>
+    <section
+      class="h-60 text-primary_white flex items-center"
+      style={`background-image: url(${imgPath}); background-repeat: no-repeat; background-size: cover;`}
+    >
       <div class="m-10 lg:ml-36">
         <h1 class="">{splash_title}</h1>
         <p class="">{splash_description}</p>
       </div>
     </section>
-
-    <!-- <section
-      class="h-60 text-primary_white flex items-center"
-      style={`background-image: url(${imgPath}); background-size: 100% auto; background-repeat: no-repeat; background-position: center;`}
-    >
-      <div class="max-w-6xl p-10">
-        <h1 class="">{splash_title}</h1>
-        <p class="">{splash_description}</p>
-      </div>
-    </section> -->
 
     <!-- Intro -->
     <section class="flex flex-col items-center text-center m-10">
@@ -58,5 +57,3 @@ const { title, splash_title, splash_description, imgPath, intro_title, intro_des
     <Footer />
   </body>
 </html>
-
-<!-- Hvordan fikser jeg splash-billedet, så den ser ud på samme måde i mobil, som det udkommenteret kode? -->
