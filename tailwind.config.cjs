@@ -15,6 +15,7 @@ module.exports = {
       },
       fontSize: {
         "heading-4": ["1.25rem"],
+        "heading-5": ["0.8rem"],
       },
     },
   },
