@@ -1,36 +1,69 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro";
 import "..//styles/style.css";
+import SecondLayout from "../layouts/SecondLayout.astro";
 ---
 
-<MainLayout
+<SecondLayout
   title="Sitemap - Dyreværnet"
   splash_title="Sitemap"
   imgPath="/public/splash/splash-om.webp"
 >
-  <div class="max-w-6xl mx-auto">
+  <div class="max-w-6xl mx-auto p-10 md:p-0 my-20">
     <h2>Dyreværnet - Sitemap</h2>
-    <ul>
-      <li><a href="https://www.amagerbryghus.dk/">Forside</a></li>
-      <li><a href="https://www.amagerbryghus.dk/">Adopter</a></li>
-      <li><a href="https://www.amagerbryghus.dk/">Indlever</a></li>
-      <li><a href="https://www.amagerbryghus.dk/">Rådgivning</a></li>
-      <li>
-        <a href="https://www.amagerbryghus.dk/">Anmeld dyreværnssag</a>
-      </li>
-      <li><a href="https://www.amagerbryghus.dk/">Om Dyreværnet</a></li>
-      <li>
-        <a href="https://www.amagerbryghus.dk/">Støt</a><ul>
-          <li><a href="https://www.amagerbryghus.dk/">Donation</a></li>
-        </ul>
-      </li>
-      <li><a href="https://www.amagerbryghus.dk/">TV</a></li>
-      <li><a href="https://www.amagerbryghus.dk/">Frynseklinikken</a></li>
-      <li><a href="https://www.amagerbryghus.dk/">Dyreklinik</a></li>
-      <li><a href="https://www.amagerbryghus.dk/">Hittedyr</a></li>
-      <li><a href="https://www.amagerbryghus.dk/">Hundepension</a></li>
-      <li><a href="https://www.amagerbryghus.dk/">Bliv sponsor</a></li>
-      <li><a href="https://www.amagerbryghus.dk/">Bliv medlem</a></li>
+    <ul class="grid lg:grid-cols-2">
+      <div class="grid gap-2">
+        <li>
+          <a href="https://3sem-eksamensprojekt-redesign.netlify.app/"
+            >Forside</a
+          >
+        </li>
+        <li>
+          <a href="https://3sem-eksamensprojekt-redesign.netlify.app/adopter/"
+            >Adopter</a
+          >
+        </li>
+        <li>
+          <a href="https://3sem-eksamensprojekt-redesign.netlify.app/indlever/"
+            >Indlever</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://3sem-eksamensprojekt-redesign.netlify.app/rodgivning/"
+            >Rådgivning</a
+          >
+        </li>
+        <li>
+          <a href="#">Anmeld dyreværnssag</a>
+        </li>
+        <li>
+          <a href="https://3sem-eksamensprojekt-redesign.netlify.app/om/"
+            >Om Dyreværnet</a
+          >
+        </li>
+        <li>
+          <a href="https://3sem-eksamensprojekt-redesign.netlify.app/stot/"
+            >Støt</a
+          >
+          <ul class="pl-4">
+            <li>
+              <a
+                href="https://3sem-eksamensprojekt-redesign.netlify.app/donation/"
+                >Donation</a
+              >
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="grid gap-2">
+        <li><a href="#">TV</a></li>
+        <li><a href="#">Frynseklinikken</a></li>
+        <li><a href="#">Dyreklinik</a></li>
+        <li><a href="#">Hittedyr</a></li>
+        <li><a href="#">Hundepension</a></li>
+        <li><a href="#">Bliv sponsor</a></li>
+        <li><a href="#">Bliv medlem</a></li>
+      </div>
     </ul>
   </div>
-</MainLayout>
+</SecondLayout>
