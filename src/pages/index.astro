@@ -9,7 +9,7 @@ import "../styles/style.css";
   metacontent="Vi brænder for dyrevelfærd. Adopter, indlever eller anmeld en dyreværnssag. Du kan også støtte med en månedlig donation. Kom og besøg vores internat og find dit kæledyr."
 >
   <section
-    class="flex items-center justify-start h-screen bg-[url('/splash/hundsplash.webp')] bg-cover bg-center"
+    class="flex items-center justify-start h-screen bg-[url('/splash/hundsplash.webp')] bg-cover md:bg-center bg-custom_position"
   >
     <div class="text-left mx-8 text-primary_white lg:ml-36">
       <h1>ALLE DYR FORTJENER ET GODT HJEM</h1>
@@ -216,3 +216,9 @@ import "../styles/style.css";
     </section>
   </section>
 </SecondLayout>
+
+<style>
+  .bg-pos-custom {
+    background-position: 25% 75%;
+  }
+</style>
