@@ -5,76 +5,43 @@ import "../styles/style.css";
 ---
 
 <SecondLayout title="Forside - Dyreværnet">
-  <section
-    class="flex items-center justify-start h-screen bg-[url('/splash/hundsplash.webp')] bg-cover bg-center"
-  >
+  <section class="flex items-center justify-start h-screen bg-[url('/splash/hundsplash.webp')] bg-cover bg-center">
     <div class="text-left mx-8 text-primary_white lg:ml-36">
       <h1>ALLE DYR FORTJENER ET GODT HJEM</h1>
-      <p>
-        Vi er dedikeret til at redde og beskytte dyr i nød. Vi arbejder for at
-        finde kærlige hjem til vores pelsede venner og sikre, at de får den
-        omsorg og opmærksomhed, de fortjener.
-      </p>
+      <p>Vi er dedikeret til at redde og beskytte dyr i nød. Vi arbejder for at finde kærlige hjem til vores pelsede venner og sikre, at de får den omsorg og opmærksomhed, de fortjener.</p>
 
       <div class="mt-5">
-        <Button variant="primary_green" size="small" link_side="stot.html">
-          STØT
-        </Button>
+        <Button variant="primary_green" size="small" link_side="stot.html">STØT</Button>
       </div>
     </div>
   </section>
 
   <!-- cookieboks -->
-  <!-- <div
-    id="cookiebox"
-    class="fixed top-0 left-0 z-50 flex h-full w-full items-center justify-center bg-primary_black bg-opacity-70"
-  >
+  <div id="cookiebox" class="fixed top-0 left-0 z-50 flex h-full w-full items-center justify-center bg-primary_black bg-opacity-70">
     <div class="cookieboks w-96 p-10 shadow-lg bg-primary_white rounded-lg">
-      <h2 class="mb-4 text-center text-xl font-bold uppercase">
-        Dyreværnet.dk bruger cookies
-      </h2>
-      <p class="mb-4 text-center text-base cookie-tekst">
-        Vi bruger cookies til at forbedre din oplevelse på vores hjemmeside og
-        til at forstå, hvordan du interagerer med os. Dette hjælper os med at
-        give dig en bedre service og mere relevant indhold.
-      </p>
+      <h2 class="mb-4 text-center text-xl font-bold uppercase">Dyreværnet.dk bruger cookies</h2>
+      <p class="mb-4 text-center text-base cookie-tekst">Vi bruger cookies til at forbedre din oplevelse på vores hjemmeside og til at forstå, hvordan du interagerer med os. Dette hjælper os med at give dig en bedre service og mere relevant indhold.</p>
       <div class="flex justify-center gap-3">
-        <button
-          id="afvis"
-          class="border-2 border-solid border-primary_black px-4 py-2 text-primary_black rounded-xl hover:bg-primary_black hover:text-primary_white"
-          >AFVIS</button
-        >
-        <button
-          id="accepter"
-          class="border-solid border-2 border-accent_green bg-accent_green text-primary_white px-4 py-2 font-bold hover:bg-primary_white hover:text-accent_green rounded-xl"
-          >ACCEPTER</button
-        >
+        <button id="afvis" class="border-2 border-solid border-primary_black px-4 py-2 text-primary_black rounded-xl hover:bg-primary_black hover:text-primary_white">AFVIS</button>
+        <button id="accepter" class="border-solid border-2 border-accent_green bg-accent_green text-primary_white px-4 py-2 font-bold hover:bg-primary_white hover:text-accent_green rounded-xl">ACCEPTER</button>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <section class="place-content-center grid px-10 lg:p-0">
     <div class="text-center mb-10 mt-10">
       <h2>KLAR TIL EN NY VEN?</h2>
-      <p>
-        Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og
-        find netop det dyr der passer perfekt til dit hjem.
-      </p>
+      <p>Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem.</p>
     </div>
   </section>
 
   <section class="place-content-center grid p-10">
-    <div
-      class="mb-10 grid grid-cols-1 md:grid-cols-2 md:ml-10 md:max-w-4xl lg:gap-16 gap-8"
-    >
+    <div class="mb-10 grid grid-cols-1 md:grid-cols-2 md:ml-10 md:max-w-4xl lg:gap-16 gap-8">
       <div class="md:border-r-2 md:border-black md:pr-24 md:pt-16">
         <div class="grid grid-cols-4 gap-8">
           <!-- Hund -->
           <div>
-            <a
-              href="adopter.astro"
-              class="flex flex-col place-items-center gap-2"
-            >
+            <a href="adopter.astro" class="flex flex-col place-items-center gap-2">
               <img src="/ikoner/ikon_hund.svg" alt="Hund" />
               <p class="underline justify-center w-1/2">Hund</p>
             </a>
@@ -82,10 +49,7 @@ import "../styles/style.css";
 
           <!-- Kat -->
           <div>
-            <a
-              href="adopter.astro"
-              class="flex flex-col place-items-center gap-2"
-            >
+            <a href="adopter.astro" class="flex flex-col place-items-center gap-2">
               <img src="/ikoner/ikon_kat.svg" alt="Kat" />
               <p class="underline pl-3">Kat</p>
             </a>
@@ -93,10 +57,7 @@ import "../styles/style.css";
 
           <!-- Kanin -->
           <div>
-            <a
-              href="adopter.astro"
-              class="flex flex-col place-items-center gap-2"
-            >
+            <a href="adopter.astro" class="flex flex-col place-items-center gap-2">
               <img src="/ikoner/ikon_kanin.svg" alt="Kanin" />
               <p class="underline justify-center">Kanin</p>
             </a>
@@ -104,60 +65,39 @@ import "../styles/style.css";
 
           <!-- Marsvin -->
           <div class="place-self-end">
-            <a
-              href="adopter.astro"
-              class="flex flex-col place-items-center gap-2"
-            >
-              <img
-                class="bg-red"
-                src="/ikoner/ikon_marsvin.svg"
-                alt="marsvin"
-              />
+            <a href="adopter.astro" class="flex flex-col place-items-center gap-2">
+              <img class="bg-red" src="/ikoner/ikon_marsvin.svg" alt="marsvin" />
               <p class="underline justify-center">Marsvin</p>
             </a>
           </div>
         </div>
       </div>
 
-      <div
-        class="md:col-start-2 md:flex md:flex-col md:items-center md:justify-center md:pt-4 lg:pt-0 lg:pl-8"
-      >
+      <div class="md:col-start-2 md:flex md:flex-col md:items-center md:justify-center md:pt-4 lg:pt-0 lg:pl-8">
         <div class="grid justify-center">
           <h1>191</h1>
         </div>
 
-        <p class="text-center">
-          venter på nyt hjem. Ingen fortjener at være alene - adopter fra
-          Dyreværnet og gør en forskel
-        </p>
+        <p class="text-center">venter på nyt hjem. Ingen fortjener at være alene - adopter fra Dyreværnet og gør en forskel</p>
         <div class="justify-center grid pt-5">
-          <Button variant="primary_blue" size="small" link_side="adopter.html">
-            FIND KÆLEDYR
-          </Button>
+          <Button variant="primary_blue" size="small" link_side="adopter.html">FIND KÆLEDYR</Button>
         </div>
       </div>
     </div>
   </section>
 
-  <section
-    class="flex items-center justify-center h-96 bg-[url('/splash/missekat.webp')] bg-blend-darken bg-cover bg-center"
-  >
+  <section class="flex items-center justify-center h-96 bg-[url('/splash/missekat.webp')] bg-blend-darken bg-cover bg-center">
     <div class="text-center text-primary_white">
       <h1 class="mb-10">TIPS OG TRICKS TIL DIG OG DIN PELSEDE VEN</h1>
 
-      <Button variant="primary_blue" size="small" link_side="rodgivning.html">
-        LÆS MERE
-      </Button>
+      <Button variant="primary_blue" size="small" link_side="rodgivning.html">LÆS MERE</Button>
     </div>
   </section>
 
   <section class="mb-8 grid justify-center p-10">
     <div class="text-center mt-8">
       <h2>VIL DU GØRE EN FORSKEL?</h2>
-      <p>
-        Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og
-        find netop det dyr der passer perfekt til dit hjem.
-      </p>
+      <p>Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem.</p>
     </div>
     <section class="grid grid-cols-4 max-w-4xl mt-10 gap-8">
       <div>
