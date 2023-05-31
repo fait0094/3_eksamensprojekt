@@ -17,6 +17,9 @@ module.exports = {
         "heading-4": ["1.25rem"],
         "heading-5": ["0.8rem"],
       },
+      backgroundPosition: {
+        custom_position: "70%",
+      },
     },
   },
   plugins: [],
