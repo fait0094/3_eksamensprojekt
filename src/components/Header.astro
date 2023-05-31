@@ -39,7 +39,7 @@ import Button from "..//components/Button.astro";
           <!-- burgermenu -->
 
           <div class="lg:hidden flex gap-6">
-            <Button variant="primary_green" size="small" link_side="stot.html">
+            <Button variant="primary_green" size="small" link_side="/stot">
               STØT
             </Button>
             <button class="hamburger z-50">
@@ -153,7 +153,7 @@ import Button from "..//components/Button.astro";
         class="hidden lg:flex justify-between lg:max-w-6xl lg:mx-auto lg:pb-5"
       >
         <div class="flex">
-          <a href="index.html"
+          <a href="/index"
             ><img
               class=""
               src="ikoner/logo.svg"
@@ -165,18 +165,13 @@ import Button from "..//components/Button.astro";
         </div>
 
         <ul class="flex gap-6 items-center">
-          <li class="uppercase"><a href="adopter.html">adopter</a></li>
-          <li class="uppercase"><a href="indlever.html">indlever</a></li>
-          <li class="uppercase"><a href="rodgivning.html">rådgivning</a></li>
+          <li class="uppercase"><a href="/adopter">adopter</a></li>
+          <li class="uppercase"><a href="/indlever">indlever</a></li>
+          <li class="uppercase"><a href="/rodgivning">rådgivning</a></li>
           <li class="uppercase"><a href="#">andmeld dyreværnssag</a></li>
-          <li class="uppercase"><a href="om">om dyreværnet</a></li>
+          <li class="uppercase"><a href="/om">om dyreværnet</a></li>
 
-          <!-- <a
-            href="stot.html"
-            class="bg-accent_green border-none text-primary_white">Støt</a
-          > -->
-
-          <Button variant="primary_green" size="small" link_side="stot.html">
+          <Button variant="primary_green" size="small" link_side="/stot">
             STØT
           </Button>
         </ul>
