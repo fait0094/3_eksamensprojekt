@@ -4,17 +4,8 @@ import MainLayout from "../layouts/MainLayout.astro";
 import "..//styles/style.css";
 ---
 
-<MainLayout
-  title="Adopter - Dyreværnet"
-  splash_title="ADOPTER DIN NYE BEDSTE VEN"
-  splash_description="Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem."
-  imgPath="/splash/splash-adopter.webp"
-  intro_title="Se vores søde dyr, der søger et nyt hjem"
-  intro_description="Skab en forskel i et kæledyrs liv ved at adoptere et af vores kærlige dyr. Fra legesyge hunde til kælne katte - vores adoptable dyr venter på deres nye familie."
->
-  <section
-    class="max-w-sm md:max-w-3xl lg:max-w-6xl mx-auto grid grid-cols-3 mb-20"
-  >
+<MainLayout title="Adopter - Dyreværnet" splash_title="ADOPTER DIN NYE BEDSTE VEN" splash_description="Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem." imgPath="/splash/splash-adopter.webp" intro_title="Se vores søde dyr, der søger et nyt hjem" intro_description="Skab en forskel i et kæledyrs liv ved at adoptere et af vores kærlige dyr. Fra legesyge hunde til kælne katte - vores adoptable dyr venter på deres nye familie." metacontent="Adopter dyreværnet hunde, katte og smådyr som marsvin og kaniner i dag og giv kæledyrerne et godt hjem">
+  <section class="max-w-sm md:max-w-3xl lg:max-w-6xl mx-auto grid grid-cols-3 mb-20">
     <div class="flex flex-col items-center justify-start">
       <img src="../splash/1.png" alt="find dit drømmedyr" class="w-28 pb-10" />
       <div class="text-center md:w-52">
@@ -26,28 +17,19 @@ import "..//styles/style.css";
       <img src="../splash/2.png" alt="kom på besøg" class="w-28 pb-10" />
       <div class="text-center md:w-52">
         <h5 class="text-sm pb-2 uppercase">2) Kom på besøg</h5>
-        <p class="text-xs">
-          Kom i åbningstiden og hør mere info om det pågældende dyr, du er
-          faldet for.
-        </p>
+        <p class="text-xs">Kom i åbningstiden og hør mere info om det pågældende dyr, du er faldet for.</p>
       </div>
     </div>
     <div class="flex flex-col items-center justify-start">
       <img src="../splash/3.png" alt="udfyld ansøgning" class="w-28 pb-10" />
       <div class="text-center md:w-52">
         <h5 class="text-sm pb-2 uppercase">3) Udfyld ansøgning</h5>
-        <p class="text-xs">
-          Vurderer vi, du er et match, udfylder du en ansøgning og godkendes
-          eventuelt til adoption.
-        </p>
+        <p class="text-xs">Vurderer vi, du er et match, udfylder du en ansøgning og godkendes eventuelt til adoption.</p>
       </div>
     </div>
   </section>
 
-  <section
-    id="step"
-    x-data="{ dyr: 'alledyr', lokation: 'allelokationer', alder: 'allealder', kon: 'allekon', skjultedyr : 0 }"
-  >
+  <section id="step" x-data="{ dyr: 'alledyr', lokation: 'allelokationer', alder: 'allealder', kon: 'allekon', skjultedyr : 0 }">
     <!-- Filterknapper -->
     <section class="px-8 md:px-12">
       <div class="mb-10 mx-10">
@@ -55,14 +37,7 @@ import "..//styles/style.css";
           <!-- Dyr -->
           <div class="grid gap-2">
             <label for="dyr">Dyr</label>
-            <select
-              class="border rounded-lg border-primary_black block px-3 py-1 bg-primary_white"
-              name="dyr"
-              id="dyr"
-              x-model="dyr"
-              form="filtre"
-              x-on:change="$nextTick(() => { ingendyr() });"
-            >
+            <select class="border rounded-lg border-primary_black block px-3 py-1 bg-primary_white" name="dyr" id="dyr" x-model="dyr" form="filtre" x-on:change="$nextTick(() => { ingendyr() });">
               <option value="alledyr">Alle dyr</option>
               <option value="hund">Hund</option>
               <option value="kat">Kat</option>
@@ -75,14 +50,7 @@ import "..//styles/style.css";
           <!-- Lokation -->
           <div class="grid gap-2">
             <label for="lokation">Lokation</label>
-            <select
-              class="border rounded-lg border-primary_black block px-3 py-1 bg-primary_white"
-              name="lokation"
-              id="lokation"
-              x-model="lokation"
-              form="filtre"
-              x-on:change="$nextTick(() => { ingendyr() });"
-            >
+            <select class="border rounded-lg border-primary_black block px-3 py-1 bg-primary_white" name="lokation" id="lokation" x-model="lokation" form="filtre" x-on:change="$nextTick(() => { ingendyr() });">
               <option value="allelokationer">Alle lokationer</option>
               <option value="sjaelland">Sjælland</option>
               <option value="jylland">Jylland</option>
@@ -92,14 +60,7 @@ import "..//styles/style.css";
           <!-- Køn -->
           <div class="grid gap-2">
             <label for="kon">Køn</label>
-            <select
-              class="border rounded-lg border-primary_black block px-3 py-1 bg-primary_white"
-              name="kon"
-              id="kon"
-              x-model="kon"
-              form="filtre"
-              x-on:change="$nextTick(() => { ingendyr() });"
-            >
+            <select class="border rounded-lg border-primary_black block px-3 py-1 bg-primary_white" name="kon" id="kon" x-model="kon" form="filtre" x-on:change="$nextTick(() => { ingendyr() });">
               <option value="allekon">Alle køn</option>
               <option value="han">Han</option>
               <option value="hun">Hun</option>
@@ -111,200 +72,54 @@ import "..//styles/style.css";
 
     <!---------------- Dyr til adoption ------------------>
     <div class="grid md:grid-cols-3 gap-8 lg:max-w-6xl mx-auto">
-      <section
-        class="cursor-pointer"
-        :class="{'hidden': !(['alledyr', 'hund'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
-        x-transition:enter.duration.800ms
-        x-on:change="testfunction();"
-      >
-        <AdoptionCard
-          title=" BASSE "
-          description=" I Basses tidligere familie var der små børn, der desværre var bange for denne smukke skabning, og man måtte indse, at samlivet ikke kunne fungere optimalt for alle parter."
-          imgPath="/adoption/basse.webp"
-          kategori="Schæfer / Husky / Border / Berner"
-          icon="/ikoner/sex.svg"
-          link_side="/singleview"
-        />
+      <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'hund'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
+        <AdoptionCard title=" BASSE " description=" I Basses tidligere familie var der små børn, der desværre var bange for denne smukke skabning, og man måtte indse, at samlivet ikke kunne fungere optimalt for alle parter." imgPath="/adoption/basse.webp" kategori="Schæfer / Husky / Border / Berner" icon="/ikoner/sex.svg" link_side="/singleview" />
       </section>
 
-      <section
-        class="cursor-pointer"
-        :class="{'hidden': !(['alledyr', 'hund'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
-        x-transition:enter.duration.800ms
-        x-on:change="testfunction();"
-      >
-        <AdoptionCard
-          title="KARLO"
-          description=" Vores lille mini-Chewbacca her skal lige se nye folk an, før han overgiver sig helt, så ny familie må ikke forvente instant connection"
-          imgPath="/adoption/karlo.webp"
-          kategori="Lhasa Apso / Cavalier King Charles"
-          link_side="/singleview"
-          icon="/ikoner/sex.svg"
-        />
+      <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'hund'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
+        <AdoptionCard title="KARLO" description=" Vores lille mini-Chewbacca her skal lige se nye folk an, før han overgiver sig helt, så ny familie må ikke forvente instant connection" imgPath="/adoption/karlo.webp" kategori="Lhasa Apso / Cavalier King Charles" link_side="/singleview" icon="/ikoner/sex.svg" />
       </section>
 
-      <section
-        class="cursor-pointer"
-        :class="{'hidden': !(['alledyr', 'hund'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
-        x-transition:enter.duration.800ms
-        x-on:change="testfunction();"
-      >
-        <AdoptionCard
-          title="ZICO"
-          description=" Zico er en flot fyr på kun 7 måneder, der er overdraget til Dyreværnet, da Zico og tidligere ejer var landet i en dårlig spiral, der påvirkede begge parter negativt, så noget måtte gøres."
-          imgPath="/adoption/zico.png"
-          kategori="Labrador-blanding"
-          link_side="/singleview"
-          icon="/ikoner/sex.svg"
-        />
+      <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'hund'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
+        <AdoptionCard title="ZICO" description=" Zico er en flot fyr på kun 7 måneder, der er overdraget til Dyreværnet, da Zico og tidligere ejer var landet i en dårlig spiral, der påvirkede begge parter negativt, så noget måtte gøres." imgPath="/adoption/zico.png" kategori="Labrador-blanding" link_side="/singleview" icon="/ikoner/sex.svg" />
       </section>
 
-      <section
-        class="cursor-pointer"
-        :class="{'hidden': !(['alledyr', 'kat'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'hun'].includes(kon)) }"
-        x-transition:enter.duration.800ms
-        x-on:change="testfunction();"
-      >
-        <AdoptionCard
-          kategori="Udekat"
-          title="KILLING"
-          description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. "
-          imgPath="/adoption/killing.webp"
-          link_side="/singleview"
-          icon="ikoner/sex-female.svg"
-        />
+      <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'kat'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'hun'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
+        <AdoptionCard kategori="Udekat" title="KILLING" description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. " imgPath="/adoption/killing.webp" link_side="/singleview" icon="ikoner/sex-female.svg" />
       </section>
 
-      <section
-        class="cursor-pointer"
-        :class="{'hidden': !(['alledyr', 'kat'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'hun'].includes(kon)) }"
-        x-transition:enter.duration.800ms
-        x-on:change="testfunction();"
-      >
-        <AdoptionCard
-          kategori="Indekat"
-          title="PJUSKE"
-          description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt."
-          imgPath="/adoption/pjuske.webp"
-          link_side="/singleview"
-          icon="ikoner/sex-female.svg"
-        />
+      <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'kat'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'hun'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
+        <AdoptionCard kategori="Indekat" title="PJUSKE" description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt." imgPath="/adoption/pjuske.webp" link_side="/singleview" icon="ikoner/sex-female.svg" />
       </section>
 
-      <section
-        class="cursor-pointer"
-        :class="{'hidden': !(['alledyr', 'kat'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
-        x-transition:enter.duration.800ms
-        x-on:change="testfunction();"
-      >
-        <AdoptionCard
-          kategori="Udekat"
-          title="PURRSEIDON"
-          description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. "
-          imgPath="/adoption/purrisedon.webp"
-          link_side="/singleview"
-          icon="/ikoner/sex.svg"
-        />
+      <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'kat'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
+        <AdoptionCard kategori="Udekat" title="PURRSEIDON" description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. " imgPath="/adoption/purrisedon.webp" link_side="/singleview" icon="/ikoner/sex.svg" />
       </section>
 
-      <section
-        class="cursor-pointer"
-        :class="{'hidden': !(['alledyr', 'kanin'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
-        x-transition:enter.duration.800ms
-        x-on:change="testfunction();"
-      >
-        <AdoptionCard
-          kategori="Dværgkanin"
-          title="WATERLOO "
-          description="Waterloo er en sød lille spirrevip, der har brug for at være mere i hænder, da det nok har været sparsomt med håndtering i tidligere hjem."
-          imgPath="/adoption/waterloo.webp"
-          link_side="/singleview"
-          icon="/ikoner/sex.svg"
-        />
+      <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'kanin'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
+        <AdoptionCard kategori="Dværgkanin" title="WATERLOO " description="Waterloo er en sød lille spirrevip, der har brug for at være mere i hænder, da det nok har været sparsomt med håndtering i tidligere hjem." imgPath="/adoption/waterloo.webp" link_side="/singleview" icon="/ikoner/sex.svg" />
       </section>
-      <section
-        class="cursor-pointer"
-        :class="{'hidden': !(['alledyr', 'marsvin'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
-        x-transition:enter.duration.800ms
-        x-on:change="testfunction();"
-      >
-        <AdoptionCard
-          kategori="Glathåret marsvin"
-          title="SØREN"
-          description=" Søren har i sandhed formået at sætte mange hjerter i brand her hos os, da han bare er noget af det sødeste lille væsen."
-          imgPath="/adoption/soren.webp"
-          link_side="/singleview"
-          icon="/ikoner/sex.svg"
-        />
+      <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'marsvin'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
+        <AdoptionCard kategori="Glathåret marsvin" title="SØREN" description=" Søren har i sandhed formået at sætte mange hjerter i brand her hos os, da han bare er noget af det sødeste lille væsen." imgPath="/adoption/soren.webp" link_side="/singleview" icon="/ikoner/sex.svg" />
       </section>
 
-      <section
-        class="cursor-pointer"
-        :class="{'hidden': !(['alledyr', 'orkenrotte'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
-        x-transition:enter.duration.800ms
-        x-on:change="testfunction();"
-      >
-        <AdoptionCard
-          kategori="Ørkenrotte"
-          title="STARSTRUCK"
-          description="Starstruck er en skøn ørkenrotte, der desværre har mistet sin ven, og han er derfor på jagt efter en ny erfaren ejer."
-          imgPath="/adoption/starstruck.webp"
-          link_side="/singleview"
-          icon="/ikoner/sex.svg"
-        />
+      <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'orkenrotte'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
+        <AdoptionCard kategori="Ørkenrotte" title="STARSTRUCK" description="Starstruck er en skøn ørkenrotte, der desværre har mistet sin ven, og han er derfor på jagt efter en ny erfaren ejer." imgPath="/adoption/starstruck.webp" link_side="/singleview" icon="/ikoner/sex.svg" />
       </section>
 
-      <section
-        class="cursor-pointer"
-        :class="{'hidden': !(['alledyr', 'kanin'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'hun'].includes(kon)) }"
-        x-transition:enter.duration.800ms
-        x-on:change="testfunction();"
-      >
-        <AdoptionCard
-          kategori="Schecke / løvehoved kanin"
-          title="FYLGJA"
-          description=" Fylgja og Embla er to smukke kaniner, der blev fundet herreløse midt på en landevej i Taastrup. "
-          imgPath="/adoption/fylgja.webp"
-          link_side="/singleview"
-          icon="ikoner/sex-female.svg"
-        />
+      <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'kanin'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'hun'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
+        <AdoptionCard kategori="Schecke / løvehoved kanin" title="FYLGJA" description=" Fylgja og Embla er to smukke kaniner, der blev fundet herreløse midt på en landevej i Taastrup. " imgPath="/adoption/fylgja.webp" link_side="/singleview" icon="ikoner/sex-female.svg" />
       </section>
 
-      <section
-        class="cursor-pointer"
-        :class="{'hidden': !(['alledyr', 'kanin'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
-        x-transition:enter.duration.800ms
-        x-on:change="testfunction();"
-      >
-        <AdoptionCard
-          kategori="Dværgkanin"
-          title="EMBLA"
-          description="Embla og Fylgja er to smukke kaniner,, der blev fundet herreløse midt på en landevej i Taastrup."
-          imgPath="/adoption/embla3.png"
-          link_side="/singleview"
-          icon="/ikoner/sex.svg"
-        />
+      <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'kanin'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
+        <AdoptionCard kategori="Dværgkanin" title="EMBLA" description="Embla og Fylgja er to smukke kaniner,, der blev fundet herreløse midt på en landevej i Taastrup." imgPath="/adoption/embla3.png" link_side="/singleview" icon="/ikoner/sex.svg" />
       </section>
 
-      <section
-        class="cursor-pointer"
-        :class="{'hidden': !(['alledyr', 'kanin'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }"
-        x-transition:enter.duration.800ms
-        x-on:change="testfunction();"
-      >
-        <AdoptionCard
-          kategori="Løvehoved-blanding"
-          title="LULU"
-          description="En baby på vej og det faktum, at lille, henrivende Lulu bare slet ikke var vild med mændene i hjemmet."
-          imgPath="/adoption/Lulu.webp"
-          link_side="/singleview"
-          icon="/ikoner/sex.svg"
-        />
+      <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'kanin'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
+        <AdoptionCard kategori="Løvehoved-blanding" title="LULU" description="En baby på vej og det faktum, at lille, henrivende Lulu bare slet ikke var vild med mændene i hjemmet." imgPath="/adoption/Lulu.webp" link_side="/singleview" icon="/ikoner/sex.svg" />
       </section>
 
-      <p id="ingendyr" class="hidden">
-        Der er desværre ingen dyr til adoption, som matcher dine valgte filtre.
-      </p>
+      <p id="ingendyr" class="hidden">Der er desværre ingen dyr til adoption, som matcher dine valgte filtre.</p>
     </div>
   </section>
 </MainLayout>
