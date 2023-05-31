@@ -84,12 +84,36 @@ import "..//styles/style.css";
         <AdoptionCard title="ZICO" description=" Zico er en flot fyr på kun 7 måneder, der er overdraget til Dyreværnet, da Zico og tidligere ejer var landet i en dårlig spiral, der påvirkede begge parter negativt, så noget måtte gøres." imgPath="/adoption/zico.png" kategori="Labrador-blanding" link_side="/singleview" icon="/ikoner/sex.svg" />
       </section>
 
-      <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'kat'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'hun'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
-        <AdoptionCard kategori="Udekat" title="KILLING" description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. " imgPath="/adoption/killing.webp" link_side="/singleview" icon="ikoner/sex-female.svg" />
+      <section
+        class="cursor-pointer"
+        :class="{'hidden': !(['alledyr', 'kat'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'hun'].includes(kon)) }"
+        x-transition:enter.duration.800ms
+        x-on:change="testfunction();"
+      >
+        <AdoptionCard
+          kategori="Udekat"
+          title="KILLING"
+          description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. "
+          imgPath="/adoption/killing.webp"
+          link_side="/singleview"
+          icon="/ikoner/sex-female.svg"
+        />
       </section>
 
-      <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'kat'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'hun'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
-        <AdoptionCard kategori="Indekat" title="PJUSKE" description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt." imgPath="/adoption/pjuske.webp" link_side="/singleview" icon="ikoner/sex-female.svg" />
+      <section
+        class="cursor-pointer"
+        :class="{'hidden': !(['alledyr', 'kat'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'hun'].includes(kon)) }"
+        x-transition:enter.duration.800ms
+        x-on:change="testfunction();"
+      >
+        <AdoptionCard
+          kategori="Indekat"
+          title="PJUSKE"
+          description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt."
+          imgPath="/adoption/pjuske.webp"
+          link_side="/singleview"
+          icon="/ikoner/sex-female.svg"
+        />
       </section>
 
       <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'kat'].includes(dyr) && ['allelokationer', 'sjaelland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
@@ -107,8 +131,20 @@ import "..//styles/style.css";
         <AdoptionCard kategori="Ørkenrotte" title="STARSTRUCK" description="Starstruck er en skøn ørkenrotte, der desværre har mistet sin ven, og han er derfor på jagt efter en ny erfaren ejer." imgPath="/adoption/starstruck.webp" link_side="/singleview" icon="/ikoner/sex.svg" />
       </section>
 
-      <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'kanin'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'hun'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
-        <AdoptionCard kategori="Schecke / løvehoved kanin" title="FYLGJA" description=" Fylgja og Embla er to smukke kaniner, der blev fundet herreløse midt på en landevej i Taastrup. " imgPath="/adoption/fylgja.webp" link_side="/singleview" icon="ikoner/sex-female.svg" />
+      <section
+        class="cursor-pointer"
+        :class="{'hidden': !(['alledyr', 'kanin'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'hun'].includes(kon)) }"
+        x-transition:enter.duration.800ms
+        x-on:change="testfunction();"
+      >
+        <AdoptionCard
+          kategori="Schecke / løvehoved kanin"
+          title="FYLGJA"
+          description=" Fylgja og Embla er to smukke kaniner, der blev fundet herreløse midt på en landevej i Taastrup. "
+          imgPath="/adoption/fylgja.webp"
+          link_side="/singleview"
+          icon="/ikoner/sex-female.svg"
+        />
       </section>
 
       <section class="cursor-pointer" :class="{'hidden': !(['alledyr', 'kanin'].includes(dyr) && ['allelokationer', 'jylland'].includes(lokation) && ['allekon', 'han'].includes(kon)) }" x-transition:enter.duration.800ms x-on:change="testfunction();">
