@@ -55,5 +55,16 @@ const {
       <slot />
     </main>
     <Footer />
+    <script is:inline>
+      ingendyr();
+      function ingendyr() {
+        const skjultedyr = document.querySelectorAll(".hidden").length;
+        if (skjultedyr === 15) {
+          document.querySelector("#ingendyr").classList.remove("hidden");
+        } else {
+          document.querySelector("#ingendyr").classList.add("hidden");
+        }
+      }
+    </script>
   </body>
 </html>
