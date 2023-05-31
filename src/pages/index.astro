@@ -5,13 +5,21 @@ import "../styles/style.css";
 ---
 
 <SecondLayout title="Forside - Dyreværnet">
-  <section class="flex items-center justify-start h-screen bg-[url('/splash/hundsplash.webp')] bg-cover bg-center">
+  <section
+    class="flex items-center justify-start h-screen bg-[url('/splash/hundsplash.webp')] bg-cover bg-center"
+  >
     <div class="text-left mx-8 text-primary_white lg:ml-36">
       <h1>ALLE DYR FORTJENER ET GODT HJEM</h1>
-      <p>Vi er dedikeret til at redde og beskytte dyr i nød. Vi arbejder for at finde kærlige hjem til vores pelsede venner og sikre, at de får den omsorg og opmærksomhed, de fortjener.</p>
+      <p>
+        Vi er dedikeret til at redde og beskytte dyr i nød. Vi arbejder for at
+        finde kærlige hjem til vores pelsede venner og sikre, at de får den
+        omsorg og opmærksomhed, de fortjener.
+      </p>
 
       <div class="mt-5">
-        <Button variant="primary_green" size="small" link_side="stot.html">STØT</Button>
+        <Button variant="primary_green" size="small" link_side="/stot">
+          STØT
+        </Button>
       </div>
     </div>
   </section>
@@ -31,17 +39,22 @@ import "../styles/style.css";
   <section class="place-content-center grid px-10 lg:p-0">
     <div class="text-center mb-10 mt-10">
       <h2>KLAR TIL EN NY VEN?</h2>
-      <p>Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem.</p>
+      <p>
+        Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og
+        find netop det dyr der passer perfekt til dit hjem.
+      </p>
     </div>
   </section>
 
   <section class="place-content-center grid p-10">
-    <div class="mb-10 grid grid-cols-1 md:grid-cols-2 md:ml-10 md:max-w-4xl lg:gap-16 gap-8">
+    <div
+      class="mb-10 grid grid-cols-1 md:grid-cols-2 md:ml-10 md:max-w-4xl lg:gap-16 gap-8"
+    >
       <div class="md:border-r-2 md:border-black md:pr-24 md:pt-16">
         <div class="grid grid-cols-4 gap-8">
           <!-- Hund -->
           <div>
-            <a href="adopter.astro" class="flex flex-col place-items-center gap-2">
+            <a href="/adopter" class="flex flex-col place-items-center gap-2">
               <img src="/ikoner/ikon_hund.svg" alt="Hund" />
               <p class="underline justify-center w-1/2">Hund</p>
             </a>
@@ -49,7 +62,7 @@ import "../styles/style.css";
 
           <!-- Kat -->
           <div>
-            <a href="adopter.astro" class="flex flex-col place-items-center gap-2">
+            <a href="/adopter" class="flex flex-col place-items-center gap-2">
               <img src="/ikoner/ikon_kat.svg" alt="Kat" />
               <p class="underline pl-3">Kat</p>
             </a>
@@ -57,7 +70,7 @@ import "../styles/style.css";
 
           <!-- Kanin -->
           <div>
-            <a href="adopter.astro" class="flex flex-col place-items-center gap-2">
+            <a href="/adopter" class="flex flex-col place-items-center gap-2">
               <img src="/ikoner/ikon_kanin.svg" alt="Kanin" />
               <p class="underline justify-center">Kanin</p>
             </a>
@@ -65,64 +78,82 @@ import "../styles/style.css";
 
           <!-- Marsvin -->
           <div class="place-self-end">
-            <a href="adopter.astro" class="flex flex-col place-items-center gap-2">
-              <img class="bg-red" src="/ikoner/ikon_marsvin.svg" alt="marsvin" />
+            <a href="/adopter" class="flex flex-col place-items-center gap-2">
+              <img
+                class="bg-red"
+                src="/ikoner/ikon_marsvin.svg"
+                alt="marsvin"
+              />
               <p class="underline justify-center">Marsvin</p>
             </a>
           </div>
         </div>
       </div>
 
-      <div class="md:col-start-2 md:flex md:flex-col md:items-center md:justify-center md:pt-4 lg:pt-0 lg:pl-8">
+      <div
+        class="md:col-start-2 md:flex md:flex-col md:items-center md:justify-center md:pt-4 lg:pt-0 lg:pl-8"
+      >
         <div class="grid justify-center">
           <h1>191</h1>
         </div>
 
-        <p class="text-center">venter på nyt hjem. Ingen fortjener at være alene - adopter fra Dyreværnet og gør en forskel</p>
+        <p class="text-center">
+          venter på nyt hjem. Ingen fortjener at være alene - adopter fra
+          Dyreværnet og gør en forskel
+        </p>
         <div class="justify-center grid pt-5">
-          <Button variant="primary_blue" size="small" link_side="adopter.html">FIND KÆLEDYR</Button>
+          <Button variant="primary_blue" size="small" link_side="adopter">
+            FIND KÆLEDYR
+          </Button>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="flex items-center justify-center h-96 bg-[url('/splash/missekat.webp')] bg-blend-darken bg-cover bg-center">
+  <section
+    class="flex items-center justify-center h-96 bg-[url('/splash/missekat.webp')] bg-blend-darken bg-cover bg-center"
+  >
     <div class="text-center text-primary_white">
       <h1 class="mb-10">TIPS OG TRICKS TIL DIG OG DIN PELSEDE VEN</h1>
 
-      <Button variant="primary_blue" size="small" link_side="rodgivning.html">LÆS MERE</Button>
+      <Button variant="primary_blue" size="small" link_side="rodgivning">
+        LÆS MERE
+      </Button>
     </div>
   </section>
 
   <section class="mb-8 grid justify-center p-10">
     <div class="text-center mt-8">
       <h2>VIL DU GØRE EN FORSKEL?</h2>
-      <p>Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og find netop det dyr der passer perfekt til dit hjem.</p>
+      <p>
+        Læs om alle de dejlige hunde, katte, kaniner og smådyr her på siden og
+        find netop det dyr der passer perfekt til dit hjem.
+      </p>
     </div>
     <section class="grid grid-cols-4 max-w-4xl mt-10 gap-8">
       <div>
-        <a href="stot.html" class="flex flex-col items-center ikon gap-2">
+        <a href="/stot" class="flex flex-col items-center ikon gap-2">
           <img class="ikon" src="ikoner/hjerte.svg" alt="Hjerte" />
           <h5 class="lg:text-heading-4">STØT DYRENE</h5>
         </a>
       </div>
 
       <div>
-        <a href="adopter.html" class="flex flex-col items-center ikon gap-2">
+        <a href="/adopter" class="flex flex-col items-center ikon gap-2">
           <img class="ikon" src="ikoner/hundkat.svg" alt="Hund og kat" />
           <h5 class="lg:text-heading-4">ADOPTERING</h5>
         </a>
       </div>
 
       <div>
-        <a href="adopter.html" class="flex flex-col items-center ikon gap-2">
+        <a href="/adopter" class="flex flex-col items-center ikon gap-2">
           <img class="ikon" src="ikoner/haender.svg" alt="Hænder" />
           <h5 class="lg:text-heading-4">INDLEVERING</h5>
         </a>
       </div>
 
       <div>
-        <a href="adopter.html" class="flex flex-col items-center ikon gap-2">
+        <a href="/adopter" class="flex flex-col items-center ikon gap-2">
           <img class="ikon" src="ikoner/poter.svg" alt="Poter" />
           <h5 class="lg:text-heading-4">SERIE</h5>
         </a>
