@@ -1,7 +1,5 @@
-import "../styles/style.css";
 
-if (typeof document !== "undefined") {
-  /*burgermenu*/
+/*burgermenu*/
   const menu = document.querySelector("#hammenu");
   const menuItem = document.querySelector(".menuItem");
   const hamburger = document.querySelector(".hamburger");
@@ -36,4 +34,3 @@ if (typeof document !== "undefined") {
   accepterBtn.addEventListener("click", () => {
     cookieBox.style.display = "none";
   });
-}
