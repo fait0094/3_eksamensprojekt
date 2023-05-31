@@ -10,7 +10,7 @@ module.exports = {
         primary_white: "#FCFCFC",
         secondary_beige: "#f1f1e8",
         secondary_eggwhite: "#fcfbfa",
-        accent_green: "#2ca900",
+        accent_green: "#248700",
         selected_gray: "#D3D3D3",
       },
       fontSize: {
