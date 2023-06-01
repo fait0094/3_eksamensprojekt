@@ -1,6 +1,6 @@
 ---
 import "../styles/style.css";
-const { variant, size, link_side, hover } = Astro.props;
+const { variant, size, link_side, hover, ...rest } = Astro.props;
 ---
 
 <a
@@ -9,6 +9,7 @@ const { variant, size, link_side, hover } = Astro.props;
   data-size={size}
   data-hover={hover}
   class="rounded-xl text-primary_white inline-block hover:scale-105 transition-transform duration-200"
+  {...rest}
 >
   <slot /></a
 >

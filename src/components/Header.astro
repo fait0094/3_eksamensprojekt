@@ -4,7 +4,7 @@ import Button from "..//components/Button.astro";
 ---
 
 <header>
-  <nav>
+  <nav class="navbar">
     <div>
       <!-- topbar -->
 
@@ -164,7 +164,6 @@ import Button from "..//components/Button.astro";
         <div class="flex">
           <a href="index.html"
             ><img
-              class=""
               src="/ikoner/logo.svg"
               alt="logo_dyrevaernet"
               height="48"
@@ -174,11 +173,21 @@ import Button from "..//components/Button.astro";
         </div>
 
         <ul class="flex gap-6 items-center">
-          <li class="uppercase"><a href="/adopter">adopter</a></li>
-          <li class="uppercase"><a href="/indlever">indlever</a></li>
-          <li class="uppercase"><a href="/rodgivning">rådgivning</a></li>
-          <li class="uppercase"><a href="#">andmeld dyreværnssag</a></li>
-          <li class="uppercase"><a href="/om">om dyreværnet</a></li>
+          <li class="uppercase">
+            <a href="/adopter">adopter</a>
+          </li>
+          <li class="uppercase">
+            <a href="/indlever">indlever</a>
+          </li>
+          <li class="uppercase">
+            <a href="/rodgivning">rådgivning</a>
+          </li>
+          <li class="uppercase">
+            <a href="#">andmeld dyreværnssag</a>
+          </li>
+          <li class="uppercase">
+            <a href="/om">om dyreværnet</a>
+          </li>
 
           <li>
             <Button variant="primary_green" size="small" link_side="/stot">
@@ -198,6 +207,14 @@ import Button from "..//components/Button.astro";
     transition-property: transform;
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
+  }
+
+  .navbar ul li a.active {
+    background-color: purple;
+  }
+
+  .navbar a.active {
+    background-color: purple;
   }
 </style>
 
