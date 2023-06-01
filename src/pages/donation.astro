@@ -1,6 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import DonationCard from "../components/DonationCard.astro";
+import Card from "../components/Card.astro";
 import "..//styles/style.css";
 ---
 
@@ -52,29 +52,29 @@ import "..//styles/style.css";
       <div id="step1" x-show="step === 'step1'">
         <p class="mb-4">Vælg din donationstype.</p>
         <form id="form" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <DonationCard
+          <Card
             title="Enkel donation"
             description="Med denne mulighed donerer du ét beløb, og du bestemmer selv beløbets størrelse."
             imgPath="/ikoner/hjerte-firkant.svg"
           >
             VÆLG
-          </DonationCard>
+          </Card>
 
-          <DonationCard
+          <Card
             title="Månedlig donation"
             description="De fleste vælger denne mulighed og donerer et valgfrit beløb hver måned."
             imgPath="/ikoner/hjerte-firkant.svg"
           >
             VÆLG
-          </DonationCard>
+          </Card>
 
-          <DonationCard
+          <Card
             title="Virksomheds donation"
             description="Din virksomhed kan hjælpe til med en donation eller ved at blive sponsor."
             imgPath="/ikoner/hjerte-firkant.svg"
           >
             VÆLG
-          </DonationCard>
+          </Card>
         </form>
       </div>
 
