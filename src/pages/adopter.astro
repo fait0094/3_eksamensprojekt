@@ -1,5 +1,5 @@
 ---
-import AdoptionCard from "../components/AdoptionCard.astro";
+import Card from "../components/Card.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import "..//styles/style.css";
 ---
@@ -118,12 +118,12 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <AdoptionCard
+        <Card
           title=" BASSE "
           description=" I Basses tidligere familie var der små børn, der desværre var bange for denne smukke skabning, og man måtte indse, at samlivet ikke kunne fungere optimalt for alle parter."
           imgPath="/adoption/basse.webp"
           kategori="Schæfer / Husky / Border / Berner"
-          icon="/ikoner/sex.svg"
+          maleicon={true}
           link_side="/singleview"
         />
       </section>
@@ -134,13 +134,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <AdoptionCard
+        <Card
           title="KARLO"
           description=" Vores lille mini-Chewbacca her skal lige se nye folk an, før han overgiver sig helt, så ny familie må ikke forvente instant connection"
           imgPath="/adoption/karlo.webp"
-          kategori="Lhasa Apso / Cavalier King Charles"
+          kategori="Lmalea Apso / Cavalier King Charles"
           link_side="/singleview"
-          icon="/ikoner/sex.svg"
+          maleicon={true}
         />
       </section>
 
@@ -150,13 +150,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <AdoptionCard
+        <Card
           title="ZICO"
           description=" Zico er en flot fyr på kun 7 måneder, der er overdraget til Dyreværnet, da Zico og tidligere ejer var landet i en dårlig spiral, der påvirkede begge parter negativt, så noget måtte gøres."
           imgPath="/adoption/zico.png"
           kategori="Labrador-blanding"
           link_side="/singleview"
-          icon="/ikoner/sex.svg"
+          maleicon={true}
         />
       </section>
 
@@ -166,13 +166,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <AdoptionCard
+        <Card
           kategori="Udekat"
           title="KILLING"
           description=" Killing er en skøn rød/hvid kattepige, der er glad for større børn, og har boet sammen med mindre hund også. "
           imgPath="/adoption/killing.webp"
           link_side="/singleview"
-          icon="/ikoner/sex-female.svg"
+          maleicon={true}
         />
       </section>
 
@@ -182,13 +182,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <AdoptionCard
+        <Card
           kategori="Indekat"
           title="PJUSKE"
           description=" Pjuske er en meget social pige, der elsker alle mennesker og har været vant til børnebørn mellem 3-12 på besøg, hvilket har været SÅ skønt."
           imgPath="/adoption/pjuske.webp"
           link_side="/singleview"
-          icon="/ikoner/sex-female.svg"
+          femaleicon={true}
         />
       </section>
 
@@ -198,13 +198,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <AdoptionCard
+        <Card
           kategori="Udekat"
           title="PURRSEIDON"
           description="Purrseidon er en stor og flot hankat, der har haft et noget turbulent og voldsomt liv som ikke kastreret hankat, indtil nu. "
           imgPath="/adoption/purrisedon.webp"
           link_side="/singleview"
-          icon="/ikoner/sex.svg"
+          maleicon={true}
         />
       </section>
 
@@ -214,13 +214,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <AdoptionCard
+        <Card
           kategori="Dværgkanin"
           title="WATERLOO "
           description="Waterloo er en sød lille spirrevip, der har brug for at være mere i hænder, da det nok har været sparsomt med håndtering i tidligere hjem."
           imgPath="/adoption/waterloo.webp"
           link_side="/singleview"
-          icon="/ikoner/sex.svg"
+          maleicon={true}
         />
       </section>
       <section
@@ -229,13 +229,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <AdoptionCard
+        <Card
           kategori="Glathåret marsvin"
           title="SØREN"
           description=" Søren har i sandhed formået at sætte mange hjerter i brand her hos os, da han bare er noget af det sødeste lille væsen."
           imgPath="/adoption/soren.webp"
           link_side="/singleview"
-          icon="/ikoner/sex.svg"
+          maleicon={true}
         />
       </section>
 
@@ -245,13 +245,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <AdoptionCard
+        <Card
           kategori="Ørkenrotte"
           title="STARSTRUCK"
           description="Starstruck er en skøn ørkenrotte, der desværre har mistet sin ven, og han er derfor på jagt efter en ny erfaren ejer."
           imgPath="/adoption/starstruck.webp"
           link_side="/singleview"
-          icon="/ikoner/sex.svg"
+          maleicon={true}
         />
       </section>
 
@@ -261,13 +261,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <AdoptionCard
+        <Card
           kategori="Schecke / løvehoved kanin"
           title="FYLGJA"
           description=" Fylgja og Embla er to smukke kaniner, der blev fundet herreløse midt på en landevej i Taastrup. "
           imgPath="/adoption/fylgja.webp"
           link_side="/singleview"
-          icon="/ikoner/sex-female.svg"
+          femaleicon={true}
         />
       </section>
 
@@ -277,13 +277,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <AdoptionCard
+        <Card
           kategori="Dværgkanin"
           title="EMBLA"
           description="Embla og Fylgja er to smukke kaniner,, der blev fundet herreløse midt på en landevej i Taastrup."
           imgPath="/adoption/embla3.png"
           link_side="/singleview"
-          icon="/ikoner/sex.svg"
+          maleicon={true}
         />
       </section>
 
@@ -293,13 +293,13 @@ import "..//styles/style.css";
         x-transition:enter.duration.800ms
         x-on:change="testfunction();"
       >
-        <AdoptionCard
+        <Card
           kategori="Løvehoved-blanding"
           title="LULU"
           description="En baby på vej og det faktum, at lille, henrivende Lulu bare slet ikke var vild med mændene i hjemmet."
           imgPath="/adoption/Lulu.webp"
           link_side="/singleview"
-          icon="/ikoner/sex.svg"
+          maleicon={true}
         />
       </section>
 
