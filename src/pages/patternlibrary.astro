@@ -1,11 +1,14 @@
 ---
-import SecondLayout from "../layouts/SecondLayout.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
-
 import "..//styles/style.css";
 ---
 
-<SecondLayout title="Pattern Library - Dyreværnet">
+<MainLayout
+  title="Pattern Library - Dyreværnet"
+  splash_title="Pattern Library"
+  imgPath="/splash/splash-adopter.webp"
+>
   <div class="p-10 lg:p-0 lg:max-w-6xl mx-auto md:my-10">
     <div class="grid lg:grid-cols-2">
       <section class="mb-10">
@@ -191,4 +194,4 @@ import "..//styles/style.css";
     </section>
   </div>
   <!-- CTA-knapper -->
-</SecondLayout>
+</MainLayout>
