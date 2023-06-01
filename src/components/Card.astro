@@ -29,7 +29,7 @@ const {
               <img src="/ikoner/sex.svg" alt="køn af dyr" />
             </figure>
           )
-        } 
+        }
         {
           femaleicon && (
             <figure class="w-5">
@@ -38,21 +38,17 @@ const {
           )
         }
 
-    <!-- ovenstående kode er en boolean kode som viser img src=xx baseret på om femaleicon er defineret som true eller ej -->
+        <!-- ovenstående kode er en boolean kode som viser img src=xx baseret på om femaleicon er defineret som true eller ej -->
       </div>
     </div>
     <p>{description}</p>
     <p class="mt-5 font-bold heading-5">{ejer}</p>
-    {
-      kategori !== "testimonial" && (
-        <div class="mt-6 items-end grid">
-          <Button variant="primary_blue" size="medium" link_side="/singleview">
-            LÆS MERE
-          </Button>
-        </div>
-      )
-    } 
+    {kategori !== "testimonial" && <div class="mt-6 items-end grid" />}
+
+    <Button variant="primary_blue" size="medium" link_side={link_side}>
+      LÆS MERE
+    </Button>
     <!-- hvis kategori ikke er = testimonials puttes knap ind pga. !== som betyder ikke/det modsatte -->
-<!-- disse booleans er en  -->
+    <!-- disse booleans er en  -->
   </div>
 </div>

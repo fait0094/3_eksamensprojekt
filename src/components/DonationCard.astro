@@ -23,7 +23,6 @@ const { title, description, imgPath, kategori, link_side } = Astro.props;
         <Button
           variant="primary_blue"
           size="medium"
-          link_side={link_side}
           x-on:click="step = 'step2'"
         >
           <slot />
