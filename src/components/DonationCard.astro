@@ -1,13 +1,12 @@
 ---
 import Button from "./Button.astro";
 import "../styles/style.css";
-const { title, description, imgPath, kategori, step, link_side } = Astro.props;
+const { title, description, imgPath, kategori, link_side } = Astro.props;
 ---
 
 <section x-data="{ selected: null }">
   <div
     class="rounded-lg shadow-xl bg-primary_white h-full grid p-10 cursor-pointer"
-    :class="{ 'bg-selected_gray': selected === $el }"
   >
     <figure class="mb-6 center flex justify-center">
       <img class="rounded-lg" src={imgPath} alt="Donation" />

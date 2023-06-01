@@ -1,7 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import DonationCard from "../components/DonationCard.astro";
-import Card from "../components/Card.astro";
 import "..//styles/style.css";
 ---
 
@@ -16,12 +15,12 @@ import "..//styles/style.css";
   <div class="grid gap-8 lg:max-w-6xl mx-auto p-10 lg:p-0">
     <!-- Form -->
     <section
-      class="form-content mb-8 col-span-2 grid justify-center"
+      class="col-span-2 grid justify-center"
       id="step"
       x-data="{ step: 'step1' }"
     >
       <header class="pb-5">
-        <ul class="">
+        <ul>
           <li
             class="inline pr-2"
             :class="{'border-black border-b': step === 'step1' }"
@@ -50,7 +49,7 @@ import "..//styles/style.css";
       </header>
 
       <!-- step 1 -->
-      <div class="" id="step1" x-show="step === 'step1'">
+      <div id="step1" x-show="step === 'step1'">
         <p class="mb-4">Vælg din donationstype.</p>
         <form id="form" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <DonationCard
