@@ -7,8 +7,6 @@ const { title, description, imgPath, kategori, link_side } = Astro.props;
 <section x-data="{ selected: null }">
   <div
     class="rounded-lg shadow-xl bg-primary_white h-full grid p-10 cursor-pointer"
-    x-on:click="selected = (selected === $el) ? null : $el"
-    :class="{ 'bg-selected_gray': selected === $el }"
   >
     <figure class="mb-6 center flex justify-center">
       <img class="rounded-lg" src={imgPath} alt="Donation" />
@@ -22,7 +20,12 @@ const { title, description, imgPath, kategori, link_side } = Astro.props;
       </div>
       <p>{description}</p>
       <div class="mt-6 items-end grid">
-        <Button variant="primary_blue" size="medium" link_side={link_side}>
+        <Button
+          variant="primary_blue"
+          size="medium"
+          link_side={link_side}
+          x-on:click="step = 'step2'"
+        >
           <slot />
         </Button>
       </div>
