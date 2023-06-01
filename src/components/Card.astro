@@ -1,8 +1,17 @@
 ---
 import Button from "./Button.astro";
 import "..//styles/style.css";
-const { title, description, imgPath, kategori, link_side, maleicon, femaleicon } =
-  Astro.props;
+const {
+  title,
+  description,
+  imgPath,
+  kategori,
+  link_side,
+  maleicon,
+  femaleicon,
+  ejer,
+  btn,
+} = Astro.props;
 ---
 
 <div class="rounded-lg shadow-xl bg-primary_white h-full grid p-10">
@@ -11,7 +20,7 @@ const { title, description, imgPath, kategori, link_side, maleicon, femaleicon }
   </figure>
   <div class="grid">
     <div class="">
-      {kategori && <h3 class="uppercase heading-5">hello</h3>}
+      {kategori && <h3 class="uppercase heading-5">{kategori}</h3>}
       <div class="flex justify-between">
         <h4 class="uppercase">{title}</h4>
         {
@@ -20,7 +29,7 @@ const { title, description, imgPath, kategori, link_side, maleicon, femaleicon }
               <img src="/ikoner/sex.svg" alt="køn af dyr" />
             </figure>
           )
-        }
+        } 
         {
           femaleicon && (
             <figure class="w-5">
@@ -28,13 +37,22 @@ const { title, description, imgPath, kategori, link_side, maleicon, femaleicon }
             </figure>
           )
         }
+
+    <!-- ovenstående kode er en boolean kode som viser img src=xx baseret på om femaleicon er defineret som true eller ej -->
       </div>
     </div>
     <p>{description}</p>
-    <div class="mt-6 items-end grid">
-      <Button variant="primary_blue" size="medium" link_side="/singleview">
-        LÆS MERE
-      </Button>
-    </div>
+    <p class="mt-5 font-bold heading-5">{ejer}</p>
+    {
+      kategori !== "testimonial" && (
+        <div class="mt-6 items-end grid">
+          <Button variant="primary_blue" size="medium" link_side="/singleview">
+            LÆS MERE
+          </Button>
+        </div>
+      )
+    } 
+    <!-- hvis kategori ikke er = testimonials puttes knap ind pga. !== som betyder ikke/det modsatte -->
+<!-- disse booleans er en  -->
   </div>
 </div>
