@@ -1,6 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Card from "../components/Card.astro";
+import DonationCard from "../components/DonationCard.astro";
 import "..//styles/style.css";
 ---
 
@@ -16,30 +16,30 @@ import "..//styles/style.css";
   <section
     class="grid gap-8 lg:grid-cols-3 lg:justify-center max-w-6xl mx-auto"
   >
-    <Card
+    <DonationCard
       title="Donation"
       description="Vil du hjælpe Dyreværnet med at redde dyr? Vælg mellem enkelt, månedlig eller virksomhedsdonation og vær med til at redde dyreliv."
       imgPath="/stot/stot-kat-1.webp"
       link_side="/donation"
     >
       LÆS MERE
-    </Card>
-    <Card
+    </DonationCard>
+    <DonationCard
       title="Betænk dyrene i testamentet"
       description="Testamentariske gaver er meget vigtige for Dyreværnets arbejde og eksistens. Vi kan hjælpe med oprettelse af testamente."
       imgPath="/stot/stot-hunde-2.webp"
       link_side="/donation"
     >
       LÆS MERE
-    </Card>
+    </DonationCard>
 
-    <Card
+    <DonationCard
       title="Indsamling via Facebook"
       description="På Facebook kan du nemt samle penge ind til Dyreværnets hunde, katte, kaniner & smådyr"
       imgPath="/stot/stot-kaniner-3.webp"
       link_side="/donation"
     >
       LÆS MERE
-    </Card>
+    </DonationCard>
   </section>
 </MainLayout>
