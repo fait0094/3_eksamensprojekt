@@ -1,0 +1,186 @@
+---
+import SecondLayout from "../layouts/SecondLayout.astro";
+import Button from "../components/Button.astro";
+
+import "..//styles/style.css";
+---
+
+<SecondLayout title="Pattern Library - Dyreværnet">
+  <div class="p-10 lg:p-0 lg:max-w-6xl mx-auto md:my-10">
+    <section class="mb-10">
+      <!-- Farver -->
+      <h1>Farvepalette</h1>
+
+      <div class="grid gap-8">
+        <!-- Primære -->
+        <div>
+          <h2>Primære farver</h2>
+          <div class="flex gap-4">
+            <div>
+              <div class="w-16 h-16 bg-primary_blue rounded-full"></div>
+              <p>#1F9ECD</p>
+            </div>
+
+            <div>
+              <div class="w-16 h-16 bg-primary_black rounded-full"></div>
+              <p>#323332</p>
+            </div>
+
+            <div>
+              <div class="w-16 h-16 bg-primary_white rounded-full border-2">
+              </div>
+              <p>#FCFCFC</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sekundære -->
+        <div>
+          <h2>Sekundær farve</h2>
+          <div class="w-16 h-16 bg-secondary_beige rounded-full border-2"></div>
+          <div><p>#F1F1E8</p></div>
+        </div>
+
+        <!-- Accent -->
+        <div>
+          <h2>Accent farve</h2>
+          <div class="w-16 h-16 bg-accent_green rounded-full"></div><p>
+            #2CA900
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Typografi -->
+    <section class="mb-10">
+      <h1>Det typografiske hierarki</h1>
+      <div class="grid gap-8">
+        <div>
+          <h1>H1: OVERSKRIFT</h1>
+          <p>2.441 rem/39.06px: Barlow - Extra Bold</p>
+        </div>
+        <div>
+          <h2>H2: Underoverskrift</h2>
+          <p>1.953rem/31.25px: Barlow - Bold</p>
+        </div>
+        <div>
+          <h3>H3: Underoverskrift</h3>
+          <p>1.563rem/25 px: Barlow - Semi-bold, Bold</p>
+        </div>
+        <div>
+          <h4>H4: Underoverskrift</h4>
+          <p>1.25rem/20 px: Barlow - Semi-bold , Bold</p>
+        </div>
+        <div>
+          <h5>H5: Underoverskrift</h5>
+          <p>0.8rem/12,8 px: Barlow - Semi-bold , Bold</p>
+        </div>
+        <div>
+          <p>P: Brødtekst</p>
+          <p>1rem/16 px: Poppins - Regular</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid gap-8">
+      <h1>CTA-knapper</h1>
+      <div class="flex gap-4">
+        <Button variant="primary_green" size="small">STØT</Button>
+        <Button variant="primary_blue" size="small">LÆS MERE</Button>
+        <Button variant="secondary" size="small">NÆSTE</Button>
+      </div>
+    </section>
+
+    <section class="grid gap-8">
+      <h1>Ikoner</h1>
+
+      <div>
+        <h2>Index ikoner</h2>
+        <div class="flex gap-4">
+          <img class="ikon w-16 h-16" src="ikoner/hjerte.svg" alt="Hjerte" />
+          <img
+            class="ikon w-16 h-16"
+            src="ikoner/hundkat.svg"
+            alt="Hund og kat"
+          />
+
+          <img class="ikon w-16 h-16" src="ikoner/haender.svg" alt="Hænder" />
+
+          <img class="ikon w-16 h-16" src="ikoner/poter.svg" alt="Poter" />
+        </div>
+      </div>
+
+      <div>
+        <h2>Social media</h2>
+        <div class="flex gap-4">
+          <img
+            class="ikon w-16 h-16"
+            src="../ikoner/facebook.svg"
+            alt="facebook-ikon"
+          />
+          <img
+            class="ikon w-16 h-16"
+            src="../ikoner/insta.svg"
+            alt="instagram-ikon"
+          />
+          <img
+            class="ikon w-16 h-16"
+            src="../ikoner/yt.svg"
+            alt="youtube-ikon"
+          />
+          <img
+            class="ikon w-16 h-16"
+            src="../ikoner/linkedin.svg"
+            alt="linkedin-ikon"
+          />
+        </div>
+      </div>
+
+      <div>
+        <h2>Singleview ikoner</h2>
+        <div class="grid gap-8">
+          <div class="flex gap-4">
+            <img
+              class="ikon w-16 h-16"
+              src="../ikoner/paw.svg"
+              alt="paw-ikon"
+            />
+            <img
+              class="ikon w-16 h-16"
+              src="../ikoner/color.svg"
+              alt="color-ikon"
+            />
+            <img
+              class="ikon w-16 h-16"
+              src="../ikoner/weight.svg"
+              alt="vægt-ikon"
+            />
+            <img
+              class="ikon w-16 h-16"
+              src="../ikoner/sex.svg"
+              alt="køn-ikon"
+            />
+          </div>
+          <div class="flex gap-4">
+            <img
+              class="ikon w-16 h-16"
+              src="../ikoner/age.svg"
+              alt="alder-ikon"
+            />
+            <img
+              class="ikon w-16 h-16"
+              src="../ikoner/location.svg"
+              alt="location-ikon"
+            />
+            <img
+              class="ikon w-16 h-16"
+              src="../ikoner/price.svg"
+              alt="price-ikon"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- CTA-knapper -->
+</SecondLayout>
