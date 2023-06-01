@@ -1,7 +1,19 @@
 ---
 import "../styles/style.css";
 import Button from "./Button.astro";
-const { name, race, color, weight, sex, age, location, price } = Astro.props;
+const {
+  name,
+  race,
+  color,
+  weight,
+  sex,
+  age,
+  location,
+  price,
+  header1,
+  header2,
+  header3,
+} = Astro.props;
 ---
 
 <section class="p-8 lg:max-w-6xl lg:mx-auto">
@@ -49,59 +61,17 @@ const { name, race, color, weight, sex, age, location, price } = Astro.props;
   <section class="grid lg:grid-cols-2 gap-8 my-8">
     <div>
       <h3>Hvem er {name}?</h3>
-      <p>
-        Hvad ender man med at ligne, når ens mor er Schæfer/Golden
-        Retriever/Berner Sennen og far er Siberian Husky/Border Collie?
-
-        <p>
-          Så ligner man Basse, for det er lige nøjagtig den vilde blanding han
-          er, og hvor ER han bare smukt faldet ud. Han er svært at få øjnene
-          fra.
-        </p>
-
-        <p>
-          Basse er blot 7 måneder gammel, og det er en svær alder, hvor alt kan
-          føles som lidt op ad bakke, men vi er sikre på, at finde hans helt
-          rette match, der er klædt på til opgaven.
-        </p>
-      </p>
+      <p>{header1}</p>
     </div>
 
     <div class="row-span-2">
       <h3>Sociale egenskaber</h3>
-      <p>
-        Han skulle efter sigende være rigtig god i sin omgang med andre hunde,
-        og har man en neutraliseret højenergisk og veltrænet tæve i forvejen,
-        kunne det rette hundematch godt blive en stor hjælp i forhold til
-        arbejdet med Basse, så det kommer vi til at lægge vægt på.
-
-        <p>
-          Denne meget charmerende fyr er ikke egnet som førstegangshund, og der
-          skal være super god tid og overskud til ham i kommende hjem. Han er
-          god og kærlig i sin grundkerne, men naturligvis på nuværende tidspunkt
-          en usleben diamant, der GLÆDER sig til at havne det helt rette sted,
-          og udvikle sig til universets sødeste, sjoveste og dygtigste hund.
-        </p>
-      </p>
+      <p>{header2}</p>
     </div>
 
     <div>
       <h3>{name}'s fortid</h3>
-      <p>
-        Tidligere ejer har nemlig måtte kaste håndklædet i ringen, da Basse er
-        en højenergisk dreng, der kræver RIGTIG meget korrekt stimuli, for at
-        han er i balance og vedblive med at være en god hund på den anden side
-        af teenageårene. Basse indtil nu boet i lejlighed og primært været i bur
-        hele tiden. Det er jo naturligvis ikke sådan man skal have hvalp/hund,
-        og han skal derfor nu ud til det stikmodsatte!
-      </p>
-      <p>
-        Basse har brug for lande i landlige omgivelser, hvor der er højt til
-        loftet, åbne vidder, stor portion tålmod, kærlige rammer og masser af
-        træning, og man kommer ikke sovende til denne opgave. Man skal betragte
-        ham som en hvalp, hvor alt skal trænes forfra, for Basse er hverken
-        renlig eller kan være alene hjemme.
-      </p>
+      <p>{header3}</p>
     </div>
   </section>
 
