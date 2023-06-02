@@ -51,7 +51,7 @@ import "..//styles/style.css";
       <!-- step 1 -->
       <div id="step1" x-show="step === 'step1'">
         <p class="mb-4">Vælg din donationstype.</p>
-        <form id="form" class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <DonationCard
             title="Enkel donation"
             description="Med denne mulighed donerer du ét beløb, og du bestemmer selv beløbets størrelse."
@@ -75,7 +75,7 @@ import "..//styles/style.css";
           >
             VÆLG
           </DonationCard>
-        </form>
+        </div>
       </div>
 
       <!-- step 2-->
@@ -295,32 +295,3 @@ import "..//styles/style.css";
     transition-timing-function: ease-in-out;
   }
 </style>
-
-<!-- Info -->
-<!-- <section class="info lg:row-start-1 col-span-1">
-      <div class="mb-5">
-        <h3>Bankoverførsel</h3>
-        <p>
-          Du kan også overføre et beløb til vores donationskonto: 5329 -
-          0242143.
-        </p>
-      </div>
-
-      <div class="mb-5">
-        <h3>Vores dedikation siden 1898</h3>
-        <p>
-          Siden 1898 har vi hjulpet dyr fra et liv med misrøgt, svigt og
-          usikkerhed til et liv med kærlighed, omsorg og i sidste ende: En
-          blivende familie.
-        </p>
-      </div>
-
-      <div>
-        <h3>Spar 10% på din dyreforsikring</h3>
-        <p>
-          Vidste du, at når du støtter Dyreværnet - som fast bidragsyder eller
-          som medlem - kan du få 10% på din dyreforsikring hos vores
-          samarbejdspartner og hovedsponsor Agria Dyreforsikring.
-        </p>
-      </div>
-    </section> -->
